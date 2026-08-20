@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fiche produit — ChicCelebria</title>
+<meta name="description" content="Découvrez cette création ChicCelebria personnalisable, fabriquée à la main à la commande.">
+<meta property="og:type" content="product">
+<link rel="icon" href="assets/logo.png" type="image/png">
+<link rel="apple-touch-icon" href="assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=Jost:wght@400;500;600&family=Caveat:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "Organization",
+  "name": "ChicCelebria",
+  "url": "https://www.chiccelebria.fr/",
+  "logo": "assets/logo.png"
+}
+</script>
+<script type="application/ld+json" id="product-jsonld"></script>
+</head>
+<body data-page="produit">
+
+<a class="skip-link" href="#contenu">Aller au contenu principal</a>
+
+<p class="promo-bar">Livraison offerte dès <strong>35&nbsp;€</strong> · Personnalisation offerte sur toute la boutique</p>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a href="index.html#top" class="wordmark">
+      <img src="assets/logo.png" alt="" class="logo-mark" width="38" height="38" onerror="window.CHICCELEBRIA.imgFallback(this)">
+      Chic<span>Celebria</span>
+    </a>
+    <nav class="main-nav" id="main-nav" aria-label="Navigation principale">
+      <a href="index.html#top">Accueil</a>
+      <a href="boutique.html" aria-current="page">Boutique</a>
+      <a href="a-propos.html">À propos</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <a class="cart-link" href="panier.html" aria-label="Voir le panier">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6h15l-1.5 9h-12L6 6Z"/><path d="M6 6 5 3H2"/><circle cx="9" cy="20" r="1.4"/><circle cx="17" cy="20" r="1.4"/></svg>
+        <span class="cart-count" id="cart-count-header">0</span>
+      </a>
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="main-nav">
+        <span class="sr-only">Ouvrir le menu</span>
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="contenu">
+
+  <section class="section" style="padding-top: var(--space-4);">
+    <div class="wrap">
+      <div class="produit-layout" id="produit-mount">
+        <!-- Rendu dynamique par script.js selon ?id= -->
+      </div>
+
+      <div class="accordion">
+        <div class="accordion-item">
+          <button type="button" class="accordion-trigger" id="trigger-description" aria-expanded="true" aria-controls="panel-description">Description</button>
+          <div class="accordion-panel" id="panel-description"></div>
+        </div>
+        <div class="accordion-item">
+          <button type="button" class="accordion-trigger" id="trigger-livraison" aria-expanded="false" aria-controls="panel-livraison">Livraison &amp; retours</button>
+          <div class="accordion-panel" id="panel-livraison" hidden></div>
+        </div>
+        <div class="accordion-item">
+          <button type="button" class="accordion-trigger" id="trigger-personnalisation" aria-expanded="false" aria-controls="panel-personnalisation">Personnalisation</button>
+          <div class="accordion-panel" id="panel-personnalisation" hidden></div>
+        </div>
+      </div>
+
+      <section class="related">
+        <p class="eyebrow eyebrow-center">Envie d'aller plus loin ?</p>
+        <h2 class="section-title">Vous aimerez aussi</h2>
+        <div class="shop-grid" id="related-grid" style="margin-top: var(--space-4);"></div>
+      </section>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer" id="contact-footer">
+  <div class="wrap footer-inner">
+    <div class="footer-brand">
+      <a href="index.html#top" class="wordmark wordmark-footer">
+        <img src="assets/logo.png" alt="" class="logo-mark" width="38" height="38" onerror="window.CHICCELEBRIA.imgFallback(this)">
+        Chic<span>Celebria</span>
+      </a>
+      <p>Décorations et cadeaux personnalisés, cousus et gravés à la main.</p>
+      <div class="footer-social">
+        <a href="https://www.instagram.com" target="_blank" rel="noopener" aria-label="ChicCelebria sur Instagram">IG</a>
+        <a href="https://www.pinterest.com" target="_blank" rel="noopener" aria-label="ChicCelebria sur Pinterest">P</a>
+      </div>
+    </div>
+
+    <nav class="footer-links" aria-label="Aide">
+      <h4>Aide</h4>
+      <a href="contact.html#faq">Livraison &amp; retours</a>
+      <a href="contact.html#faq">Foire aux questions</a>
+      <a href="panier.html">Suivi de commande</a>
+      <a href="contact.html">Nous contacter</a>
+    </nav>
+
+    <nav class="footer-links" aria-label="Collections">
+      <h4>Collections</h4>
+      <a href="boutique.html?cat=halloween">Halloween</a>
+      <a href="boutique.html?cat=deco">Décoration</a>
+      <a href="boutique.html?cat=cadeaux">Cadeaux</a>
+      <a href="boutique.html?cat=saison">Saison</a>
+    </nav>
+
+    <div class="footer-links">
+      <h4>Contact</h4>
+      <a href="mailto:bonjour@chiccelebria.fr">bonjour@chiccelebria.fr</a>
+      <a href="tel:+33100000000">01 00 00 00 00</a>
+      <div class="footer-payments">
+        <span class="payment-chip">CB</span>
+        <span class="payment-chip">Visa</span>
+        <span class="payment-chip">Mastercard</span>
+        <span class="payment-chip">PayPal</span>
+        <span class="payment-chip">Apple Pay</span>
+      </div>
+    </div>
+  </div>
+  <div class="wrap footer-bottom">
+    <p>© 2026 ChicCelebria — Boutique artisanale. Fait main, avec soin.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

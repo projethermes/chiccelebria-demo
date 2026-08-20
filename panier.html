@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mon panier — ChicCelebria</title>
+<meta name="description" content="Consultez votre panier ChicCelebria : articles, personnalisations, sous-total et progression vers la livraison offerte dès 35 €.">
+<link rel="icon" href="assets/logo.png" type="image/png">
+<link rel="apple-touch-icon" href="assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=Jost:wght@400;500;600&family=Caveat:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="panier">
+
+<a class="skip-link" href="#contenu">Aller au contenu principal</a>
+
+<p class="promo-bar">Livraison offerte dès <strong>35&nbsp;€</strong> · Personnalisation offerte sur toute la boutique</p>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a href="index.html#top" class="wordmark">
+      <img src="assets/logo.png" alt="" class="logo-mark" width="38" height="38" onerror="window.CHICCELEBRIA.imgFallback(this)">
+      Chic<span>Celebria</span>
+    </a>
+    <nav class="main-nav" id="main-nav" aria-label="Navigation principale">
+      <a href="index.html#top">Accueil</a>
+      <a href="boutique.html">Boutique</a>
+      <a href="a-propos.html">À propos</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <a class="cart-link" href="panier.html" aria-label="Voir le panier" aria-current="page">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6h15l-1.5 9h-12L6 6Z"/><path d="M6 6 5 3H2"/><circle cx="9" cy="20" r="1.4"/><circle cx="17" cy="20" r="1.4"/></svg>
+        <span class="cart-count" id="cart-count-header">0</span>
+      </a>
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="main-nav">
+        <span class="sr-only">Ouvrir le menu</span>
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="contenu">
+
+  <section class="page-title" id="top">
+    <div class="wrap">
+      <p class="breadcrumb breadcrumb-light breadcrumb-center"><a href="index.html#top">Accueil</a> / Panier</p>
+      <p class="eyebrow eyebrow-center">Votre sélection</p>
+      <h1 class="section-title">Mon panier</h1>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top: 0;">
+    <div class="wrap">
+
+      <div class="cart-empty" id="cart-empty" hidden>
+        <h2>Votre panier est vide</h2>
+        <p>Découvrez nos créations personnalisables et ajoutez vos premières pièces.</p>
+        <a class="btn btn-primary" href="boutique.html">Voir la boutique</a>
+      </div>
+
+      <div class="cart-layout">
+        <ul class="cart-list" id="cart-list" hidden></ul>
+
+        <aside class="cart-summary" id="cart-summary" hidden>
+          <h2>Récapitulatif</h2>
+          <div class="cart-subtotal-row">
+            <span>Sous-total</span>
+            <span id="cart-subtotal">0,00 €</span>
+          </div>
+          <div class="shipping-progress"><div class="shipping-progress-bar" id="shipping-progress-bar"></div></div>
+          <p id="shipping-progress-text">Plus que 35,00 € pour la livraison offerte !</p>
+          <div class="cart-summary-actions">
+            <button type="button" class="btn btn-primary btn-lg" id="cart-checkout">Commander</button>
+            <button type="button" class="btn btn-outline" id="cart-clear">Vider le panier</button>
+          </div>
+          <p class="checkout-confirm" id="checkout-confirm" role="status" aria-live="polite" hidden></p>
+        </aside>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer" id="contact-footer">
+  <div class="wrap footer-inner">
+    <div class="footer-brand">
+      <a href="index.html#top" class="wordmark wordmark-footer">
+        <img src="assets/logo.png" alt="" class="logo-mark" width="38" height="38" onerror="window.CHICCELEBRIA.imgFallback(this)">
+        Chic<span>Celebria</span>
+      </a>
+      <p>Décorations et cadeaux personnalisés, cousus et gravés à la main.</p>
+      <div class="footer-social">
+        <a href="https://www.instagram.com" target="_blank" rel="noopener" aria-label="ChicCelebria sur Instagram">IG</a>
+        <a href="https://www.pinterest.com" target="_blank" rel="noopener" aria-label="ChicCelebria sur Pinterest">P</a>
+      </div>
+    </div>
+
+    <nav class="footer-links" aria-label="Aide">
+      <h4>Aide</h4>
+      <a href="contact.html#faq">Livraison &amp; retours</a>
+      <a href="contact.html#faq">Foire aux questions</a>
+      <a href="panier.html">Suivi de commande</a>
+      <a href="contact.html">Nous contacter</a>
+    </nav>
+
+    <nav class="footer-links" aria-label="Collections">
+      <h4>Collections</h4>
+      <a href="boutique.html?cat=halloween">Halloween</a>
+      <a href="boutique.html?cat=deco">Décoration</a>
+      <a href="boutique.html?cat=cadeaux">Cadeaux</a>
+      <a href="boutique.html?cat=saison">Saison</a>
+    </nav>
+
+    <div class="footer-links">
+      <h4>Contact</h4>
+      <a href="mailto:bonjour@chiccelebria.fr">bonjour@chiccelebria.fr</a>
+      <a href="tel:+33100000000">01 00 00 00 00</a>
+      <div class="footer-payments">
+        <span class="payment-chip">CB</span>
+        <span class="payment-chip">Visa</span>
+        <span class="payment-chip">Mastercard</span>
+        <span class="payment-chip">PayPal</span>
+        <span class="payment-chip">Apple Pay</span>
+      </div>
+    </div>
+  </div>
+  <div class="wrap footer-bottom">
+    <p>© 2026 ChicCelebria — Boutique artisanale. Fait main, avec soin.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
