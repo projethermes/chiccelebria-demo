@@ -119,8 +119,8 @@
       reviews: 27,
       badges: ["nouveau"],
       images: [
-        "https://images.unsplash.com/photo-1617104551722-3b2d51366400?auto=format&fit=crop&w=900&q=80",
-        "https://images.unsplash.com/photo-1615873968403-89e068629265?auto=format&fit=crop&w=900&q=80"
+        "assets/produits/img-12.jpg",
+        "assets/produits/img-10.jpg"
       ],
       short: "Anneau bois et feuillage séché pour un mur végétal doux.",
       description: "Une suspension murale en macramé tissée main, anneau de bois clair et feuillage séché glissé dans les mailles. Elle apporte une touche bohème et végétale à n'importe quel mur, toute l'année.",
@@ -141,8 +141,8 @@
       reviews: 54,
       badges: ["promo", "personnalisable"],
       images: [
-        "https://images.unsplash.com/photo-1602874801006-e26c4c5b5f0e?auto=format&fit=crop&w=900&q=80",
-        "https://images.unsplash.com/photo-1603006905003-be475563bc59?auto=format&fit=crop&w=900&q=80"
+        "assets/produits/img-08.jpg",
+        "assets/produits/img-09.jpg"
       ],
       short: "Cire de soja, mèche coton, étiquette à votre prénom.",
       description: "Une bougie en cire de soja coulée à la main, parfum bois de santal ou figue selon la saison, avec une étiquette à votre prénom. Le petit cadeau qui fait toujours son effet, seul ou en duo.",
@@ -163,8 +163,8 @@
       reviews: 15,
       badges: ["nouveau"],
       images: [
-        "https://images.unsplash.com/photo-1509557965043-ce612cd1f9e6?auto=format&fit=crop&w=900&q=80",
-        "https://images.unsplash.com/photo-1601301939739-0131a1a5d18f?auto=format&fit=crop&w=900&q=80"
+        "assets/produits/img-01.jpg",
+        "assets/produits/img-07.jpg"
       ],
       short: "Sept citrouilles en feutrine épaisse, coutures apparentes.",
       description: "Sept citrouilles en feutrine épaisse, cousues main avec des coutures apparentes façon patchwork, à suspendre au-dessus d'une cheminée ou d'une fenêtre. Douce et chic, jamais criarde.",
@@ -185,8 +185,8 @@
       reviews: 33,
       badges: ["best-seller"],
       images: [
-        "https://images.unsplash.com/photo-1567016432779-094069958ea5?auto=format&fit=crop&w=900&q=80",
-        "https://images.unsplash.com/photo-1616627561950-9f746e330187?auto=format&fit=crop&w=900&q=80"
+        "assets/produits/img-04.jpg",
+        "assets/produits/img-11.jpg"
       ],
       short: "Bois clair suspendu par des cordes macramé tissées main.",
       description: "Une étagère en bois clair suspendue par des cordes en macramé tissées main, parfaite pour une petite plante, quelques bougies ou vos objets préférés. Un rangement qui a l'air d'une décoration.",
@@ -207,8 +207,8 @@
       reviews: 29,
       badges: ["promo", "personnalisable"],
       images: [
-        "https://images.unsplash.com/photo-1600857544200-b2f666a9a2ec?auto=format&fit=crop&w=900&q=80",
-        "https://images.unsplash.com/photo-1587049352846-4a222e784d38?auto=format&fit=crop&w=900&q=80"
+        "assets/produits/img-06.jpg",
+        "assets/produits/img-05.jpg"
       ],
       short: "Lin naturel, fleurs séchées, ruban brodé à votre prénom.",
       description: "Trois sachets senteur en lin naturel garnis de fleurs séchées et de bois de cèdre, fermés par un ruban brodé à votre prénom. À glisser dans une armoire, un tiroir ou une valise.",
@@ -229,8 +229,8 @@
       reviews: 12,
       badges: ["nouveau", "personnalisable"],
       images: [
-        "https://images.unsplash.com/photo-1543589077-47d81606c1bf?auto=format&fit=crop&w=900&q=80",
-        "https://images.unsplash.com/photo-1512909006721-3d6018887383?auto=format&fit=crop&w=900&q=80"
+        "assets/produits/img-03.jpg",
+        "assets/produits/img-02.jpg"
       ],
       short: "Ananas en papier doré et perles de bois, esprit Noël tropical.",
       description: "Une guirlande de petits ananas en papier doré et de perles de bois naturel, pour un Noël tropical chic — celui qui préfère le soleil aux sapins givrés. Se suspend au-dessus d'une table ou d'un miroir.",
