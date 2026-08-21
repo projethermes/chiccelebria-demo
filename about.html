@@ -3,12 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About | Chic Celebria</title>
-<meta name="description" content="Chic Celebria curates decor and personalised gifts for Halloween, Christmas and everyday celebrations. Here's how we work, today.">
+<title data-i18n="about.title">About | Chic Celebria</title>
+<meta name="description" data-i18n-content="about.desc" content="Chic Celebria curates decor and personalised gifts for Halloween, Christmas and everyday celebrations. Here's how we work, today.">
 <link rel="canonical" href="https://projethermes.github.io/chiccelebria-demo/about.html">
 <meta property="og:type" content="website">
-<meta property="og:title" content="About | Chic Celebria">
-<meta property="og:description" content="Chic Celebria curates decor and personalised gifts for Halloween, Christmas and everyday celebrations. Here's how we work, today.">
+<meta property="og:title" data-i18n-content="about.title" content="About | Chic Celebria">
+<meta property="og:description" data-i18n-content="about.desc" content="Chic Celebria curates decor and personalised gifts for Halloween, Christmas and everyday celebrations. Here's how we work, today.">
 <meta property="og:url" content="https://projethermes.github.io/chiccelebria-demo/about.html">
 <meta property="og:image" content="https://projethermes.github.io/chiccelebria-demo/assets/produits/img-10.jpg">
 <meta name="twitter:card" content="summary_large_image">
@@ -32,7 +32,7 @@
 </head>
 <body data-page="about">
 
-<a class="skip-link" href="#main">Skip to content</a>
+<a class="skip-link" href="#main" data-i18n="common.skip">Skip to content</a>
 
 <header class="site-header" data-site-header>
   <div class="wrap header-inner">
@@ -40,18 +40,27 @@
       <img src="assets/logo.png" alt="" class="logo-mark" width="30" height="30">
       Chic Celebria
     </a>
-    <nav class="main-nav" id="main-nav" aria-label="Main navigation">
-      <a href="index.html#new-in">New In</a>
-      <a href="collections/">Celebrations</a>
-      <a href="collections/halloween/">Halloween</a>
-      <a href="collections/christmas/">Christmas</a>
-      <a href="collections/gifts/">Gifts</a>
-      <a href="collections/personalised/">Personalised</a>
-      <a href="about.html">About</a>
+    <nav class="main-nav" id="main-nav" aria-label="Main navigation" data-i18n-aria="common.navLabel">
+      <a href="index.html#new-in" data-i18n="common.newIn">New In</a>
+      <a href="collections/" data-i18n="common.celebrations">Celebrations</a>
+      <a href="collections/halloween/" data-i18n="common.halloween">Halloween</a>
+      <a href="collections/christmas/" data-i18n="common.christmas">Christmas</a>
+      <a href="collections/gifts/" data-i18n="common.gifts">Gifts</a>
+      <a href="collections/personalised/" data-i18n="common.personalised">Personalised</a>
+      <a href="about.html" data-i18n="common.about">About</a>
     </nav>
     <div class="header-actions">
+      <div class="lang-switch">
+        <select id="lang-select" data-i18n-aria="common.language" aria-label="Language">
+          <option value="en">EN</option>
+          <option value="es">ES</option>
+          <option value="fr">FR</option>
+          <option value="it">IT</option>
+          <option value="de">DE</option>
+        </select>
+      </div>
       <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="main-nav">
-        <span class="sr-only">Open menu</span>
+        <span class="sr-only" data-i18n="common.openMenu">Open menu</span>
         <span class="nav-toggle-bar" aria-hidden="true"></span>
       </button>
     </div>
@@ -61,41 +70,41 @@
 <main id="main">
   <section class="page-hero">
     <div class="wrap">
-      <h1>Decor and gifts for the celebrations you actually have</h1>
-      <p>Chic Celebria curates decor and personalised gifts for Halloween, Christmas and everything in between — an edit, not an aisle.</p>
+      <h1 data-i18n="about.hero.h1">Decor and gifts for the celebrations you actually have</h1>
+      <p data-i18n="about.hero.p">Chic Celebria curates decor and personalised gifts for Halloween, Christmas and everything in between — an edit, not an aisle.</p>
     </div>
   </section>
 
   <section class="story">
     <div class="wrap story-inner">
-      <p>Chic Celebria brings together decor and personalised gifts for the celebrations that matter — Halloween, Christmas, and the birthdays, gifts and everyday moments that fall in between. We pick pieces that hold up as decor first, seasonal second: things you'd want to keep out, not just pack away in January.</p>
+      <p data-i18n="about.story.p1">Chic Celebria brings together decor and personalised gifts for the celebrations that matter — Halloween, Christmas, and the birthdays, gifts and everyday moments that fall in between. We pick pieces that hold up as decor first, seasonal second: things you'd want to keep out, not just pack away in January.</p>
 
-      <h2>How to shop right now</h2>
-      <p>We're in an early phase: every piece on this site is sold and fulfilled through our Etsy shop. Browse here, then follow the "Shop on Etsy" link on any product to complete your order and message us directly about sizes, personalisation or delivery timing.</p>
+      <h2 data-i18n="about.how.h2">How to shop right now</h2>
+      <p data-i18n="about.how.p">We're in an early phase: every piece on this site is sold and fulfilled through our Etsy shop. Browse here, then follow the "Shop on Etsy" link on any product to complete your order and message us directly about sizes, personalisation or delivery timing.</p>
 
-      <h2>Personalisation</h2>
-      <p>Several pieces can be made yours — a name on a tapestry, a message on a candle label, initials on a cushion. Where personalisation is offered, you'll find the details on the product page, with instructions for sending us your text or photo after ordering.</p>
+      <h2 data-i18n="about.perso.h2">Personalisation</h2>
+      <p data-i18n="about.perso.p">Several pieces can be made yours — a name on a tapestry, a message on a candle label, initials on a cushion. Where personalisation is offered, you'll find the details on the product page, with instructions for sending us your text or photo after ordering.</p>
     </div>
   </section>
 
   <section class="section">
     <div class="wrap editorial">
       <div class="editorial-media reveal">
-        <img src="assets/produits/img-10.jpg" alt="A softly styled living room with layered seasonal decor" width="900" height="506" loading="lazy">
+        <img src="assets/produits/img-10.jpg" alt="A softly styled living room with layered seasonal decor" data-i18n-alt="alt.livingroom" width="900" height="506" loading="lazy">
       </div>
       <div class="editorial-copy reveal">
-        <h2 class="section-title">Considered, not crammed</h2>
-        <p>We'd rather show a short, well-chosen edit than a wall of everything. If a collection feels small, that's by design — it grows as we add pieces we actually stand behind.</p>
+        <h2 class="section-title" data-i18n="about.editorial.h2">Considered, not crammed</h2>
+        <p data-i18n="about.editorial.p">We'd rather show a short, well-chosen edit than a wall of everything. If a collection feels small, that's by design — it grows as we add pieces we actually stand behind.</p>
       </div>
     </div>
   </section>
 
   <section class="section cta-panel">
-    <h2>Ready to look around?</h2>
-    <p>Start with a collection, or head straight to our Etsy shop.</p>
+    <h2 data-i18n="about.cta.h2">Ready to look around?</h2>
+    <p data-i18n="about.cta.p">Start with a collection, or head straight to our Etsy shop.</p>
     <div class="hero-actions" style="justify-content: center; display: flex; gap: 1rem; flex-wrap: wrap;">
-      <a class="btn btn-primary" href="collections/">Shop the Collections</a>
-      <a class="btn btn-outline" href="#" data-etsy-cta>Shop on Etsy</a>
+      <a class="btn btn-primary" href="collections/" data-i18n="about.cta.primary">Shop the Collections</a>
+      <a class="btn btn-outline" href="#" data-etsy-cta data-i18n="common.shopOnEtsy">Shop on Etsy</a>
     </div>
   </section>
 </main>
@@ -107,29 +116,30 @@
         <img src="assets/logo.png" alt="" class="logo-mark" width="30" height="30">
         Chic Celebria
       </a>
-      <p>Distinctive decor and personalised gifts for Halloween, Christmas and every celebration in between.</p>
-      <a class="btn btn-outline btn-sm" href="#" data-etsy-cta>Shop on Etsy</a>
+      <p data-i18n="common.footerTagline">Distinctive decor and personalised gifts for Halloween, Christmas and every celebration in between.</p>
+      <a class="btn btn-outline btn-sm" href="#" data-etsy-cta data-i18n="common.shopOnEtsy">Shop on Etsy</a>
     </div>
     <nav class="footer-links" aria-label="Shop">
-      <h4>Shop</h4>
-      <a href="index.html#new-in">New In</a>
-      <a href="collections/halloween/">Halloween</a>
-      <a href="collections/christmas/">Christmas</a>
-      <a href="collections/gifts/">Gifts</a>
-      <a href="collections/personalised/">Personalised</a>
+      <h4 data-i18n="common.shop">Shop</h4>
+      <a href="index.html#new-in" data-i18n="common.newIn">New In</a>
+      <a href="collections/halloween/" data-i18n="common.halloween">Halloween</a>
+      <a href="collections/christmas/" data-i18n="common.christmas">Christmas</a>
+      <a href="collections/gifts/" data-i18n="common.gifts">Gifts</a>
+      <a href="collections/personalised/" data-i18n="common.personalised">Personalised</a>
     </nav>
     <nav class="footer-links" aria-label="Company">
-      <h4>Company</h4>
-      <a href="collections/">Celebrations</a>
-      <a href="about.html">About</a>
-      <a href="#" data-etsy-cta>Shop on Etsy</a>
+      <h4 data-i18n="common.company">Company</h4>
+      <a href="collections/" data-i18n="common.celebrations">Celebrations</a>
+      <a href="about.html" data-i18n="common.about">About</a>
+      <a href="#" data-etsy-cta data-i18n="common.shopOnEtsy">Shop on Etsy</a>
     </nav>
   </div>
   <div class="wrap footer-bottom">
-    <p>&copy; <span id="year">2026</span> Chic Celebria. Prices shown in EUR.</p>
+    <p>&copy; <span id="year">2026</span> <span data-i18n="common.footerCopyright">Chic Celebria. Prices shown in EUR.</span></p>
   </div>
 </footer>
 
+<script src="i18n.js"></script>
 <script src="script.js"></script>
 </body>
 </html>

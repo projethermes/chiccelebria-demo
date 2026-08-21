@@ -3,12 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Personalised Gifts & Decor | Chic Celebria</title>
-<meta name="description" content="Add a name, initials or your own photo — shop tapestries, candles and cushions you can personalise at Chic Celebria, now on Etsy.">
+<title data-i18n="personalised.title">Personalised Gifts & Decor | Chic Celebria</title>
+<meta name="description" data-i18n-content="personalised.desc" content="Add a name, initials or your own photo — shop tapestries, candles and cushions you can personalise at Chic Celebria, now on Etsy.">
 <link rel="canonical" href="https://projethermes.github.io/chiccelebria-demo/collections/personalised/">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Personalised Gifts & Decor | Chic Celebria">
-<meta property="og:description" content="Add a name, initials or your own photo — shop tapestries, candles and cushions you can personalise at Chic Celebria, now on Etsy.">
+<meta property="og:title" data-i18n-content="personalised.title" content="Personalised Gifts & Decor | Chic Celebria">
+<meta property="og:description" data-i18n-content="personalised.desc" content="Add a name, initials or your own photo — shop tapestries, candles and cushions you can personalise at Chic Celebria, now on Etsy.">
 <meta property="og:url" content="https://projethermes.github.io/chiccelebria-demo/collections/personalised/">
 <meta property="og:image" content="https://projethermes.github.io/chiccelebria-demo/assets/tapestry.jpg">
 <meta name="twitter:card" content="summary_large_image">
@@ -33,7 +33,7 @@
 </head>
 <body data-page="collection-personalised">
 
-<a class="skip-link" href="#main">Skip to content</a>
+<a class="skip-link" href="#main" data-i18n="common.skip">Skip to content</a>
 
 <header class="site-header" data-site-header>
   <div class="wrap header-inner">
@@ -41,18 +41,27 @@
       <img src="../../assets/logo.png" alt="" class="logo-mark" width="30" height="30">
       Chic Celebria
     </a>
-    <nav class="main-nav" id="main-nav" aria-label="Main navigation">
-      <a href="../../index.html#new-in">New In</a>
-      <a href="../">Celebrations</a>
-      <a href="../halloween/">Halloween</a>
-      <a href="../christmas/">Christmas</a>
-      <a href="../gifts/">Gifts</a>
-      <a href="./">Personalised</a>
-      <a href="../../about.html">About</a>
+    <nav class="main-nav" id="main-nav" aria-label="Main navigation" data-i18n-aria="common.navLabel">
+      <a href="../../index.html#new-in" data-i18n="common.newIn">New In</a>
+      <a href="../" data-i18n="common.celebrations">Celebrations</a>
+      <a href="../halloween/" data-i18n="common.halloween">Halloween</a>
+      <a href="../christmas/" data-i18n="common.christmas">Christmas</a>
+      <a href="../gifts/" data-i18n="common.gifts">Gifts</a>
+      <a href="./" data-i18n="common.personalised">Personalised</a>
+      <a href="../../about.html" data-i18n="common.about">About</a>
     </nav>
     <div class="header-actions">
+      <div class="lang-switch">
+        <select id="lang-select" data-i18n-aria="common.language" aria-label="Language">
+          <option value="en">EN</option>
+          <option value="es">ES</option>
+          <option value="fr">FR</option>
+          <option value="it">IT</option>
+          <option value="de">DE</option>
+        </select>
+      </div>
       <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="main-nav">
-        <span class="sr-only">Open menu</span>
+        <span class="sr-only" data-i18n="common.openMenu">Open menu</span>
         <span class="nav-toggle-bar" aria-hidden="true"></span>
       </button>
     </div>
@@ -62,10 +71,10 @@
 <main id="main">
   <section class="collection-hero">
     <div class="wrap">
-      <p class="breadcrumb"><a href="../../index.html">Home</a> / <a href="../">Celebrations</a> / Personalised</p>
-      <span class="eyebrow">Made Yours</span>
-      <h1>Personalised</h1>
-      <p>A photo tapestry, a labelled candle, a monogrammed cushion — every piece here can carry a name, initials or your own design.</p>
+      <p class="breadcrumb"><a href="../../index.html" data-i18n="common.home">Home</a> / <a href="../" data-i18n="common.celebrations">Celebrations</a> / <span data-i18n="common.personalised">Personalised</span></p>
+      <span class="eyebrow" data-i18n="personalised.eyebrow">Made Yours</span>
+      <h1 data-i18n="common.personalised">Personalised</h1>
+      <p data-i18n="personalised.hero.p">A photo tapestry, a labelled candle, a monogrammed cushion — every piece here can carry a name, initials or your own design.</p>
     </div>
   </section>
 
@@ -74,30 +83,30 @@
       <div class="toolbar">
         <div class="toolbar-filters">
           <div class="toolbar-field">
-            <label for="filter-type">Occasion</label>
+            <label for="filter-type" data-i18n="toolbar.occasion">Occasion</label>
             <select id="filter-type">
-              <option value="all">All</option>
-              <option value="halloween">Halloween</option>
-              <option value="christmas">Christmas</option>
-              <option value="gifts">Gifts</option>
+              <option value="all" data-i18n="toolbar.all">All</option>
+              <option value="halloween" data-i18n="common.halloween">Halloween</option>
+              <option value="christmas" data-i18n="common.christmas">Christmas</option>
+              <option value="gifts" data-i18n="common.gifts">Gifts</option>
             </select>
           </div>
           <div class="toolbar-field">
-            <label for="filter-price">Price</label>
+            <label for="filter-price" data-i18n="toolbar.price">Price</label>
             <select id="filter-price">
-              <option value="all">All</option>
-              <option value="under-15">Under €15</option>
-              <option value="15-25">€15–€25</option>
-              <option value="over-25">Over €25</option>
+              <option value="all" data-i18n="toolbar.all">All</option>
+              <option value="under-15" data-i18n="toolbar.under15">Under €15</option>
+              <option value="15-25" data-i18n="toolbar.15to25">€15–€25</option>
+              <option value="over-25" data-i18n="toolbar.over25">Over €25</option>
             </select>
           </div>
           <div class="toolbar-field">
-            <label for="sort-by">Sort by</label>
+            <label for="sort-by" data-i18n="toolbar.sort">Sort by</label>
             <select id="sort-by">
-              <option value="name-asc">Name (A–Z)</option>
-              <option value="name-desc">Name (Z–A)</option>
-              <option value="price-asc">Price (Low to High)</option>
-              <option value="price-desc">Price (High to Low)</option>
+              <option value="name-asc" data-i18n="toolbar.nameAsc">Name (A–Z)</option>
+              <option value="name-desc" data-i18n="toolbar.nameDesc">Name (Z–A)</option>
+              <option value="price-asc" data-i18n="toolbar.priceAsc">Price (Low to High)</option>
+              <option value="price-desc" data-i18n="toolbar.priceDesc">Price (High to Low)</option>
             </select>
           </div>
         </div>
@@ -106,45 +115,45 @@
 
       <div class="product-grid" data-collection-grid>
 
-        <article class="p-card" data-name="Personalised Photo Tapestry" data-price="15.99" data-type="halloween">
+        <article class="p-card" data-name="Personalised Photo Tapestry" data-i18n-name="p.tapestry.title" data-price="15.99" data-type="halloween">
           <a class="p-card-media" href="../../products/personalised-halloween-tapestry/">
-            <span class="p-card-badge">Personalised</span>
-            <img class="img-main" src="../../assets/tapestry.jpg" alt="Black wall tapestry that can be personalised with your own photo or text" width="1200" height="1200" loading="lazy">
+            <span class="p-card-badge" data-i18n="common.badgePersonalised">Personalised</span>
+            <img class="img-main" src="../../assets/tapestry.jpg" alt="Black wall tapestry that can be personalised with your own photo or text" data-i18n-alt="alt.tapestryCard" width="1200" height="1200" loading="lazy">
           </a>
           <div class="p-card-body">
-            <a class="p-card-title" href="../../products/personalised-halloween-tapestry/">Personalised Photo Tapestry</a>
-            <p class="p-card-variant">60×80 cm or 90×130 cm</p>
+            <a class="p-card-title" href="../../products/personalised-halloween-tapestry/" data-i18n="p.tapestry.title">Personalised Photo Tapestry</a>
+            <p class="p-card-variant" data-i18n="p.tapestry.variant">60×80 cm or 90×130 cm</p>
             <p class="p-card-price">€15.99</p>
           </div>
         </article>
 
-        <article class="p-card" data-name="Personalised Scented Candle" data-price="14.50" data-type="christmas">
+        <article class="p-card" data-name="Personalised Scented Candle" data-i18n-name="p.candle.title" data-price="14.50" data-type="christmas">
           <a class="p-card-media" href="../../products/personalised-scented-candle/">
-            <span class="p-card-badge">Personalised</span>
-            <img class="img-main" src="../../assets/produits/img-09.jpg" alt="Lit scented candle in a glass jar surrounded by fairy lights" width="900" height="1350" loading="lazy">
+            <span class="p-card-badge" data-i18n="common.badgePersonalised">Personalised</span>
+            <img class="img-main" src="../../assets/produits/img-09.jpg" alt="Lit scented candle in a glass jar surrounded by fairy lights" data-i18n-alt="alt.candleCard" width="900" height="1350" loading="lazy">
           </a>
           <div class="p-card-body">
-            <a class="p-card-title" href="../../products/personalised-scented-candle/">Personalised Scented Candle</a>
-            <p class="p-card-variant">Vanilla Woods, Winter Spice or Fresh Fir</p>
+            <a class="p-card-title" href="../../products/personalised-scented-candle/" data-i18n="p.candle.title">Personalised Scented Candle</a>
+            <p class="p-card-variant" data-i18n="p.candle.variant">Vanilla Woods, Winter Spice or Fresh Fir</p>
             <p class="p-card-price">€14.50</p>
           </div>
         </article>
 
-        <article class="p-card" data-name="Striped Linen Cushion Cover" data-price="21.00" data-type="gifts">
+        <article class="p-card" data-name="Striped Linen Cushion Cover" data-i18n-name="p.cushion.title" data-price="21.00" data-type="gifts">
           <a class="p-card-media" href="../../products/striped-linen-cushion-cover/">
-            <span class="p-card-badge">Personalised</span>
-            <img class="img-main" src="../../assets/produits/img-11.jpg" alt="Striped linen cushion covers styled against a wooden bed frame" width="900" height="1350" loading="lazy">
+            <span class="p-card-badge" data-i18n="common.badgePersonalised">Personalised</span>
+            <img class="img-main" src="../../assets/produits/img-11.jpg" alt="Striped linen cushion covers styled against a wooden bed frame" data-i18n-alt="alt.cushion" width="900" height="1350" loading="lazy">
           </a>
           <div class="p-card-body">
-            <a class="p-card-title" href="../../products/striped-linen-cushion-cover/">Striped Linen Cushion Cover</a>
-            <p class="p-card-variant">40×40 cm or 45×45 cm</p>
+            <a class="p-card-title" href="../../products/striped-linen-cushion-cover/" data-i18n="p.cushion.title">Striped Linen Cushion Cover</a>
+            <p class="p-card-variant" data-i18n="p.cushion.variant">40×40 cm or 45×45 cm</p>
             <p class="p-card-price">€21.00</p>
           </div>
         </article>
 
       </div>
 
-      <p class="collection-empty" data-collection-empty hidden>No pieces match these filters yet — try widening your search.</p>
+      <p class="collection-empty" data-collection-empty hidden data-i18n="collection.empty">No pieces match these filters yet — try widening your search.</p>
     </div>
   </section>
 </main>
@@ -156,29 +165,30 @@
         <img src="../../assets/logo.png" alt="" class="logo-mark" width="30" height="30">
         Chic Celebria
       </a>
-      <p>Distinctive decor and personalised gifts for Halloween, Christmas and every celebration in between.</p>
-      <a class="btn btn-outline btn-sm" href="#" data-etsy-cta>Shop on Etsy</a>
+      <p data-i18n="common.footerTagline">Distinctive decor and personalised gifts for Halloween, Christmas and every celebration in between.</p>
+      <a class="btn btn-outline btn-sm" href="#" data-etsy-cta data-i18n="common.shopOnEtsy">Shop on Etsy</a>
     </div>
     <nav class="footer-links" aria-label="Shop">
-      <h4>Shop</h4>
-      <a href="../../index.html#new-in">New In</a>
-      <a href="../halloween/">Halloween</a>
-      <a href="../christmas/">Christmas</a>
-      <a href="../gifts/">Gifts</a>
-      <a href="./">Personalised</a>
+      <h4 data-i18n="common.shop">Shop</h4>
+      <a href="../../index.html#new-in" data-i18n="common.newIn">New In</a>
+      <a href="../halloween/" data-i18n="common.halloween">Halloween</a>
+      <a href="../christmas/" data-i18n="common.christmas">Christmas</a>
+      <a href="../gifts/" data-i18n="common.gifts">Gifts</a>
+      <a href="./" data-i18n="common.personalised">Personalised</a>
     </nav>
     <nav class="footer-links" aria-label="Company">
-      <h4>Company</h4>
-      <a href="../">Celebrations</a>
-      <a href="../../about.html">About</a>
-      <a href="#" data-etsy-cta>Shop on Etsy</a>
+      <h4 data-i18n="common.company">Company</h4>
+      <a href="../" data-i18n="common.celebrations">Celebrations</a>
+      <a href="../../about.html" data-i18n="common.about">About</a>
+      <a href="#" data-etsy-cta data-i18n="common.shopOnEtsy">Shop on Etsy</a>
     </nav>
   </div>
   <div class="wrap footer-bottom">
-    <p>&copy; <span id="year">2026</span> Chic Celebria. Prices shown in EUR.</p>
+    <p>&copy; <span id="year">2026</span> <span data-i18n="common.footerCopyright">Chic Celebria. Prices shown in EUR.</span></p>
   </div>
 </footer>
 
+<script src="../../i18n.js"></script>
 <script src="../../script.js"></script>
 </body>
 </html>

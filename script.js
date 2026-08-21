@@ -172,7 +172,8 @@
       });
 
       if (countEl) {
-        countEl.textContent = visible.length + (visible.length === 1 ? " piece" : " pieces");
+        var pieceKey = visible.length === 1 ? "toolbar.piece" : "toolbar.pieces";
+        countEl.textContent = window.I18N ? window.I18N.t(pieceKey, { n: visible.length }) : (visible.length + " pieces");
       }
       if (emptyEl) emptyEl.hidden = visible.length !== 0;
     }
@@ -182,6 +183,8 @@
     });
 
     apply();
+
+    document.addEventListener("chic:lang", function () { apply(); });
   }
 
   /* ------------------------------------------------------------------
@@ -199,11 +202,11 @@
       var isValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
       if (!feedback) return;
       if (isValid) {
-        feedback.textContent = "Thank you — you're on the list.";
+        feedback.textContent = window.I18N ? window.I18N.t("home.newsletter.thanks") : "Thank you — you're on the list.";
         feedback.classList.remove("is-error");
         form.reset();
       } else {
-        feedback.textContent = "Please enter a valid email address.";
+        feedback.textContent = window.I18N ? window.I18N.t("home.newsletter.error") : "Please enter a valid email address.";
         feedback.classList.add("is-error");
       }
     });
