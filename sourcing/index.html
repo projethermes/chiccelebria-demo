@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Sourcing — Chic Celebria (privé)</title>
+<link rel="icon" href="../assets/logo.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+<style>
+  body { background:#faf7f2; }
+  .sourcing-wrap { max-width: 1000px; margin: 0 auto; padding: 40px 20px 80px; }
+  .sourcing-wrap h1 { font-family: Fraunces, serif; font-size: 2rem; margin-bottom: 4px; }
+  .sourcing-wrap .sub { color:#6b6b6b; margin-bottom: 28px; }
+  table.src { width:100%; border-collapse: collapse; font-family: Jost, sans-serif; font-size: 0.92rem; background:#fff; border-radius:12px; overflow:hidden; box-shadow:0 1px 4px rgba(0,0,0,.06); }
+  table.src th { background:#4F46E5; color:#fff; text-align:left; padding:12px 14px; font-weight:600; }
+  table.src td { padding:12px 14px; border-bottom:1px solid #f0ece4; vertical-align:top; }
+  table.src tr:last-child td { border-bottom:none; }
+  table.src a { color:#4F46E5; text-decoration:none; }
+  table.src a:hover { text-decoration:underline; }
+  .badge { display:inline-block; padding:2px 8px; border-radius:20px; font-size:0.78rem; font-weight:600; }
+  .b-warn { background:#fef3c7; color:#92400e; }
+  .b-ok { background:#dcfce7; color:#166534; }
+  .b-wait { background:#e0e7ff; color:#3730a3; }
+  /* écran de verrouillage */
+  #gate { position:fixed; inset:0; background:#faf7f2; display:flex; align-items:center; justify-content:center; z-index:50; }
+  #gate .card { background:#fff; padding:32px 36px; border-radius:14px; box-shadow:0 8px 30px rgba(0,0,0,.1); text-align:center; max-width:360px; width:90%; font-family:Jost, sans-serif; }
+  #gate h2 { font-family:Fraunces, serif; margin:0 0 6px; }
+  #gate p { color:#6b6b6b; margin:0 0 18px; }
+  #gate input { width:100%; padding:11px 12px; border:1px solid #ddd6cb; border-radius:8px; font-size:1rem; margin-bottom:12px; }
+  #gate button { width:100%; padding:11px; background:#4F46E5; color:#fff; border:none; border-radius:8px; font-size:1rem; font-weight:600; cursor:pointer; }
+  #err { color:#b91c1c; font-size:0.85rem; display:none; margin-top:8px; }
+</style>
+</head>
+<body>
+
+<div id="gate">
+  <div class="card">
+    <h2>Espace privé</h2>
+    <p>Sourcing AliExpress / Alibaba</p>
+    <input type="password" id="pw" placeholder="Mot de passe" autocomplete="off">
+    <button type="button" id="unlock">Déverrouiller</button>
+    <p id="err">Mot de passe incorrect.</p>
+  </div>
+</div>
+
+<div class="sourcing-wrap" id="content" hidden>
+  <h1>🛒 Sourcing — achats AliExpress / Alibaba</h1>
+  <p class="sub">Suivi des produits sourcés : fournisseurs, prix, liens. Page privée (non indexée, non liée dans la navigation).</p>
+
+  <table class="src">
+    <thead>
+      <tr>
+        <th>Produit</th>
+        <th>Fournisseur</th>
+        <th>Lien</th>
+        <th>Prix achat</th>
+        <th>MOQ</th>
+        <th>Statut</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Pince à cheveux squelette (gothic hair claw)</td>
+        <td>Alibaba — Gothic Metal Spider Net Ghost Hand</td>
+        <td><a href="https://www.alibaba.com/product-detail/Gothic-Large-Metal-Spider-Net-Ghost_1601860155027.html" target="_blank">fiche</a></td>
+        <td>0,40–0,50 €/pc</td>
+        <td>—</td>
+        <td><span class="badge b-ok">fiche Etsy #4560038973</span></td>
+      </tr>
+      <tr>
+        <td>Bâtonnets Matatabi Silver Vine (12 cm, épais)</td>
+        <td>Hefei Longnew Pet Products (11 ans)</td>
+        <td><a href="https://www.alibaba.com/product-detail/16-Pieces-Thick-Natural-Matatabi-Cat_60734115471.html" target="_blank">fiche</a></td>
+        <td>0,055–0,063 €/pc (sac 16)</td>
+        <td>30 sacs</td>
+        <td><span class="badge b-wait">à négocier</span></td>
+      </tr>
+      <tr>
+        <td>Mini balai de sorcière (besom, paille + corde rouge)</td>
+        <td>Henan Yokids Group (7 ans)</td>
+        <td><a href="https://www.alibaba.com/product-detail/Mini-Besom-Red-Rope-Straw-Brooms_1601564375252.html" target="_blank">fiche</a></td>
+        <td>0,242 €/pc</td>
+        <td>100 sacs</td>
+        <td><span class="badge b-wait">à l'étude</span></td>
+      </tr>
+      <tr>
+        <td>Baguette « One Wish Willow » (wand imprimé 3D)</td>
+        <td>Tongling Jingchu Trading</td>
+        <td><a href="https://www.alibaba.com/product-detail/One-Wish-Black-Willow-Wand-Wishing_1601922029163.html" target="_blank">fiche</a></td>
+        <td>0,86 €/pc</td>
+        <td>100</td>
+        <td><span class="badge b-warn">⚠️ risque copyright — éviter</span></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<script>
+const HASH = "6835858b9dc2175c82fd8a0ec08aea436ee000260c395d674502fd29fb4178dd";
+const KEY = "chic_sourcing_ok";
+async function sha256(s) {
+  const b = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(s));
+  return [...new Uint8Array(b)].map(x => x.toString(16).padStart(2,'0')).join('');
+}
+const gate = document.getElementById('gate');
+const content = document.getElementById('content');
+if (localStorage.getItem(KEY) === '1') {
+  gate.style.display = 'none';
+  content.hidden = false;
+}
+document.getElementById('unlock').addEventListener('click', async () => {
+  const v = document.getElementById('pw').value;
+  if ((await sha256(v)) === HASH) {
+    localStorage.setItem(KEY, '1');
+    gate.style.display = 'none';
+    content.hidden = false;
+  } else {
+    document.getElementById('err').style.display = 'block';
+  }
+});
+document.getElementById('pw').addEventListener('keydown', e => { if (e.key === 'Enter') document.getElementById('unlock').click(); });
+</script>
+</body>
+</html>
