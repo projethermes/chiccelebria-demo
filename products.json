@@ -341,5 +341,133 @@
     ],
     "stock": true,
     "actif": true
+  },
+  {
+    "id": "wool-winter-scarf",
+    "nom": {
+      "en": "Wool Winter Scarf",
+      "es": "Bufanda de lana de invierno",
+      "fr": "Écharpe en laine d'hiver",
+      "it": "Sciarpa di lana invernale",
+      "de": "Winter-Wollschal"
+    },
+    "description": {
+      "en": "Soft wool scarf for winter warmth.",
+      "es": "Bufanda de lana suave para el invierno.",
+      "fr": "Écharpe en laine douce pour l'hiver.",
+      "it": "Sciarpa di lana morbida per l'inverno.",
+      "de": "Weicher Wollschal für den Winter."
+    },
+    "prix": 34.99,
+    "images": [
+      "assets/sourcing/scarf.jpg"
+    ],
+    "collections": [
+      "winter"
+    ],
+    "stock": true,
+    "actif": true
+  },
+  {
+    "id": "thermal-touchscreen-gloves",
+    "nom": {
+      "en": "Thermal Touchscreen Gloves",
+      "es": "Guantes térmicos táctiles",
+      "fr": "Gants thermiques tactiles",
+      "it": "Guanti termici touchscreen",
+      "de": "Thermo-Touchscreen-Handschuhe"
+    },
+    "description": {
+      "en": "Warm gloves with touchscreen fingertips.",
+      "es": "Guantes cálidos con dedos táctiles.",
+      "fr": "Gants chauds à bouts tactiles.",
+      "it": "Guanti caldi con punte touchscreen.",
+      "de": "Warme Handschuhe mit Touchscreen-Fingern."
+    },
+    "prix": 49.99,
+    "images": [
+      "assets/sourcing/gloves.jpg"
+    ],
+    "collections": [
+      "winter"
+    ],
+    "stock": true,
+    "actif": true
+  },
+  {
+    "id": "fleece-throw-blanket",
+    "nom": {
+      "en": "Fleece Throw Blanket",
+      "es": "Manta de forro polar",
+      "fr": "Plaid en polaire",
+      "it": "Coperta in pile",
+      "de": "Fleece-Wurfdecke"
+    },
+    "description": {
+      "en": "Cozy fleece throw blanket.",
+      "es": "Manta de forro polar acogedora.",
+      "fr": "Plaid en polaire tout doux.",
+      "it": "Coperta in pile accogliente.",
+      "de": "Kuschelige Fleece-Wurfdecke."
+    },
+    "prix": 24.99,
+    "images": [
+      "assets/sourcing/blanket.jpg"
+    ],
+    "collections": [
+      "winter"
+    ],
+    "stock": true,
+    "actif": true
+  },
+  {
+    "id": "silicone-hot-water-bottle",
+    "nom": {
+      "en": "Silicone Hot Water Bottle",
+      "es": "Bolsa de agua caliente de silicona",
+      "fr": "Bouillotte en silicone",
+      "it": "Borsa dell'acqua calda in silicone",
+      "de": "Silikon-Wärmflasche"
+    },
+    "description": {
+      "en": "Reusable silicone hot water bottle.",
+      "es": "Bolsa de agua caliente de silicona reutilizable.",
+      "fr": "Bouillotte en silicone réutilisable.",
+      "it": "Borsa dell'acqua calda in silicone riutilizzabile.",
+      "de": "Wiederverwendbare Silikon-Wärmflasche."
+    },
+    "prix": 16.99,
+    "images": [
+      "assets/sourcing/hot-water-bottle.jpg"
+    ],
+    "collections": [
+      "winter"
+    ],
+    "stock": true,
+    "actif": true
+  },
+  {
+    "id": "winter-knit-beanie",
+    "nom": {
+      "en": "Knit Winter Beanie",
+      "es": "Gorro de punto de invierno",
+      "fr": "Bonnet tricoté d'hiver",
+      "it": "Berretto di lana invernale",
+      "de": "Winter-Strickmütze"
+    },
+    "description": {
+      "en": "Warm knitted beanie for cold days.",
+      "es": "Gorro de punto cálido para los días fríos.",
+      "fr": "Bonnet tricoté chaud pour les jours froids.",
+      "it": "Berretto di lana caldo per le giornate fredde.",
+      "de": "Warme Strickmütze für kalte Tage."
+    },
+    "prix": 19.99,
+    "images": [],
+    "collections": [
+      "winter"
+    ],
+    "stock": true,
+    "actif": false
   }
 ]
