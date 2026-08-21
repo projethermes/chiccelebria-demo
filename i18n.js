@@ -254,6 +254,9 @@
       "p.witch-boot-vase.title": "Witch Boot Vase",
       "p.witch-boot-vase.desc": "3D-printed witch boot vase — pen holder or gothic desk decor.",
       "p.witch-boot-vase.metaTitle": "Witch Boot Vase | Chic Celebria",
+      "p.skeleton-hair-claw.title": "Skeleton Hair Claw",
+      "p.skeleton-hair-claw.desc": "Gothic metal skeleton-hand hair claw — a spooky Halloween hair accessory.",
+      "p.skeleton-hair-claw.metaTitle": "Skeleton Hair Claw | Chic Celebria",
       "alt.linen": "Styled linen bedding layered in warm, seasonal tones"
     },
 
@@ -493,6 +496,9 @@
       "p.witch-boot-vase.title": "Jarrón bota de bruja",
       "p.witch-boot-vase.desc": "Jarrón bota de bruja impreso en 3D: portalápices o decoración de escritorio gótica.",
       "p.witch-boot-vase.metaTitle": "Jarrón bota de bruja | Chic Celebria",
+      "p.skeleton-hair-claw.title": "Pinza de pelo de esqueleto",
+      "p.skeleton-hair-claw.desc": "Pinza de pelo de mano de esqueleto en metal gótico: accesorio de pelo espeluznante para Halloween.",
+      "p.skeleton-hair-claw.metaTitle": "Pinza de pelo de esqueleto | Chic Celebria",
       "alt.linen": "Ropa de cama de lino dispuesta en tonos cálidos de temporada"
     },
 
@@ -732,6 +738,9 @@
       "p.witch-boot-vase.title": "Vase botte de sorcière",
       "p.witch-boot-vase.desc": "Vase botte de sorcière imprimé en 3D : porte-stylo ou déco de bureau gothique.",
       "p.witch-boot-vase.metaTitle": "Vase botte de sorcière | Chic Celebria",
+      "p.skeleton-hair-claw.title": "Pince à cheveux squelette",
+      "p.skeleton-hair-claw.desc": "Pince à cheveux squelette en métal, style gothique — accessoire capillaire pour Halloween.",
+      "p.skeleton-hair-claw.metaTitle": "Pince à cheveux squelette | Chic Celebria",
       "alt.linen": "Literie en lin disposée dans des tons chauds de saison"
     },
 
@@ -971,6 +980,9 @@
       "p.witch-boot-vase.title": "Vaso stivale da strega",
       "p.witch-boot-vase.desc": "Vaso stivale da strega stampato in 3D: portapenne o decorazione da scrivania gotica.",
       "p.witch-boot-vase.metaTitle": "Vaso stivale da strega | Chic Celebria",
+      "p.skeleton-hair-claw.title": "Molletta a scheletro",
+      "p.skeleton-hair-claw.desc": "Molletta per capelli a mano di scheletro in metallo gotico: accessorio per capelli spettrale per Halloween.",
+      "p.skeleton-hair-claw.metaTitle": "Molletta a scheletro | Chic Celebria",
       "alt.linen": "Biancheria in lino disposta in calde tonalità stagionali"
     },
 
@@ -1210,6 +1222,9 @@
       "p.witch-boot-vase.title": "Hexenstiefel-Vase",
       "p.witch-boot-vase.desc": "3D-gedruckte Hexenstiefel-Vase: Stiftehalter oder gotische Schreibtisch-Deko.",
       "p.witch-boot-vase.metaTitle": "Hexenstiefel-Vase | Chic Celebria",
+      "p.skeleton-hair-claw.title": "Skelett-Haarspange",
+      "p.skeleton-hair-claw.desc": "Gothic-Metall-Haarspange in Skelettform – gruseliges Halloween-Haaraccessoire.",
+      "p.skeleton-hair-claw.metaTitle": "Skelett-Haarspange | Chic Celebria",
       "alt.linen": "Leinenbettwäsche in warmen, saisonalen Tönen gestylt"
     }
   };
