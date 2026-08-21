@@ -12,25 +12,25 @@
 <link rel="stylesheet" href="../style.css">
 <style>
   body { background:#faf7f2; }
-  .sourcing-wrap { max-width: 1000px; margin: 0 auto; padding: 40px 20px 80px; }
-  .sourcing-wrap h1 { font-family: Fraunces, serif; font-size: 2rem; margin-bottom: 4px; }
-  .sourcing-wrap .sub { color:#6b6b6b; margin-bottom: 28px; }
-  table.src { width:100%; border-collapse: collapse; font-family: Jost, sans-serif; font-size: 0.92rem; background:#fff; border-radius:12px; overflow:hidden; box-shadow:0 1px 4px rgba(0,0,0,.06); }
-  table.src th { background:#4F46E5; color:#fff; text-align:left; padding:12px 14px; font-weight:600; }
-  table.src td { padding:12px 14px; border-bottom:1px solid #f0ece4; vertical-align:top; }
+  .src-wrap { max-width: 1040px; margin: 0 auto; padding: 40px 20px 80px; font-family:Jost, sans-serif; }
+  .src-wrap h1 { font-family: Fraunces, serif; font-size: 2rem; margin-bottom: 4px; }
+  .src-wrap h2 { font-family: Fraunces, serif; font-size: 1.25rem; margin: 32px 0 10px; }
+  .src-wrap .sub { color:#6b6b6b; margin-bottom: 28px; }
+  table.src { width:100%; border-collapse: collapse; font-size: 0.9rem; background:#fff; border-radius:12px; overflow:hidden; box-shadow:0 1px 4px rgba(0,0,0,.06); }
+  table.src th { background:#4F46E5; color:#fff; text-align:left; padding:11px 13px; font-weight:600; }
+  table.src td { padding:11px 13px; border-bottom:1px solid #f0ece4; vertical-align:top; }
   table.src tr:last-child td { border-bottom:none; }
-  table.src a { color:#4F46E5; text-decoration:none; }
+  table.src a { color:#4F46E5; text-decoration:none; word-break:break-all; }
   table.src a:hover { text-decoration:underline; }
-  .badge { display:inline-block; padding:2px 8px; border-radius:20px; font-size:0.78rem; font-weight:600; }
+  .badge { display:inline-block; padding:2px 8px; border-radius:20px; font-size:0.76rem; font-weight:600; white-space:nowrap; }
   .b-warn { background:#fef3c7; color:#92400e; }
   .b-ok { background:#dcfce7; color:#166534; }
   .b-wait { background:#e0e7ff; color:#3730a3; }
-  /* écran de verrouillage */
   #gate { position:fixed; inset:0; background:#faf7f2; display:flex; align-items:center; justify-content:center; z-index:50; }
   #gate .card { background:#fff; padding:32px 36px; border-radius:14px; box-shadow:0 8px 30px rgba(0,0,0,.1); text-align:center; max-width:360px; width:90%; font-family:Jost, sans-serif; }
   #gate h2 { font-family:Fraunces, serif; margin:0 0 6px; }
   #gate p { color:#6b6b6b; margin:0 0 18px; }
-  #gate input { width:100%; padding:11px 12px; border:1px solid #ddd6cb; border-radius:8px; font-size:1rem; margin-bottom:12px; }
+  #gate input { width:100%; padding:11px 12px; border:1px solid #ddd6cb; border-radius:8px; font-size:1rem; margin-bottom:12px; box-sizing:border-box; }
   #gate button { width:100%; padding:11px; background:#4F46E5; color:#fff; border:none; border-radius:8px; font-size:1rem; font-weight:600; cursor:pointer; }
   #err { color:#b91c1c; font-size:0.85rem; display:none; margin-top:8px; }
 </style>
@@ -40,60 +40,56 @@
 <div id="gate">
   <div class="card">
     <h2>Espace privé</h2>
-    <p>Sourcing AliExpress / Alibaba</p>
+    <p>Sourcing &amp; commandes</p>
     <input type="password" id="pw" placeholder="Mot de passe" autocomplete="off">
     <button type="button" id="unlock">Déverrouiller</button>
     <p id="err">Mot de passe incorrect.</p>
   </div>
 </div>
 
-<div class="sourcing-wrap" id="content" hidden>
-  <h1>🛒 Sourcing — achats AliExpress / Alibaba</h1>
-  <p class="sub">Suivi des produits sourcés : fournisseurs, prix, liens. Page privée (non indexée, non liée dans la navigation).</p>
+<div class="src-wrap" id="content" hidden>
+  <h1>🛒 Sourcing &amp; commandes</h1>
+  <p class="sub">Espace privé (non indexé, non lié dans la navigation). Liens de commande dropshipping Etsy + sourcing volume.</p>
 
+  <h2>📦 Produits Etsy — lien de commande (dropshipping)</h2>
   <table class="src">
     <thead>
-      <tr>
-        <th>Produit</th>
-        <th>Fournisseur</th>
-        <th>Lien</th>
-        <th>Prix achat</th>
-        <th>MOQ</th>
-        <th>Statut</th>
-      </tr>
+      <tr><th>Produit (site)</th><th>Prix Etsy</th><th>Lien de commande</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Tapisserie personnalisée Halloween</td><td>15,99 €</td><td><a href="https://fr.aliexpress.com/item/1005010753218733.html" target="_blank">AliExpress · 1005010753218733</a></td></tr>
+      <tr><td>Housse de coussin Halloween</td><td>24,99 €</td><td><a href="https://fr.aliexpress.com/item/1005009806732637.html" target="_blank">AliExpress · 1005009806732637</a></td></tr>
+      <tr><td>Tapis de porte citrouille/fantôme</td><td>34,99 €</td><td><a href="https://fr.aliexpress.com/item/1005009749344888.html" target="_blank">AliExpress · 1005009749344888</a></td></tr>
+      <tr><td>Couverture à capuche Sherpa</td><td>39,99 €</td><td><a href="https://fr.aliexpress.com/item/1005009141757364.html" target="_blank">AliExpress · 1005009141757364</a></td></tr>
+      <tr><td>Lampe / pot fantôme</td><td>29,99 €</td><td><a href="https://fr.aliexpress.com/item/1005009544500561.html" target="_blank">AliExpress · 1005009544500561</a></td></tr>
+      <tr><td>Vase botte de sorcière</td><td>29,99 €</td><td><span class="badge b-warn">⚠️ lien à retrouver</span></td></tr>
+      <tr><td>Pince à cheveux squelette</td><td>15,99 €</td><td><a href="https://www.alibaba.com/product-detail/Gothic-Large-Metal-Spider-Net-Ghost_1601860155027.html" target="_blank">Alibaba · 0,40–0,50 €/pc</a></td></tr>
+    </tbody>
+  </table>
+
+  <h2>🏭 Sourcing volume (eBay / revente)</h2>
+  <table class="src">
+    <thead>
+      <tr><th>Produit</th><th>Fournisseur</th><th>Prix achat</th><th>MOQ</th><th>Statut</th></tr>
     </thead>
     <tbody>
       <tr>
-        <td>Pince à cheveux squelette (gothic hair claw)</td>
-        <td>Alibaba — Gothic Metal Spider Net Ghost Hand</td>
-        <td><a href="https://www.alibaba.com/product-detail/Gothic-Large-Metal-Spider-Net-Ghost_1601860155027.html" target="_blank">fiche</a></td>
-        <td>0,40–0,50 €/pc</td>
-        <td>—</td>
-        <td><span class="badge b-ok">fiche Etsy #4560038973</span></td>
-      </tr>
-      <tr>
-        <td>Bâtonnets Matatabi Silver Vine (12 cm, épais)</td>
-        <td>Hefei Longnew Pet Products (11 ans)</td>
-        <td><a href="https://www.alibaba.com/product-detail/16-Pieces-Thick-Natural-Matatabi-Cat_60734115471.html" target="_blank">fiche</a></td>
-        <td>0,055–0,063 €/pc (sac 16)</td>
-        <td>30 sacs</td>
+        <td>Bâtonnets Matatabi Silver Vine (12 cm)</td>
+        <td><a href="https://www.alibaba.com/product-detail/16-Pieces-Thick-Natural-Matatabi-Cat_60734115471.html" target="_blank">Hefei Longnew Pet Products</a></td>
+        <td>0,055–0,063 €/pc</td><td>30 sacs</td>
         <td><span class="badge b-wait">à négocier</span></td>
       </tr>
       <tr>
-        <td>Mini balai de sorcière (besom, paille + corde rouge)</td>
-        <td>Henan Yokids Group (7 ans)</td>
-        <td><a href="https://www.alibaba.com/product-detail/Mini-Besom-Red-Rope-Straw-Brooms_1601564375252.html" target="_blank">fiche</a></td>
-        <td>0,242 €/pc</td>
-        <td>100 sacs</td>
+        <td>Mini balai de sorcière (besom)</td>
+        <td><a href="https://www.alibaba.com/product-detail/Mini-Besom-Red-Rope-Straw-Brooms_1601564375252.html" target="_blank">Henan Yokids Group</a></td>
+        <td>0,242 €/pc</td><td>100 sacs</td>
         <td><span class="badge b-wait">à l'étude</span></td>
       </tr>
       <tr>
-        <td>Baguette « One Wish Willow » (wand imprimé 3D)</td>
-        <td>Tongling Jingchu Trading</td>
-        <td><a href="https://www.alibaba.com/product-detail/One-Wish-Black-Willow-Wand-Wishing_1601922029163.html" target="_blank">fiche</a></td>
-        <td>0,86 €/pc</td>
-        <td>100</td>
-        <td><span class="badge b-warn">⚠️ risque copyright — éviter</span></td>
+        <td>Baguette « One Wish Willow »</td>
+        <td><a href="https://www.alibaba.com/product-detail/One-Wish-Black-Willow-Wand-Wishing_1601922029163.html" target="_blank">Tongling Jingchu Trading</a></td>
+        <td>0,86 €/pc</td><td>100</td>
+        <td><span class="badge b-warn">⚠️ risque copyright</span></td>
       </tr>
     </tbody>
   </table>
