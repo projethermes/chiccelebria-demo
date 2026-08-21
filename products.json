@@ -1,0 +1,345 @@
+[
+  {
+    "id": "halloween-doormat",
+    "nom": {
+      "en": "Halloween Doormat",
+      "es": "Felpu­do de Halloween",
+      "fr": "Tapis de porte Halloween",
+      "it": "Zerbino di Halloween",
+      "de": "Halloween-Türmatte"
+    },
+    "description": {
+      "en": "Anti-slip, washable doormat with a pumpkin and ghost design. 40×60 cm.",
+      "es": "Felpu­do antideslizante y lavable con diseño de calabaza y fantasma. 40×60 cm.",
+      "fr": "Tapis de porte antidérapant et lavable, motif citrouille et fantôme. 40×60 cm.",
+      "it": "Zerbino antiscivolo e lavabile con design zucca e fantasma. 40×60 cm.",
+      "de": "Rutschfeste, waschbare Türmatte mit Kürbis- und Geistermotiv. 40×60 cm."
+    },
+    "prix": 34.99,
+    "images": [
+      "assets/sourcing/tapis.jpg"
+    ],
+    "collections": [
+      "halloween"
+    ],
+    "stock": true,
+    "actif": true
+  },
+  {
+    "id": "halloween-ghost-light",
+    "nom": {
+      "en": "Halloween Ghost Light",
+      "es": "Luz fantasma de Halloween",
+      "fr": "Lampe fantôme Halloween",
+      "it": "Luce fantasma di Halloween",
+      "de": "Halloween-Geisterlicht"
+    },
+    "description": {
+      "en": "Hanging LED ghost and witch light for indoor or outdoor Halloween decor.",
+      "es": "Luz LED colgante de fantasma y bruja para decoración de Halloween interior o exterior.",
+      "fr": "Lampe LED suspendue fantôme et sorcière pour une déco Halloween intérieure ou extérieure.",
+      "it": "Luce LED sospesa fantasma e strega per decorazioni Halloween da interno o esterno.",
+      "de": "Hängendes LED-Geister- und Hexenlicht für Halloween-Deko innen oder außen."
+    },
+    "prix": 29.99,
+    "images": [
+      "assets/sourcing/ghost-light.jpg"
+    ],
+    "collections": [
+      "halloween"
+    ],
+    "stock": true,
+    "actif": true
+  },
+  {
+    "id": "halloween-hooded-blanket",
+    "nom": {
+      "en": "Halloween Hooded Blanket",
+      "es": "Manta con capucha de Halloween",
+      "fr": "Couverture à capuche Halloween",
+      "it": "Coperta con cappuccio di Halloween",
+      "de": "Halloween-Kapuzen-Decke"
+    },
+    "description": {
+      "en": "Oversized Sherpa fleece hooded blanket with a bat design and kangaroo pockets.",
+      "es": "Manta con capucha de forro polar Sherpa, diseño de murciélago y bolsillos canguro.",
+      "fr": "Couverture à capuche en polaire Sherpa surdimensionnée, motif chauve-souris et poches kangourou.",
+      "it": "Coperta con cappuccio in pile Sherpa oversize, design pipistrello e tasche a marsupio.",
+      "de": "Übergroße Sherpa-Fleece-Kapuzen-Decke mit Fledermaus-Motiv und Kängurutaschen."
+    },
+    "prix": 39.99,
+    "images": [
+      "assets/sourcing/couverture.jpg"
+    ],
+    "collections": [
+      "halloween"
+    ],
+    "stock": true,
+    "actif": true
+  },
+  {
+    "id": "halloween-pillow-cover",
+    "nom": {
+      "en": "Halloween Pillow Cover",
+      "es": "Funda de cojín de Halloween",
+      "fr": "Housse de coussin Halloween",
+      "it": "Copricuscino di Halloween",
+      "de": "Halloween-Kissenbezug"
+    },
+    "description": {
+      "en": "Reversible sequin cushion cover — pumpkin on one side, ghost on the other. 45×45 cm, hidden zip. Insert not included.",
+      "es": "Funda de cojín de lentejuelas reversible: calabaza por un lado, fantasma por el otro. 45×45 cm, cremallera oculta.",
+      "fr": "Housse de coussin sequin réversible : citrouille d'un côté, fantôme de l'autre. 45×45 cm, fermeture éclair invisible. Coussin non inclus.",
+      "it": "Copricuscino in paillettes reversibile: zucca da un lato, fantasma dall'altro. 45×45 cm, cerniera nascosta.",
+      "de": "Wendbarer Pailletten-Kissenbezug: Kürbis auf der einen, Geist auf der anderen Seite. 45×45 cm, verdeckter Reißverschluss."
+    },
+    "prix": 24.99,
+    "images": [
+      "assets/sourcing/coussin.jpg"
+    ],
+    "collections": [
+      "halloween"
+    ],
+    "stock": true,
+    "actif": true
+  },
+  {
+    "id": "kraft-wrapped-gift-box",
+    "nom": {
+      "en": "Kraft-Wrapped Gift Box",
+      "es": "Caja de regalo kraft envuelta",
+      "fr": "Coffret cadeau kraft emballé",
+      "it": "Scatola regalo kraft incartata",
+      "de": "Kraft-Geschenkbox verpackt"
+    },
+    "description": {
+      "en": "A ready-wrapped kraft gift box finished with candy-striped string — just add what's inside.",
+      "es": "Una caja de regalo kraft ya envuelta y rematada con cordón de caramelo: solo añade lo que va dentro.",
+      "fr": "Un coffret cadeau kraft déjà emballé et fini avec une ficelle rayée bonbon — il ne reste qu'à y glisser ce qui va dedans.",
+      "it": "Una scatola regalo kraft già incartata e rifinita con spago a strisce caramella: aggiungi solo ciò che va dentro.",
+      "de": "Eine fertig verpackte Kraft-Geschenkbox mit Bonbonstreifen-Schnur — füge nur noch den Inhalt hinzu."
+    },
+    "prix": 7.5,
+    "images": [
+      "assets/produits/img-02.jpg"
+    ],
+    "collections": [
+      "christmas",
+      "gifts"
+    ],
+    "stock": true,
+    "actif": true
+  },
+  {
+    "id": "macrame-ghost-wall-hanging",
+    "nom": {
+      "en": "Macramé Ghost Wall Hanging",
+      "es": "Tapiz de pared de fantasmas de macramé",
+      "fr": "Décoration murale fantômes en macramé",
+      "it": "Arazzo da parete con fantasmini in macramè",
+      "de": "Makramee-Geister Wanddekoration"
+    },
+    "description": {
+      "en": "Woven cotton ghosts with hand-stitched faces, ready to hang in a cascade across a wall, window or mantel.",
+      "es": "Fantasmas de algodón tejido con caras cosidas a mano, listos para colgar en cascada por una pared, ventana o repisa.",
+      "fr": "Des fantômes en coton tissé aux visages cousus main, prêts à s'accrocher en cascade sur un mur, une fenêtre ou une cheminée.",
+      "it": "Fantasmini di cotone intrecciato con facce cucite a mano, pronti da appendere a cascata su una parete, una finestra o una mensola.",
+      "de": "Gewebte Baumwollgeister mit handgestickten Gesichtern, bereit, kaskadenartig an Wand, Fenster oder Kaminsims zu hängen."
+    },
+    "prix": 22.5,
+    "images": [
+      "assets/macrame.webp"
+    ],
+    "collections": [
+      "halloween"
+    ],
+    "stock": true,
+    "actif": true
+  },
+  {
+    "id": "personalised-halloween-tapestry",
+    "nom": {
+      "en": "Personalised Photo Tapestry",
+      "es": "Tapiz fotográfico personalizado",
+      "fr": "Tenture photo personnalisée",
+      "it": "Arazzo fotografico personalizzato",
+      "de": "Personalisierter Foto-Wandteppich"
+    },
+    "description": {
+      "en": "A custom wall tapestry you make your own — add a photo, name or design for an instant statement wall, from a Halloween scene to a favourite picture.",
+      "es": "Un tapiz de pared a medida que haces tuyo: añade una foto, un nombre o un diseño para una pared que impacta al instante, desde una escena de Halloween hasta tu foto favorita.",
+      "fr": "Une tenture murale sur mesure que vous faites vôtre — ajoutez une photo, un prénom ou un design pour un mur qui marque, d'une scène d'Halloween à votre image préférée.",
+      "it": "Un arazzo da parete su misura che rendi tuo: aggiungi una foto, un nome o un design per una parete d'effetto, da una scena di Halloween alla tua immagine preferita.",
+      "de": "Ein Wandteppich nach Maß, den du zu deinem machst — füge ein Foto, einen Namen oder ein Design hinzu für eine sofort wirkungsvolle Wand, von einer Halloween-Szene bis zu deinem Lieblingsbild."
+    },
+    "prix": 15.99,
+    "images": [
+      "assets/tapestry.jpg"
+    ],
+    "collections": [
+      "halloween",
+      "personalised"
+    ],
+    "stock": true,
+    "actif": true
+  },
+  {
+    "id": "personalised-scented-candle",
+    "nom": {
+      "en": "Personalised Scented Candle",
+      "es": "Vela perfumada personalizada",
+      "fr": "Bougie parfumée personnalisée",
+      "it": "Candela profumata personalizzata",
+      "de": "Personalisierte Duftkerze"
+    },
+    "description": {
+      "en": "A soy-blend candle with a personalised label, ready to gift or keep for cosy nights in.",
+      "es": "Una vela de mezcla de soja con etiqueta personalizada, lista para regalar o para quedártela en noches acogedoras.",
+      "fr": "Une bougie à base de soja avec une étiquette personnalisée, prête à offrir ou à garder pour les soirées cocooning.",
+      "it": "Una candela a base di soia con etichetta personalizzata, pronta da regalare o da tenere per le serate accoglienti.",
+      "de": "Eine Kerze auf Sojabasis mit personalisiertem Etikett, bereit zum Verschenken oder für gemütliche Abende."
+    },
+    "prix": 14.5,
+    "images": [
+      "assets/produits/img-09.jpg"
+    ],
+    "collections": [
+      "personalised",
+      "christmas",
+      "gifts"
+    ],
+    "stock": true,
+    "actif": true
+  },
+  {
+    "id": "red-christmas-ornament-set",
+    "nom": {
+      "en": "Red Christmas Ornament Set",
+      "es": "Set de adornos navideños rojos",
+      "fr": "Coffret de boules de Noël rouges",
+      "it": "Set di decorazioni natalizie rosse",
+      "de": "Rotes Weihnachtsschmuck-Set"
+    },
+    "description": {
+      "en": "A coordinated set of red baubles and a knitted stocking ornament for a classic Christmas tree.",
+      "es": "Un set coordinado de bolas rojas y un adorno de calcetín de punto para un árbol de Navidad clásico.",
+      "fr": "Un ensemble coordonné de boules rouges et d'une décoration chaussette tricotée pour un sapin de Noël classique.",
+      "it": "Un set coordinato di palline rosse e una decorazione a calza lavorata a maglia per un albero di Natale classico.",
+      "de": "Ein abgestimmtes Set aus roten Kugeln und einem gestrickten Strumpf-Anhänger für einen klassischen Weihnachtsbaum."
+    },
+    "prix": 16.0,
+    "images": [
+      "assets/produits/img-03.jpg"
+    ],
+    "collections": [
+      "christmas"
+    ],
+    "stock": true,
+    "actif": true
+  },
+  {
+    "id": "skeleton-hair-claw",
+    "nom": {
+      "en": "Skeleton Hair Claw",
+      "es": "Pinza de pelo de esqueleto",
+      "fr": "Pince à cheveux squelette",
+      "it": "Molletta a scheletro",
+      "de": "Skelett-Haarspange"
+    },
+    "description": {
+      "en": "Gothic metal skeleton-hand hair claw — a spooky Halloween hair accessory.",
+      "es": "Pinza de pelo de mano de esqueleto en metal gótico: accesorio de pelo espeluznante para Halloween.",
+      "fr": "Pince à cheveux squelette en métal, style gothique — accessoire capillaire pour Halloween.",
+      "it": "Molletta per capelli a mano di scheletro in metallo gotico: accessorio per capelli spettrale per Halloween.",
+      "de": "Gothic-Metall-Haarspange in Skelettform – gruseliges Halloween-Haaraccessoire."
+    },
+    "prix": 15.99,
+    "images": [
+      "assets/sourcing/skeleton-hair-claw.jpg"
+    ],
+    "collections": [
+      "halloween"
+    ],
+    "stock": true,
+    "actif": true
+  },
+  {
+    "id": "striped-linen-cushion-cover",
+    "nom": {
+      "en": "Striped Linen Cushion Cover",
+      "es": "Funda de cojín de lino a rayas",
+      "fr": "Housse de coussin en lin rayé",
+      "it": "Copricuscino in lino a righe",
+      "de": "Kissenbezug aus gestreiftem Leinen"
+    },
+    "description": {
+      "en": "A washed-linen cushion cover in a soft stripe, with an optional monogram for a personal touch.",
+      "es": "Una funda de cojín de lino lavado en una raya suave, con monograma opcional para un toque personal.",
+      "fr": "Une housse de coussin en lin lavé aux rayures douces, avec monogramme en option pour une touche personnelle.",
+      "it": "Un copricuscino in lino lavato a righe morbide, con monogramma opzionale per un tocco personale.",
+      "de": "Ein Kissenbezug aus gewaschenem Leinen in zarten Streifen, mit optionalem Monogramm für eine persönliche Note."
+    },
+    "prix": 21.0,
+    "images": [
+      "assets/produits/img-11.jpg"
+    ],
+    "collections": [
+      "personalised",
+      "gifts"
+    ],
+    "stock": true,
+    "actif": true
+  },
+  {
+    "id": "witch-boot-vase",
+    "nom": {
+      "en": "Witch Boot Vase",
+      "es": "Jarrón bota de bruja",
+      "fr": "Vase botte de sorcière",
+      "it": "Vaso stivale da strega",
+      "de": "Hexenstiefel-Vase"
+    },
+    "description": {
+      "en": "3D-printed witch boot vase — pen holder or gothic desk decor.",
+      "es": "Jarrón bota de bruja impreso en 3D: portalápices o decoración de escritorio gótica.",
+      "fr": "Vase botte de sorcière imprimé en 3D : porte-stylo ou déco de bureau gothique.",
+      "it": "Vaso stivale da strega stampato in 3D: portapenne o decorazione da scrivania gotica.",
+      "de": "3D-gedruckte Hexenstiefel-Vase: Stiftehalter oder gotische Schreibtisch-Deko."
+    },
+    "prix": 29.99,
+    "images": [
+      "assets/sourcing/vase-sorciere.jpg"
+    ],
+    "collections": [
+      "halloween"
+    ],
+    "stock": true,
+    "actif": true
+  },
+  {
+    "id": "witch-hat-wall-hanging",
+    "nom": {
+      "en": "Witch Hat Wall Hanging",
+      "es": "Tapiz de pared de sombrero de bruja",
+      "fr": "Décoration murale chapeau de sorcière",
+      "it": "Arazzo da parete a cappello da strega",
+      "de": "Hexenhut-Wanddekoration"
+    },
+    "description": {
+      "en": "Felt witch hats finished with an organza bow and long macramé fringe, styled as a hanging duo.",
+      "es": "Sombreros de bruja de fieltro rematados con un lazo de organza y un largo fleco de macramé, presentados como dúo colgante.",
+      "fr": "Des chapeaux de sorcière en feutrine finis avec un nœud en organza et une longue frange en macramé, présentés en duo suspendu.",
+      "it": "Cappelli da strega in feltro rifiniti con un fiocco in organza e una lunga frangia in macramè, presentati come duo da appendere.",
+      "de": "Hexenhüte aus Filz, veredelt mit einer Organza-Schleife und langen Makramee-Fransen, als hängendes Duo präsentiert."
+    },
+    "prix": 19.99,
+    "images": [
+      "assets/deco2.webp"
+    ],
+    "collections": [
+      "halloween"
+    ],
+    "stock": true,
+    "actif": true
+  }
+]
