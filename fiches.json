@@ -21,6 +21,234 @@
         "lien": "https://fr.aliexpress.com/item/1005010753218733.html",
         "lien_label": "Voir la fiche AliExpress"
       }
+    },
+    {
+      "id": "F-002",
+      "date": "2026-08-26",
+      "statut": "en-attente",
+      "produit": {
+        "nom": "Sapin de table en bois (DIY)",
+        "prix": 16.99,
+        "description": "Produit sapin de table en bois (diy) — à vendre sur Etsy (ChicCelebria) et eBay. Prix de vente calculé pour marge 20-40 % après frais et envoi suivi.",
+        "photo": "assets/sourcing/noel-sapin-table-bois.jpg"
+      },
+      "source": {
+        "nom": "Sapin de Noël en bois à assembler, ornement de table",
+        "prix": 3.09,
+        "fournisseur": "AliExpress",
+        "photo": "assets/sourcing/noel-sapin-table-bois.jpg",
+        "lien": "https://fr.aliexpress.com/item/1005013007711256.html",
+        "lien_label": "Voir la fiche AliExpress"
+      }
+    },
+    {
+      "id": "F-003",
+      "date": "2026-08-26",
+      "statut": "en-attente",
+      "produit": {
+        "nom": "Décorations bois Père Noël — Lot de 24",
+        "prix": 14.99,
+        "description": "Produit décorations bois père noël — lot de 24 — à vendre sur Etsy (ChicCelebria) et eBay. Prix de vente calculé pour marge 20-40 % après frais et envoi suivi.",
+        "photo": "assets/sourcing/noel-deco-bois-24pcs.jpg"
+      },
+      "source": {
+        "nom": "Décorations en bois Père Noël, 24 pièces",
+        "prix": 2.59,
+        "fournisseur": "AliExpress",
+        "photo": "assets/sourcing/noel-deco-bois-24pcs.jpg",
+        "lien": "https://fr.aliexpress.com/item/1005009881191116.html",
+        "lien_label": "Voir la fiche AliExpress"
+      }
+    },
+    {
+      "id": "F-004",
+      "date": "2026-08-26",
+      "statut": "en-attente",
+      "produit": {
+        "nom": "Arbre de Noël mural en bois shabby chic",
+        "prix": 34.99,
+        "description": "Produit arbre de noël mural en bois shabby chic — à vendre sur Etsy (ChicCelebria) et eBay. Prix de vente calculé pour marge 20-40 % après frais et envoi suivi.",
+        "photo": "assets/sourcing/noel-arbre-mural-bois.jpg"
+      },
+      "source": {
+        "nom": "Arbre de Noël tenture murale, échelle en bois shabby",
+        "prix": 13.59,
+        "fournisseur": "AliExpress",
+        "photo": "assets/sourcing/noel-arbre-mural-bois.jpg",
+        "lien": "https://fr.aliexpress.com/item/1005010547459942.html",
+        "lien_label": "Voir la fiche AliExpress"
+      }
+    },
+    {
+      "id": "F-005",
+      "date": "2026-08-26",
+      "statut": "en-attente",
+      "produit": {
+        "nom": "Boule de Noël personnalisée photo",
+        "prix": 12.99,
+        "description": "Produit boule de noël personnalisée photo — à vendre sur Etsy (ChicCelebria) et eBay. Prix de vente calculé pour marge 20-40 % après frais et envoi suivi.",
+        "photo": "assets/sourcing/noel-boule-photo-a.jpg"
+      },
+      "source": {
+        "nom": "Boule de Noël photo transparente personnalisée",
+        "prix": 1.48,
+        "fournisseur": "AliExpress",
+        "photo": "assets/sourcing/noel-boule-photo-a.jpg",
+        "lien": "https://fr.aliexpress.com/item/1005007602787892.html",
+        "lien_label": "Voir la fiche AliExpress"
+      }
+    },
+    {
+      "id": "F-006",
+      "date": "2026-08-26",
+      "statut": "en-attente",
+      "produit": {
+        "nom": "Ornement de Noël photo personnalisé",
+        "prix": 13.99,
+        "description": "Produit ornement de noël photo personnalisé — à vendre sur Etsy (ChicCelebria) et eBay. Prix de vente calculé pour marge 20-40 % après frais et envoi suivi.",
+        "photo": "assets/sourcing/noel-boule-photo-b.jpg"
+      },
+      "source": {
+        "nom": "Boule de Noël photo transparente personnalisable",
+        "prix": 2.06,
+        "fournisseur": "AliExpress",
+        "photo": "assets/sourcing/noel-boule-photo-b.jpg",
+        "lien": "https://fr.aliexpress.com/item/1005012745432540.html",
+        "lien_label": "Voir la fiche AliExpress"
+      }
+    },
+    {
+      "id": "F-007",
+      "date": "2026-08-26",
+      "statut": "en-attente",
+      "produit": {
+        "nom": "Boule photo par sublimation 8 cm",
+        "prix": 15.99,
+        "description": "Produit boule photo par sublimation 8 cm — à vendre sur Etsy (ChicCelebria) et eBay. Prix de vente calculé pour marge 20-40 % après frais et envoi suivi.",
+        "photo": "assets/sourcing/noel-boule-sublimation.jpg"
+      },
+      "source": {
+        "nom": "Boule de Noël personnalisée par sublimation 3,15 pouces",
+        "prix": 3.89,
+        "fournisseur": "AliExpress",
+        "photo": "assets/sourcing/noel-boule-sublimation.jpg",
+        "lien": "https://fr.aliexpress.com/item/1005009931921490.html",
+        "lien_label": "Voir la fiche AliExpress"
+      }
+    },
+    {
+      "id": "F-008",
+      "date": "2026-08-26",
+      "statut": "en-attente",
+      "produit": {
+        "nom": "Chaussettes de Noël personnalisées (texte)",
+        "prix": 16.99,
+        "description": "Produit chaussettes de noël personnalisées (texte) — à vendre sur Etsy (ChicCelebria) et eBay. Prix de vente calculé pour marge 20-40 % après frais et envoi suivi.",
+        "photo": "assets/sourcing/noel-chaussettes-texte.jpg"
+      },
+      "source": {
+        "nom": "Chaussettes de Noël personnalisées texte/nom imprimé",
+        "prix": 3.89,
+        "fournisseur": "AliExpress",
+        "photo": "assets/sourcing/noel-chaussettes-texte.jpg",
+        "lien": "https://fr.aliexpress.com/item/1005012047933732.html",
+        "lien_label": "Voir la fiche AliExpress"
+      }
+    },
+    {
+      "id": "F-009",
+      "date": "2026-08-26",
+      "statut": "en-attente",
+      "produit": {
+        "nom": "Chemin de table de Noël renne",
+        "prix": 19.99,
+        "description": "Produit chemin de table de noël renne — à vendre sur Etsy (ChicCelebria) et eBay. Prix de vente calculé pour marge 20-40 % après frais et envoi suivi.",
+        "photo": "assets/sourcing/noel-chemin-table-renne.jpg"
+      },
+      "source": {
+        "nom": "Chemin de table de Noël motif renne",
+        "prix": 5.89,
+        "fournisseur": "AliExpress",
+        "photo": "assets/sourcing/noel-chemin-table-renne.jpg",
+        "lien": "https://fr.aliexpress.com/item/1005012589922831.html",
+        "lien_label": "Voir la fiche AliExpress"
+      }
+    },
+    {
+      "id": "F-010",
+      "date": "2026-08-26",
+      "statut": "en-attente",
+      "produit": {
+        "nom": "Bannière d'anniversaire personnalisée (âge + photo)",
+        "prix": 17.99,
+        "description": "Produit bannière d'anniversaire personnalisée (âge + photo) — à vendre sur Etsy (ChicCelebria) et eBay. Prix de vente calculé pour marge 20-40 % après frais et envoi suivi.",
+        "photo": "assets/sourcing/anniv-banniere-age.jpg"
+      },
+      "source": {
+        "nom": "Bannière d'anniversaire personnalisée numéro d'âge / photo",
+        "prix": 4.59,
+        "fournisseur": "AliExpress",
+        "photo": "assets/sourcing/anniv-banniere-age.jpg",
+        "lien": "https://fr.aliexpress.com/item/1005009501894315.html",
+        "lien_label": "Voir la fiche AliExpress"
+      }
+    },
+    {
+      "id": "F-011",
+      "date": "2026-08-26",
+      "statut": "en-attente",
+      "produit": {
+        "nom": "Bannière photo anniversaire avec chapeaux de fête",
+        "prix": 19.99,
+        "description": "Produit bannière photo anniversaire avec chapeaux de fête — à vendre sur Etsy (ChicCelebria) et eBay. Prix de vente calculé pour marge 20-40 % après frais et envoi suivi.",
+        "photo": "assets/sourcing/anniv-banniere-photo.jpg"
+      },
+      "source": {
+        "nom": "Bannière photo personnalisée anniversaire, chapeau de fête",
+        "prix": 6.29,
+        "fournisseur": "AliExpress",
+        "photo": "assets/sourcing/anniv-banniere-photo.jpg",
+        "lien": "https://fr.aliexpress.com/item/1005011975758887.html",
+        "lien_label": "Voir la fiche AliExpress"
+      }
+    },
+    {
+      "id": "F-012",
+      "date": "2026-08-26",
+      "statut": "en-attente",
+      "produit": {
+        "nom": "Guirlande de fanions arc-en-ciel 4 m",
+        "prix": 12.99,
+        "description": "Produit guirlande de fanions arc-en-ciel 4 m — à vendre sur Etsy (ChicCelebria) et eBay. Prix de vente calculé pour marge 20-40 % après frais et envoi suivi.",
+        "photo": "assets/sourcing/anniv-guirlande-fanions.jpg"
+      },
+      "source": {
+        "nom": "Guirlande de fanions arc-en-ciel 4 m, 12 pièces",
+        "prix": 2.1,
+        "fournisseur": "AliExpress",
+        "photo": "assets/sourcing/anniv-guirlande-fanions.jpg",
+        "lien": "https://fr.aliexpress.com/item/1005005702425417.html",
+        "lien_label": "Voir la fiche AliExpress"
+      }
+    },
+    {
+      "id": "F-013",
+      "date": "2026-08-26",
+      "statut": "en-attente",
+      "produit": {
+        "nom": "Drapeaux personnalisés 'Joyeux Anniversaire'",
+        "prix": 15.99,
+        "description": "Produit drapeaux personnalisés 'joyeux anniversaire' — à vendre sur Etsy (ChicCelebria) et eBay. Prix de vente calculé pour marge 20-40 % après frais et envoi suivi.",
+        "photo": "assets/sourcing/anniv-drapeaux.jpg"
+      },
+      "source": {
+        "nom": "6 drapeaux personnalisés 'Joyeux Anniversaire'",
+        "prix": 4.39,
+        "fournisseur": "AliExpress",
+        "photo": "assets/sourcing/anniv-drapeaux.jpg",
+        "lien": "https://fr.aliexpress.com/item/1005012388314742.html",
+        "lien_label": "Voir la fiche AliExpress"
+      }
     }
   ]
 }

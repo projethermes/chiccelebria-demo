@@ -62,7 +62,7 @@
     },
     "type": "occasion",
     "ordre": 5,
-    "actif": false
+    "actif": true
   },
   {
     "slug": "gifts",

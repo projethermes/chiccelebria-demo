@@ -469,5 +469,324 @@
     ],
     "stock": true,
     "actif": false
+  },
+  {
+    "id": "noel-sapin-table-bois",
+    "nom": {
+      "en": "Wooden Table Christmas Tree (DIY)",
+      "es": "Árbol de Navidad de madera de mesa (DIY)",
+      "fr": "Sapin de table en bois (DIY)",
+      "it": "Albero di Natale da tavola in legno (DIY)",
+      "de": "Tisch-Weihnachtsbaum aus Holz (DIY)"
+    },
+    "description": {
+      "en": "Flat-pack wooden mini Christmas tree to assemble yourself. Rustic table decor, reusable every year. ~23 cm.",
+      "es": "Mini árbol de Navidad de madera para montar. Decoración rústica de mesa, reutilizable cada año. ~23 cm.",
+      "fr": "Mini sapin en bois à monter soi-même. Déco de table rustique, réutilisable chaque année. ~23 cm.",
+      "it": "Mini albero di Natale in legno da montare. Decorazione rustica da tavolo, riutilizzabile ogni anno. ~23 cm.",
+      "de": "Kleiner Holz-Weihnachtsbaum zum Selbstaufbauen. Rustikale Tischdeko, jedes Jahr wiederverwendbar. ~23 cm."
+    },
+    "prix": 16.99,
+    "images": [
+      "assets/sourcing/noel-sapin-table-bois.jpg"
+    ],
+    "collections": [
+      "christmas"
+    ],
+    "stock": true,
+    "actif": true
+  },
+  {
+    "id": "noel-deco-bois-24pcs",
+    "nom": {
+      "en": "Wooden Santa Ornaments — Set of 24",
+      "es": "Adornos de madera de Papá Noel — Set de 24",
+      "fr": "Décorations bois Père Noël — Lot de 24",
+      "it": "Decorazioni in legno Babbo Natale — Set da 24",
+      "de": "Holz-Weihnachtsmann-Anhänger — Set aus 24"
+    },
+    "description": {
+      "en": "24 assorted wooden hanging ornaments (Santa, snowflakes, Christmas tree). Perfect for garlands, gift tags or festive tables.",
+      "es": "24 adornos colgantes de madera variados (Papá Noel, copos, árbol). Ideales para guirnaldas, etiquetas o mesas festivas.",
+      "fr": "24 décorations suspendues en bois variées (Père Noël, flocons, sapin). Parfaites en guirlande, étiquettes cadeaux ou table de fête.",
+      "it": "24 decorazioni appese in legno assortite (Babbo Natale, fiocchi, albero). Perfette per ghirlande, etichette o tavole festive.",
+      "de": "24 gemischte Holz-Anhänger (Weihnachtsmann, Schneeflocken, Tannenbaum). Ideal für Girlanden, Geschenkanhänger oder Festtafeln."
+    },
+    "prix": 14.99,
+    "images": [
+      "assets/sourcing/noel-deco-bois-24pcs.jpg"
+    ],
+    "collections": [
+      "christmas"
+    ],
+    "stock": true,
+    "actif": true
+  },
+  {
+    "id": "noel-arbre-mural-bois",
+    "nom": {
+      "en": "Shabby Chic Wooden Wall Christmas Tree",
+      "es": "Árbol de Navidad de pared de madera shabby chic",
+      "fr": "Arbre de Noël mural en bois shabby chic",
+      "it": "Albero di Natale da parete in legno shabby chic",
+      "de": "Shabby-Chic-Wand-Weihnachtsbaum aus Holz"
+    },
+    "description": {
+      "en": "Decorative ladder-style wooden wall tree, shabby chic finish. Space-saving alternative to a real tree.",
+      "es": "Árbol de pared estilo escalera en madera, acabado shabby chic. Alternativa que ahorra espacio al árbol real.",
+      "fr": "Arbre mural en bois style échelle, finition shabby chic. Alternative gain de place au vrai sapin.",
+      "it": "Albero da parete stile scala in legno, finitura shabby chic. Alternativa salvaspazio al vero albero.",
+      "de": "Wandbaum im Leiterstil aus Holz, Shabby-Chic-Finish. Platzsparende Alternative zum echten Baum."
+    },
+    "prix": 34.99,
+    "images": [
+      "assets/sourcing/noel-arbre-mural-bois.jpg"
+    ],
+    "collections": [
+      "christmas"
+    ],
+    "stock": true,
+    "actif": true
+  },
+  {
+    "id": "noel-boule-photo-a",
+    "nom": {
+      "en": "Personalised Photo Christmas Bauble",
+      "es": "Bola de Navidad personalizada con foto",
+      "fr": "Boule de Noël personnalisée photo",
+      "it": "Pallina di Natale personalizzata con foto",
+      "de": "Personalisierte Foto-Weihnachtskugel"
+    },
+    "description": {
+      "en": "Transparent bauble you fill with your own photo. Personalised keepsake, ready to hang on the tree.",
+      "es": "Bola transparente que se rellena con tu foto. Recuerdo personalizado, lista para colgar.",
+      "fr": "Boule transparente à remplir avec votre photo. Souvenir personnalisé, prête à accrocher.",
+      "it": "Pallina trasparente da riempire con la tua foto. Ricordo personalizzato, pronta da appendere.",
+      "de": "Transparente Kugel zum Befüllen mit eigenem Foto. Personalisiertes Andenken, fertig zum Aufhängen."
+    },
+    "prix": 12.99,
+    "images": [
+      "assets/sourcing/noel-boule-photo-a.jpg"
+    ],
+    "collections": [
+      "christmas",
+      "personalised"
+    ],
+    "stock": true,
+    "actif": true
+  },
+  {
+    "id": "noel-boule-photo-b",
+    "nom": {
+      "en": "Custom Photo Christmas Ornament",
+      "es": "Adorno navideño personalizado con foto",
+      "fr": "Ornement de Noël photo personnalisé",
+      "it": "Ornamento di Natale personalizzato con foto",
+      "de": "Personalisierter Foto-Weihnachtsschmuck"
+    },
+    "description": {
+      "en": "Personalised transparent bauble with your photo inside. A unique Christmas keepsake for family and friends.",
+      "es": "Bola transparente personalizada con tu foto dentro. Recuerdo navideño único para familia y amigos.",
+      "fr": "Boule transparente personnalisée avec votre photo à l'intérieur. Souvenir de Noël unique.",
+      "it": "Pallina trasparente personalizzata con la tua foto dentro. Ricordo di Natale unico.",
+      "de": "Personalisierte transparente Kugel mit Foto im Inneren. Einzigartiges Weihnachtsandenken."
+    },
+    "prix": 13.99,
+    "images": [
+      "assets/sourcing/noel-boule-photo-b.jpg"
+    ],
+    "collections": [
+      "christmas",
+      "personalised"
+    ],
+    "stock": true,
+    "actif": true
+  },
+  {
+    "id": "noel-boule-sublimation",
+    "nom": {
+      "en": "Sublimation Photo Bauble 8 cm",
+      "es": "Bola de sublimación con foto 8 cm",
+      "fr": "Boule photo par sublimation 8 cm",
+      "it": "Pallina a sublimazione con foto 8 cm",
+      "de": "Sublimations-Fotokugel 8 cm"
+    },
+    "description": {
+      "en": "Printed personalised bauble (photo or text), 8 cm. Great for custom gifts and memory trees.",
+      "es": "Bola impresa personalizada (foto o texto), 8 cm. Ideal para regalos y árboles de recuerdos.",
+      "fr": "Boule imprimée personnalisable (photo ou texte), 8 cm. Idéale pour cadeaux sur mesure.",
+      "it": "Pallina stampata personalizzabile (foto o testo), 8 cm. Perfetta per regali personalizzati.",
+      "de": "Bedruckte, personalisierbare Kugel (Foto oder Text), 8 cm. Ideal für personalisierte Geschenke."
+    },
+    "prix": 15.99,
+    "images": [
+      "assets/sourcing/noel-boule-sublimation.jpg"
+    ],
+    "collections": [
+      "christmas",
+      "personalised"
+    ],
+    "stock": true,
+    "actif": true
+  },
+  {
+    "id": "noel-chaussettes-texte",
+    "nom": {
+      "en": "Personalised Christmas Stockings (Text)",
+      "es": "Calcetines de Navidad personalizados (texto)",
+      "fr": "Chaussettes de Noël personnalisées (texte)",
+      "it": "Calze di Natale personalizzate (testo)",
+      "de": "Personalisierte Weihnachtsstrümpfe (Text)"
+    },
+    "description": {
+      "en": "Festive stockings printed with your names or message. Fun and personal Christmas decor for the fireplace.",
+      "es": "Calcetines festivos impresos con nombres o mensaje. Decoración navideña divertida y personal para la chimenea.",
+      "fr": "Chaussettes de Noël imprimées avec vos prénoms ou un message. Déco de cheminée festive et personnelle.",
+      "it": "Calze festive stampate con nomi o messaggio. Decorazione natalizia divertente e personale per il camino.",
+      "de": "Festliche Strümpfe mit Namen oder Botschaft bedruckt. Lustige, persönliche Weihnachtsdeko für den Kamin."
+    },
+    "prix": 16.99,
+    "images": [
+      "assets/sourcing/noel-chaussettes-texte.jpg"
+    ],
+    "collections": [
+      "christmas",
+      "personalised"
+    ],
+    "stock": true,
+    "actif": true
+  },
+  {
+    "id": "noel-chemin-table-renne",
+    "nom": {
+      "en": "Reindeer Christmas Table Runner",
+      "es": "Camino de mesa navideño de reno",
+      "fr": "Chemin de table de Noël renne",
+      "it": "Tovaglia runner di Natale renna",
+      "de": "Weihnachtstischläufer Rentier"
+    },
+    "description": {
+      "en": "Festive reindeer print table runner. Instant Christmas table styling, machine washable.",
+      "es": "Camino de mesa festivo con estampado de reno. Mesa navideña al instante, lavable a máquina.",
+      "fr": "Chemin de table festif motif renne. Table de Noël instantanée, lavable en machine.",
+      "it": "Runner festivo con stampa renna. Tavola di Natale istantanea, lavabile in lavatrice.",
+      "de": "Festlicher Tischläufer mit Rentierdruck. Weihnachtstafel im Handumdrehen, maschinenwaschbar."
+    },
+    "prix": 19.99,
+    "images": [
+      "assets/sourcing/noel-chemin-table-renne.jpg"
+    ],
+    "collections": [
+      "christmas"
+    ],
+    "stock": true,
+    "actif": true
+  },
+  {
+    "id": "anniv-banniere-age",
+    "nom": {
+      "en": "Personalised Birthday Banner (Age + Photo)",
+      "es": "Banner de cumpleaños personalizado (edad + foto)",
+      "fr": "Bannière d'anniversaire personnalisée (âge + photo)",
+      "it": "Stendardo di compleanno personalizzato (età + foto)",
+      "de": "Personalisierte Geburtstagsbanner (Alter + Foto)"
+    },
+    "description": {
+      "en": "Custom birthday banner with age number and photo. Perfect for milestone birthdays and parties.",
+      "es": "Banner de cumpleaños personalizado con número de edad y foto. Perfecto para cumpleaños importantes.",
+      "fr": "Bannière d'anniversaire personnalisée avec âge et photo. Parfaite pour les anniversaires marquants.",
+      "it": "Stendardo personalizzato con numero di età e foto. Perfetto per compleanni importanti.",
+      "de": "Personalisierte Banner mit Alter und Foto. Perfekt für runde Geburtstage und Partys."
+    },
+    "prix": 17.99,
+    "images": [
+      "assets/sourcing/anniv-banniere-age.jpg"
+    ],
+    "collections": [
+      "anniversaire",
+      "personalised"
+    ],
+    "stock": true,
+    "actif": true
+  },
+  {
+    "id": "anniv-banniere-photo",
+    "nom": {
+      "en": "Photo Birthday Banner with Party Hats",
+      "es": "Banner de cumpleaños con foto y gorros de fiesta",
+      "fr": "Bannière photo anniversaire avec chapeaux de fête",
+      "it": "Stendardo foto di compleanno con cappellini",
+      "de": "Foto-Geburtstagsbanner mit Partymützen"
+    },
+    "description": {
+      "en": "Fun banner printed with your photos and party hats. A personalised touch for any celebration.",
+      "es": "Banner divertido impreso con tus fotos y gorros de fiesta. Un toque personal para cualquier celebración.",
+      "fr": "Bannière ludique imprimée avec vos photos et chapeaux de fête. Une touche personnelle pour toute célébration.",
+      "it": "Stendardo divertente stampato con le tue foto e cappellini. Un tocco personale per ogni festa.",
+      "de": "Lustige Banner mit Fotos und Partymützen bedruckt. Eine persönliche Note für jede Feier."
+    },
+    "prix": 19.99,
+    "images": [
+      "assets/sourcing/anniv-banniere-photo.jpg"
+    ],
+    "collections": [
+      "anniversaire",
+      "personalised"
+    ],
+    "stock": true,
+    "actif": true
+  },
+  {
+    "id": "anniv-guirlande-fanions",
+    "nom": {
+      "en": "Rainbow Bunting Banner 4 m",
+      "es": "Guirnalda de banderines arcoíris 4 m",
+      "fr": "Guirlande de fanions arc-en-ciel 4 m",
+      "it": "Ghirlanda di bandierine arcobaleno 4 m",
+      "de": "Regenbogen-Wimpelkette 4 m"
+    },
+    "description": {
+      "en": "4 m colourful bunting with 12 flags. Instant party decoration for birthdays and celebrations.",
+      "es": "Guirnalda de colores de 4 m con 12 banderines. Decoración de fiesta al instante.",
+      "fr": "Guirlande colorée de 4 m avec 12 fanions. Déco de fête instantanée pour anniversaires.",
+      "it": "Ghirlanda colorata di 4 m con 12 bandierine. Decorazione istantanea per feste di compleanno.",
+      "de": "4 m bunte Wimpelkette mit 12 Fahnen. Sofortige Partydeko für Geburtstage."
+    },
+    "prix": 12.99,
+    "images": [
+      "assets/sourcing/anniv-guirlande-fanions.jpg"
+    ],
+    "collections": [
+      "anniversaire"
+    ],
+    "stock": true,
+    "actif": true
+  },
+  {
+    "id": "anniv-drapeaux",
+    "nom": {
+      "en": "Personalised 'Happy Birthday' Bunting",
+      "es": "Banderín personalizado 'Feliz cumpleaños'",
+      "fr": "Drapeaux personnalisés 'Joyeux Anniversaire'",
+      "it": "Bandierine personalizzate 'Buon Compleanno'",
+      "de": "Personalisierte 'Happy Birthday' Wimpel"
+    },
+    "description": {
+      "en": "6 personalised bunting flags with your name or message. Birthday decor that feels truly made for you.",
+      "es": "6 banderines personalizados con tu nombre o mensaje. Decoración de cumpleaños hecha para ti.",
+      "fr": "6 fanions personnalisés avec votre prénom ou message. Une déco d'anniversaire vraiment à vous.",
+      "it": "6 bandierine personalizzate con nome o messaggio. Decorazione di compleanno fatta per te.",
+      "de": "6 personalisierte Wimpel mit Name oder Botschaft. Geburtstagsdeko, die wirklich zu dir passt."
+    },
+    "prix": 15.99,
+    "images": [
+      "assets/sourcing/anniv-drapeaux.jpg"
+    ],
+    "collections": [
+      "anniversaire",
+      "personalised"
+    ],
+    "stock": true,
+    "actif": true
   }
 ]
