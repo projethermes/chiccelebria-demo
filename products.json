@@ -938,5 +938,109 @@
     ],
     "stock": true,
     "actif": true
+  },
+  {
+    "id": "gothique-vase-crane-3d",
+    "nom": {
+      "en": "Gothic Skull Vase 3D Resin Flower Holder - Halloween Gothic Decore",
+      "es": "Jarrón calavera 3D de resina gótica - Decoración gótica de Halloween",
+      "fr": "Vase crâne 3D en résine - Déco gothique Halloween",
+      "it": "Vaso teschio 3D in resina gotica - Decorazione gotica Halloween",
+      "de": "Gotische 3D-Schädelvase aus Harz - Gotische Halloween-Deko"
+    },
+    "description": {
+      "en": "Statement gothic skull vase in black resin, 3D sculpted with fine detail. Use it as a flower holder, candle display or centrepiece. Bold gothic decore that transforms any shelf or table into a dark masterpiece.",
+      "es": "Jarrón gótico de calavera en resina negra, esculpido en 3D con fino detalle. Úsalo como florero, portavelas o centro de mesa. Decoración gótica que convierte cualquier estante en una obra oscura.",
+      "fr": "Vase gothique en résine noire en forme de crâne, sculpté 3D avec un fin détail. Idéal comme porte-fleurs, support de bougie ou pièce maîtresse. Une déco gothique qui transforme toute étagère en œuvre sombre.",
+      "it": "Vaso gotico a teschio in resina nera, scolpito in 3D con dettaglio fine. Perfetto come portafiori, portacandele o centrotavola. Una decorazione gotica che trasforma ogni mensola in un capolavoro oscuro.",
+      "de": "Gotische Schädelvase aus schwarzem Harz, 3D-geformt mit feinem Detail. Perfekt als Blumenhalter, Kerzenhalter oder Mittelstück. Gotische Deko, die jedes Regal in ein dunkles Meisterwerk verwandelt."
+    },
+    "prix": 32.99,
+    "images": [
+      "assets/sourcing/gothique-vase-crane-3d.jpg"
+    ],
+    "collections": [
+      "halloween"
+    ],
+    "stock": true,
+    "actif": true
+  },
+  {
+    "id": "gothique-grim-reaper",
+    "nom": {
+      "en": "Grim Reaper Statue Sitting - Gothic Halloween Decore Figurine",
+      "es": "Estatua del Segador sentado - Decoración gótica de Halloween",
+      "fr": "Statue du Faucheur assis - Figurine déco gothique Halloween",
+      "it": "Statua del Mietitore seduto - Decorazione gotica Halloween",
+      "de": "Sensenmann-Statue sitzend - Gotische Halloween-Deko Figur"
+    },
+    "description": {
+      "en": "Eerie Grim Reaper statue seated with his scythe, crafted in textured resin. A striking gothic decore piece for the living room, shelf or dark academia shelf styling.",
+      "es": "Escalofriante estatua del Segador sentado con su guadaña, en resina texturizada. Una pieza de decoración gótica llamativa para el salón o la estantería.",
+      "fr": "Statue effrayante du Faucheur assis avec sa faux, en résine texturée. Une pièce de déco gothique saisissante pour le salon ou l'étagère.",
+      "it": "Statua inquietante del Mietitore seduto con la sua falce, in resina testurizzata. Un pezzo di decorazione gotica sorprendente per il soggiorno o la mensola.",
+      "de": "Unheimliche Sensenmann-Statue mit Sense, aus strukturiertem Harz. Ein eindrucksvolles Stück gotischer Deko für Wohnzimmer oder Regal."
+    },
+    "prix": 29.99,
+    "images": [
+      "assets/sourcing/gothique-grim-reaper.jpg"
+    ],
+    "collections": [
+      "halloween"
+    ],
+    "stock": true,
+    "actif": true
+  },
+  {
+    "id": "gothique-main-demon",
+    "nom": {
+      "en": "Gothic Demon Hand Resin Statue - Halloween Gothic Decore Art",
+      "es": "Estatua de mano de demonio en resina - Arte decorativo gótico Halloween",
+      "fr": "Statue main de démon en résine - Art déco gothique Halloween",
+      "it": "Statua mano di demone in resina - Arte decorativa gotica Halloween",
+      "de": "Gotische Dämonenhand-Statue aus Harz - Gothic Decore Kunst"
+    },
+    "description": {
+      "en": "Bold sculpted demon hand statue in black resin with fine claw detail. A collector piece and edgy gothic decore art for desks, shelves and altars.",
+      "es": "Audaz estatua de mano de demonio en resina negra con fino detalle de garras. Pieza de colección y arte decorativo gótico para escritorios y estanterías.",
+      "fr": "Statue de main de démon sculptée en résine noire, détail de griffes fin. Pièce de collection et art déco gothique pour bureaux et étagères.",
+      "it": "Audace statua di mano di demone in resina nera con fine dettaglio di artigli. Pezzo da collezione e arte decorativa gotica per scrivanie e mensole.",
+      "de": "Kühne Dämonenhand-Statue aus schwarzem Harz mit feinem Klauendetail. Sammlerstück und gotische Deko-Kunst für Schreibtisch und Regal."
+    },
+    "prix": 29.99,
+    "images": [
+      "assets/sourcing/gothique-main-demon.jpg"
+    ],
+    "collections": [
+      "halloween"
+    ],
+    "stock": true,
+    "actif": true
+  },
+  {
+    "id": "gothique-corbeaux-noirs",
+    "nom": {
+      "en": "Realistic Black Crows Set - Gothic Halloween Decore Ravens",
+      "es": "Set de cuervos negros realistas - Decoración gótica Halloween",
+      "fr": "Lot de corbeaux noirs réalistes - Déco gothique Halloween",
+      "it": "Set di corvi neri realistici - Decorazione gotica Halloween",
+      "de": "Set realistischer schwarzer Raben - Gotische Halloween-Deko"
+    },
+    "description": {
+      "en": "Set of realistic black crows with detailed feathers and matte finish. Perfect perched on shelves, wreaths or candle displays for a dark gothic decore vibe.",
+      "es": "Set de cuervos negros realistas con plumas detalladas y acabado mate. Perfectos en estanterías, coronas o portavelas para un ambiente gótico oscuro.",
+      "fr": "Lot de corbeaux noirs réalistes, plumes détaillées et finition mate. Parfaits perchés sur étagères, couronnes ou bougeoirs pour une ambiance gothique sombre.",
+      "it": "Set di corvi neri realistici con piume dettagliate e finitura opaca. Perfetti su mensole, corone o portacandele per un'atmosfera gotica oscura.",
+      "de": "Set realistischer schwarzer Raben mit detaillierten Federn und mattem Finish. Perfekt auf Regalen, Kränzen oder Kerzenhaltern für eine dunkle Gothic-Stimmung."
+    },
+    "prix": 29.99,
+    "images": [
+      "assets/sourcing/gothique-corbeaux-noirs.jpg"
+    ],
+    "collections": [
+      "halloween"
+    ],
+    "stock": true,
+    "actif": true
   }
 ]

@@ -344,6 +344,82 @@
         "lien": "https://fr.aliexpress.com/item/1005012924844410.html",
         "lien_label": "Voir la fiche AliExpress"
       }
+    },
+    {
+      "id": "F-019",
+      "date": "2026-08-28",
+      "statut": "en-attente",
+      "produit": {
+        "nom": "Vase crâne 3D en résine - Déco gothique Halloween",
+        "prix": 32.99,
+        "description": "Produit vase crâne 3d en résine - déco gothique halloween — à vendre sur Etsy (ChicCelebria) et eBay. Prix de vente calculé pour marge 20-40 % après frais et envoi suivi.",
+        "photo": "assets/sourcing/gothique-vase-crane-3d.jpg"
+      },
+      "source": {
+        "nom": "Vase décoratif en forme de crâne 3D, porte-fleurs en résine noire, décoration gothique",
+        "prix": 10.19,
+        "fournisseur": "AliExpress",
+        "photo": "assets/sourcing/gothique-vase-crane-3d.jpg",
+        "lien": "https://fr.aliexpress.com/item/1005011854630196.html",
+        "lien_label": "Voir la fiche AliExpress"
+      }
+    },
+    {
+      "id": "F-020",
+      "date": "2026-08-28",
+      "statut": "en-attente",
+      "produit": {
+        "nom": "Statue du Faucheur assis - Figurine déco gothique Halloween",
+        "prix": 29.99,
+        "description": "Produit statue du faucheur assis - figurine déco gothique halloween — à vendre sur Etsy (ChicCelebria) et eBay. Prix de vente calculé pour marge 20-40 % après frais et envoi suivi.",
+        "photo": "assets/sourcing/gothique-grim-reaper.jpg"
+      },
+      "source": {
+        "nom": "Statue gothique esthétique effrayante de Grim Reaper assis pour la décoration de la maison",
+        "prix": 8.89,
+        "fournisseur": "AliExpress",
+        "photo": "assets/sourcing/gothique-grim-reaper.jpg",
+        "lien": "https://fr.aliexpress.com/item/1005012776726174.html",
+        "lien_label": "Voir la fiche AliExpress"
+      }
+    },
+    {
+      "id": "F-021",
+      "date": "2026-08-28",
+      "statut": "en-attente",
+      "produit": {
+        "nom": "Statue main de démon en résine - Art déco gothique Halloween",
+        "prix": 29.99,
+        "description": "Produit statue main de démon en résine - art déco gothique halloween — à vendre sur Etsy (ChicCelebria) et eBay. Prix de vente calculé pour marge 20-40 % après frais et envoi suivi.",
+        "photo": "assets/sourcing/gothique-main-demon.jpg"
+      },
+      "source": {
+        "nom": "Statue de main divine Berserk de démon créatif, décor gothique d'Halloween, art en résine",
+        "prix": 9.79,
+        "fournisseur": "AliExpress",
+        "photo": "assets/sourcing/gothique-main-demon.jpg",
+        "lien": "https://fr.aliexpress.com/item/1005010449718368.html",
+        "lien_label": "Voir la fiche AliExpress"
+      }
+    },
+    {
+      "id": "F-022",
+      "date": "2026-08-28",
+      "statut": "en-attente",
+      "produit": {
+        "nom": "Lot de corbeaux noirs réalistes - Déco gothique Halloween",
+        "prix": 29.99,
+        "description": "Produit lot de corbeaux noirs réalistes - déco gothique halloween — à vendre sur Etsy (ChicCelebria) et eBay. Prix de vente calculé pour marge 20-40 % après frais et envoi suivi.",
+        "photo": "assets/sourcing/gothique-corbeaux-noirs.jpg"
+      },
+      "source": {
+        "nom": "Corbeaux artificiels réalistes, ornement de fête, décorations d'Halloween",
+        "prix": 9.79,
+        "fournisseur": "AliExpress",
+        "photo": "assets/sourcing/gothique-corbeaux-noirs.jpg",
+        "lien": "https://fr.aliexpress.com/item/1005007580017478.html",
+        "lien_label": "Voir la fiche AliExpress"
+      }
     }
   ]
 }
