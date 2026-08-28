@@ -249,6 +249,101 @@
         "lien": "https://fr.aliexpress.com/item/1005012388314742.html",
         "lien_label": "Voir la fiche AliExpress"
       }
+    },
+    {
+      "id": "F-014",
+      "date": "2026-08-28",
+      "statut": "en-attente",
+      "produit": {
+        "nom": "Bas de Noël vintage personnalisé, nom brodé",
+        "prix": 34.99,
+        "description": "Produit bas de noël vintage personnalisé, nom brodé — à vendre sur Etsy (ChicCelebria) et eBay. Prix de vente calculé pour marge 20-40 % après frais et envoi suivi.",
+        "photo": "assets/sourcing/noel-bas-vintage-brode.jpg"
+      },
+      "source": {
+        "nom": "Bas de Noël vintage personnalisé avec nom brodé et lettres personnalisables",
+        "prix": 12.29,
+        "fournisseur": "AliExpress",
+        "photo": "assets/sourcing/noel-bas-vintage-brode.jpg",
+        "lien": "https://fr.aliexpress.com/item/1005010242140679.html",
+        "lien_label": "Voir la fiche AliExpress"
+      }
+    },
+    {
+      "id": "F-015",
+      "date": "2026-08-28",
+      "statut": "en-attente",
+      "produit": {
+        "nom": "Bas de Noël vintage brodé avec sac cadeau",
+        "prix": 36.99,
+        "description": "Produit bas de noël vintage brodé avec sac cadeau — à vendre sur Etsy (ChicCelebria) et eBay. Prix de vente calculé pour marge 20-40 % après frais et envoi suivi.",
+        "photo": "assets/sourcing/noel-bas-vintage-sac.jpg"
+      },
+      "source": {
+        "nom": "Bas de Noël personnalisé vintage avec nom brodé, sac cadeau de vacances",
+        "prix": 12.89,
+        "fournisseur": "AliExpress",
+        "photo": "assets/sourcing/noel-bas-vintage-sac.jpg",
+        "lien": "https://fr.aliexpress.com/item/1005010148844332.html",
+        "lien_label": "Voir la fiche AliExpress"
+      }
+    },
+    {
+      "id": "F-016",
+      "date": "2026-08-28",
+      "statut": "en-attente",
+      "produit": {
+        "nom": "Bas de Noël tricoté personnalisé (enfants)",
+        "prix": 11.99,
+        "description": "Produit bas de noël tricoté personnalisé (enfants) — à vendre sur Etsy (ChicCelebria) et eBay. Prix de vente calculé pour marge 20-40 % après frais et envoi suivi.",
+        "photo": "assets/sourcing/noel-bas-prenom-tricote.jpg"
+      },
+      "source": {
+        "nom": "Bas de Noël tricoté personnalisé avec nom, pour enfants et famille",
+        "prix": 3.79,
+        "fournisseur": "AliExpress",
+        "photo": "assets/sourcing/noel-bas-prenom-tricote.jpg",
+        "lien": "https://fr.aliexpress.com/item/1005010245908836.html",
+        "lien_label": "Voir la fiche AliExpress"
+      }
+    },
+    {
+      "id": "F-017",
+      "date": "2026-08-28",
+      "statut": "en-attente",
+      "produit": {
+        "nom": "Chaussettes de Noël en tricot, lettres alphabet",
+        "prix": 11.99,
+        "description": "Produit chaussettes de noël en tricot, lettres alphabet — à vendre sur Etsy (ChicCelebria) et eBay. Prix de vente calculé pour marge 20-40 % après frais et envoi suivi.",
+        "photo": "assets/sourcing/noel-chaussettes-alphabet.jpg"
+      },
+      "source": {
+        "nom": "Chaussettes de Noël en tricot avec lettres de l'alphabet, déco de sapin",
+        "prix": 3.99,
+        "fournisseur": "AliExpress",
+        "photo": "assets/sourcing/noel-chaussettes-alphabet.jpg",
+        "lien": "https://fr.aliexpress.com/item/1005009711495818.html",
+        "lien_label": "Voir la fiche AliExpress"
+      }
+    },
+    {
+      "id": "F-018",
+      "date": "2026-08-28",
+      "statut": "en-attente",
+      "produit": {
+        "nom": "Chaussette de Noël tricot torsadé brodée sur mesure",
+        "prix": 36.99,
+        "description": "Produit chaussette de noël tricot torsadé brodée sur mesure — à vendre sur Etsy (ChicCelebria) et eBay. Prix de vente calculé pour marge 20-40 % après frais et envoi suivi.",
+        "photo": "assets/sourcing/noel-chaussette-torsade-brodee.jpg"
+      },
+      "source": {
+        "nom": "Chaussette de Noël en tricot torsadé brodée sur mesure avec nom",
+        "prix": 12.99,
+        "fournisseur": "AliExpress",
+        "photo": "assets/sourcing/noel-chaussette-torsade-brodee.jpg",
+        "lien": "https://fr.aliexpress.com/item/1005012924844410.html",
+        "lien_label": "Voir la fiche AliExpress"
+      }
     }
   ]
 }
