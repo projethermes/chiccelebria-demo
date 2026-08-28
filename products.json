@@ -1,792 +1,808 @@
 [
-  {
-    "id": "halloween-doormat",
-    "nom": {
-      "en": "Halloween Doormat",
-      "es": "Felpu­do de Halloween",
-      "fr": "Tapis de porte Halloween",
-      "it": "Zerbino di Halloween",
-      "de": "Halloween-Türmatte"
-    },
-    "description": {
-      "en": "Anti-slip, washable doormat with a pumpkin and ghost design. 40×60 cm.",
-      "es": "Felpu­do antideslizante y lavable con diseño de calabaza y fantasma. 40×60 cm.",
-      "fr": "Tapis de porte antidérapant et lavable, motif citrouille et fantôme. 40×60 cm.",
-      "it": "Zerbino antiscivolo e lavabile con design zucca e fantasma. 40×60 cm.",
-      "de": "Rutschfeste, waschbare Türmatte mit Kürbis- und Geistermotiv. 40×60 cm."
-    },
-    "prix": 34.99,
-    "images": [
-      "assets/sourcing/tapis.jpg"
-    ],
-    "collections": [
-      "halloween"
-    ],
-    "stock": true,
-    "actif": true
+ {
+  "id": "halloween-doormat",
+  "nom": {
+   "en": "Halloween Doormat",
+   "es": "Felpu­do de Halloween",
+   "fr": "Tapis de porte Halloween",
+   "it": "Zerbino di Halloween",
+   "de": "Halloween-Türmatte"
   },
-  {
-    "id": "halloween-ghost-light",
-    "nom": {
-      "en": "Halloween Ghost Light",
-      "es": "Luz fantasma de Halloween",
-      "fr": "Lampe fantôme Halloween",
-      "it": "Luce fantasma di Halloween",
-      "de": "Halloween-Geisterlicht"
-    },
-    "description": {
-      "en": "Hanging LED ghost and witch light for indoor or outdoor Halloween decor.",
-      "es": "Luz LED colgante de fantasma y bruja para decoración de Halloween interior o exterior.",
-      "fr": "Lampe LED suspendue fantôme et sorcière pour une déco Halloween intérieure ou extérieure.",
-      "it": "Luce LED sospesa fantasma e strega per decorazioni Halloween da interno o esterno.",
-      "de": "Hängendes LED-Geister- und Hexenlicht für Halloween-Deko innen oder außen."
-    },
-    "prix": 29.99,
-    "images": [
-      "assets/sourcing/ghost-light.jpg"
-    ],
-    "collections": [
-      "halloween"
-    ],
-    "stock": true,
-    "actif": true
+  "description": {
+   "en": "Anti-slip, washable doormat with a pumpkin and ghost design. 40×60 cm.",
+   "es": "Felpu­do antideslizante y lavable con diseño de calabaza y fantasma. 40×60 cm.",
+   "fr": "Tapis de porte antidérapant et lavable, motif citrouille et fantôme. 40×60 cm.",
+   "it": "Zerbino antiscivolo e lavabile con design zucca e fantasma. 40×60 cm.",
+   "de": "Rutschfeste, waschbare Türmatte mit Kürbis- und Geistermotiv. 40×60 cm."
   },
-  {
-    "id": "halloween-hooded-blanket",
-    "nom": {
-      "en": "Halloween Hooded Blanket",
-      "es": "Manta con capucha de Halloween",
-      "fr": "Couverture à capuche Halloween",
-      "it": "Coperta con cappuccio di Halloween",
-      "de": "Halloween-Kapuzen-Decke"
-    },
-    "description": {
-      "en": "Oversized Sherpa fleece hooded blanket with a bat design and kangaroo pockets.",
-      "es": "Manta con capucha de forro polar Sherpa, diseño de murciélago y bolsillos canguro.",
-      "fr": "Couverture à capuche en polaire Sherpa surdimensionnée, motif chauve-souris et poches kangourou.",
-      "it": "Coperta con cappuccio in pile Sherpa oversize, design pipistrello e tasche a marsupio.",
-      "de": "Übergroße Sherpa-Fleece-Kapuzen-Decke mit Fledermaus-Motiv und Kängurutaschen."
-    },
-    "prix": 39.99,
-    "images": [
-      "assets/sourcing/couverture.jpg"
-    ],
-    "collections": [
-      "halloween"
-    ],
-    "stock": true,
-    "actif": true
+  "prix": 34.99,
+  "images": [
+   "assets/sourcing/tapis.jpg"
+  ],
+  "collections": [
+   "halloween"
+  ],
+  "stock": true,
+  "actif": true
+ },
+ {
+  "id": "halloween-ghost-light",
+  "nom": {
+   "en": "Halloween Ghost Light",
+   "es": "Luz fantasma de Halloween",
+   "fr": "Lampe fantôme Halloween",
+   "it": "Luce fantasma di Halloween",
+   "de": "Halloween-Geisterlicht"
   },
-  {
-    "id": "halloween-pillow-cover",
-    "nom": {
-      "en": "Halloween Pillow Cover",
-      "es": "Funda de cojín de Halloween",
-      "fr": "Housse de coussin Halloween",
-      "it": "Copricuscino di Halloween",
-      "de": "Halloween-Kissenbezug"
-    },
-    "description": {
-      "en": "Reversible sequin cushion cover — pumpkin on one side, ghost on the other. 45×45 cm, hidden zip. Insert not included.",
-      "es": "Funda de cojín de lentejuelas reversible: calabaza por un lado, fantasma por el otro. 45×45 cm, cremallera oculta.",
-      "fr": "Housse de coussin sequin réversible : citrouille d'un côté, fantôme de l'autre. 45×45 cm, fermeture éclair invisible. Coussin non inclus.",
-      "it": "Copricuscino in paillettes reversibile: zucca da un lato, fantasma dall'altro. 45×45 cm, cerniera nascosta.",
-      "de": "Wendbarer Pailletten-Kissenbezug: Kürbis auf der einen, Geist auf der anderen Seite. 45×45 cm, verdeckter Reißverschluss."
-    },
-    "prix": 24.99,
-    "images": [
-      "assets/sourcing/coussin.jpg"
-    ],
-    "collections": [
-      "halloween"
-    ],
-    "stock": true,
-    "actif": true
+  "description": {
+   "en": "Hanging LED ghost and witch light for indoor or outdoor Halloween decor.",
+   "es": "Luz LED colgante de fantasma y bruja para decoración de Halloween interior o exterior.",
+   "fr": "Lampe LED suspendue fantôme et sorcière pour une déco Halloween intérieure ou extérieure.",
+   "it": "Luce LED sospesa fantasma e strega per decorazioni Halloween da interno o esterno.",
+   "de": "Hängendes LED-Geister- und Hexenlicht für Halloween-Deko innen oder außen."
   },
-  {
-    "id": "kraft-wrapped-gift-box",
-    "nom": {
-      "en": "Kraft-Wrapped Gift Box",
-      "es": "Caja de regalo kraft envuelta",
-      "fr": "Coffret cadeau kraft emballé",
-      "it": "Scatola regalo kraft incartata",
-      "de": "Kraft-Geschenkbox verpackt"
-    },
-    "description": {
-      "en": "A ready-wrapped kraft gift box finished with candy-striped string — just add what's inside.",
-      "es": "Una caja de regalo kraft ya envuelta y rematada con cordón de caramelo: solo añade lo que va dentro.",
-      "fr": "Un coffret cadeau kraft déjà emballé et fini avec une ficelle rayée bonbon — il ne reste qu'à y glisser ce qui va dedans.",
-      "it": "Una scatola regalo kraft già incartata e rifinita con spago a strisce caramella: aggiungi solo ciò che va dentro.",
-      "de": "Eine fertig verpackte Kraft-Geschenkbox mit Bonbonstreifen-Schnur — füge nur noch den Inhalt hinzu."
-    },
-    "prix": 7.5,
-    "images": [
-      "assets/produits/img-02.jpg"
-    ],
-    "collections": [
-      "christmas",
-      "gifts"
-    ],
-    "stock": true,
-    "actif": true
+  "prix": 29.99,
+  "images": [
+   "assets/sourcing/ghost-light.jpg"
+  ],
+  "collections": [
+   "halloween"
+  ],
+  "stock": true,
+  "actif": true
+ },
+ {
+  "id": "halloween-hooded-blanket",
+  "nom": {
+   "en": "Halloween Hooded Blanket",
+   "es": "Manta con capucha de Halloween",
+   "fr": "Couverture à capuche Halloween",
+   "it": "Coperta con cappuccio di Halloween",
+   "de": "Halloween-Kapuzen-Decke"
   },
-  {
-    "id": "macrame-ghost-wall-hanging",
-    "nom": {
-      "en": "Macramé Ghost Wall Hanging",
-      "es": "Tapiz de pared de fantasmas de macramé",
-      "fr": "Décoration murale fantômes en macramé",
-      "it": "Arazzo da parete con fantasmini in macramè",
-      "de": "Makramee-Geister Wanddekoration"
-    },
-    "description": {
-      "en": "Woven cotton ghosts with hand-stitched faces, ready to hang in a cascade across a wall, window or mantel.",
-      "es": "Fantasmas de algodón tejido con caras cosidas a mano, listos para colgar en cascada por una pared, ventana o repisa.",
-      "fr": "Des fantômes en coton tissé aux visages cousus main, prêts à s'accrocher en cascade sur un mur, une fenêtre ou une cheminée.",
-      "it": "Fantasmini di cotone intrecciato con facce cucite a mano, pronti da appendere a cascata su una parete, una finestra o una mensola.",
-      "de": "Gewebte Baumwollgeister mit handgestickten Gesichtern, bereit, kaskadenartig an Wand, Fenster oder Kaminsims zu hängen."
-    },
-    "prix": 22.5,
-    "images": [
-      "assets/macrame.webp"
-    ],
-    "collections": [
-      "halloween"
-    ],
-    "stock": true,
-    "actif": true
+  "description": {
+   "en": "Oversized Sherpa fleece hooded blanket with a bat design and kangaroo pockets.",
+   "es": "Manta con capucha de forro polar Sherpa, diseño de murciélago y bolsillos canguro.",
+   "fr": "Couverture à capuche en polaire Sherpa surdimensionnée, motif chauve-souris et poches kangourou.",
+   "it": "Coperta con cappuccio in pile Sherpa oversize, design pipistrello e tasche a marsupio.",
+   "de": "Übergroße Sherpa-Fleece-Kapuzen-Decke mit Fledermaus-Motiv und Kängurutaschen."
   },
-  {
-    "id": "personalised-halloween-tapestry",
-    "nom": {
-      "en": "Personalised Photo Tapestry",
-      "es": "Tapiz fotográfico personalizado",
-      "fr": "Tenture photo personnalisée",
-      "it": "Arazzo fotografico personalizzato",
-      "de": "Personalisierter Foto-Wandteppich"
-    },
-    "description": {
-      "en": "A custom wall tapestry you make your own — add a photo, name or design for an instant statement wall, from a Halloween scene to a favourite picture.",
-      "es": "Un tapiz de pared a medida que haces tuyo: añade una foto, un nombre o un diseño para una pared que impacta al instante, desde una escena de Halloween hasta tu foto favorita.",
-      "fr": "Une tenture murale sur mesure que vous faites vôtre — ajoutez une photo, un prénom ou un design pour un mur qui marque, d'une scène d'Halloween à votre image préférée.",
-      "it": "Un arazzo da parete su misura che rendi tuo: aggiungi una foto, un nome o un design per una parete d'effetto, da una scena di Halloween alla tua immagine preferita.",
-      "de": "Ein Wandteppich nach Maß, den du zu deinem machst — füge ein Foto, einen Namen oder ein Design hinzu für eine sofort wirkungsvolle Wand, von einer Halloween-Szene bis zu deinem Lieblingsbild."
-    },
-    "prix": 15.99,
-    "images": [
-      "assets/tapestry.jpg"
-    ],
-    "collections": [
-      "halloween",
-      "personalised"
-    ],
-    "stock": true,
-    "actif": true
+  "prix": 39.99,
+  "images": [
+   "assets/sourcing/couverture.jpg"
+  ],
+  "collections": [
+   "halloween",
+   "black-friday"
+  ],
+  "stock": true,
+  "actif": true,
+  "promo": 27.99
+ },
+ {
+  "id": "halloween-pillow-cover",
+  "nom": {
+   "en": "Halloween Pillow Cover",
+   "es": "Funda de cojín de Halloween",
+   "fr": "Housse de coussin Halloween",
+   "it": "Copricuscino di Halloween",
+   "de": "Halloween-Kissenbezug"
   },
-  {
-    "id": "personalised-scented-candle",
-    "nom": {
-      "en": "Personalised Scented Candle",
-      "es": "Vela perfumada personalizada",
-      "fr": "Bougie parfumée personnalisée",
-      "it": "Candela profumata personalizzata",
-      "de": "Personalisierte Duftkerze"
-    },
-    "description": {
-      "en": "A soy-blend candle with a personalised label, ready to gift or keep for cosy nights in.",
-      "es": "Una vela de mezcla de soja con etiqueta personalizada, lista para regalar o para quedártela en noches acogedoras.",
-      "fr": "Une bougie à base de soja avec une étiquette personnalisée, prête à offrir ou à garder pour les soirées cocooning.",
-      "it": "Una candela a base di soia con etichetta personalizzata, pronta da regalare o da tenere per le serate accoglienti.",
-      "de": "Eine Kerze auf Sojabasis mit personalisiertem Etikett, bereit zum Verschenken oder für gemütliche Abende."
-    },
-    "prix": 14.5,
-    "images": [
-      "assets/produits/img-09.jpg"
-    ],
-    "collections": [
-      "personalised",
-      "christmas",
-      "gifts"
-    ],
-    "stock": true,
-    "actif": true
+  "description": {
+   "en": "Reversible sequin cushion cover — pumpkin on one side, ghost on the other. 45×45 cm, hidden zip. Insert not included.",
+   "es": "Funda de cojín de lentejuelas reversible: calabaza por un lado, fantasma por el otro. 45×45 cm, cremallera oculta.",
+   "fr": "Housse de coussin sequin réversible : citrouille d'un côté, fantôme de l'autre. 45×45 cm, fermeture éclair invisible. Coussin non inclus.",
+   "it": "Copricuscino in paillettes reversibile: zucca da un lato, fantasma dall'altro. 45×45 cm, cerniera nascosta.",
+   "de": "Wendbarer Pailletten-Kissenbezug: Kürbis auf der einen, Geist auf der anderen Seite. 45×45 cm, verdeckter Reißverschluss."
   },
-  {
-    "id": "red-christmas-ornament-set",
-    "nom": {
-      "en": "Red Christmas Ornament Set",
-      "es": "Set de adornos navideños rojos",
-      "fr": "Coffret de boules de Noël rouges",
-      "it": "Set di decorazioni natalizie rosse",
-      "de": "Rotes Weihnachtsschmuck-Set"
-    },
-    "description": {
-      "en": "A coordinated set of red baubles and a knitted stocking ornament for a classic Christmas tree.",
-      "es": "Un set coordinado de bolas rojas y un adorno de calcetín de punto para un árbol de Navidad clásico.",
-      "fr": "Un ensemble coordonné de boules rouges et d'une décoration chaussette tricotée pour un sapin de Noël classique.",
-      "it": "Un set coordinato di palline rosse e una decorazione a calza lavorata a maglia per un albero di Natale classico.",
-      "de": "Ein abgestimmtes Set aus roten Kugeln und einem gestrickten Strumpf-Anhänger für einen klassischen Weihnachtsbaum."
-    },
-    "prix": 16.0,
-    "images": [
-      "assets/produits/img-03.jpg"
-    ],
-    "collections": [
-      "christmas"
-    ],
-    "stock": true,
-    "actif": true
+  "prix": 24.99,
+  "images": [
+   "assets/sourcing/coussin.jpg"
+  ],
+  "collections": [
+   "halloween"
+  ],
+  "stock": true,
+  "actif": true
+ },
+ {
+  "id": "kraft-wrapped-gift-box",
+  "nom": {
+   "en": "Kraft-Wrapped Gift Box",
+   "es": "Caja de regalo kraft envuelta",
+   "fr": "Coffret cadeau kraft emballé",
+   "it": "Scatola regalo kraft incartata",
+   "de": "Kraft-Geschenkbox verpackt"
   },
-  {
-    "id": "skeleton-hair-claw",
-    "nom": {
-      "en": "Skeleton Hair Claw",
-      "es": "Pinza de pelo de esqueleto",
-      "fr": "Pince à cheveux squelette",
-      "it": "Molletta a scheletro",
-      "de": "Skelett-Haarspange"
-    },
-    "description": {
-      "en": "Gothic metal skeleton-hand hair claw — a spooky Halloween hair accessory.",
-      "es": "Pinza de pelo de mano de esqueleto en metal gótico: accesorio de pelo espeluznante para Halloween.",
-      "fr": "Pince à cheveux squelette en métal, style gothique — accessoire capillaire pour Halloween.",
-      "it": "Molletta per capelli a mano di scheletro in metallo gotico: accessorio per capelli spettrale per Halloween.",
-      "de": "Gothic-Metall-Haarspange in Skelettform – gruseliges Halloween-Haaraccessoire."
-    },
-    "prix": 15.99,
-    "images": [
-      "assets/sourcing/skeleton-hair-claw.jpg"
-    ],
-    "collections": [
-      "halloween"
-    ],
-    "stock": true,
-    "actif": true
+  "description": {
+   "en": "A ready-wrapped kraft gift box finished with candy-striped string — just add what's inside.",
+   "es": "Una caja de regalo kraft ya envuelta y rematada con cordón de caramelo: solo añade lo que va dentro.",
+   "fr": "Un coffret cadeau kraft déjà emballé et fini avec une ficelle rayée bonbon — il ne reste qu'à y glisser ce qui va dedans.",
+   "it": "Una scatola regalo kraft già incartata e rifinita con spago a strisce caramella: aggiungi solo ciò che va dentro.",
+   "de": "Eine fertig verpackte Kraft-Geschenkbox mit Bonbonstreifen-Schnur — füge nur noch den Inhalt hinzu."
   },
-  {
-    "id": "striped-linen-cushion-cover",
-    "nom": {
-      "en": "Striped Linen Cushion Cover",
-      "es": "Funda de cojín de lino a rayas",
-      "fr": "Housse de coussin en lin rayé",
-      "it": "Copricuscino in lino a righe",
-      "de": "Kissenbezug aus gestreiftem Leinen"
-    },
-    "description": {
-      "en": "A washed-linen cushion cover in a soft stripe, with an optional monogram for a personal touch.",
-      "es": "Una funda de cojín de lino lavado en una raya suave, con monograma opcional para un toque personal.",
-      "fr": "Une housse de coussin en lin lavé aux rayures douces, avec monogramme en option pour une touche personnelle.",
-      "it": "Un copricuscino in lino lavato a righe morbide, con monogramma opzionale per un tocco personale.",
-      "de": "Ein Kissenbezug aus gewaschenem Leinen in zarten Streifen, mit optionalem Monogramm für eine persönliche Note."
-    },
-    "prix": 21.0,
-    "images": [
-      "assets/produits/img-11.jpg"
-    ],
-    "collections": [
-      "personalised",
-      "gifts"
-    ],
-    "stock": true,
-    "actif": true
+  "prix": 7.5,
+  "images": [
+   "assets/produits/img-02.jpg"
+  ],
+  "collections": [
+   "christmas",
+   "gifts"
+  ],
+  "stock": true,
+  "actif": true
+ },
+ {
+  "id": "macrame-ghost-wall-hanging",
+  "nom": {
+   "en": "Macramé Ghost Wall Hanging",
+   "es": "Tapiz de pared de fantasmas de macramé",
+   "fr": "Décoration murale fantômes en macramé",
+   "it": "Arazzo da parete con fantasmini in macramè",
+   "de": "Makramee-Geister Wanddekoration"
   },
-  {
-    "id": "witch-boot-vase",
-    "nom": {
-      "en": "Witch Boot Vase",
-      "es": "Jarrón bota de bruja",
-      "fr": "Vase botte de sorcière",
-      "it": "Vaso stivale da strega",
-      "de": "Hexenstiefel-Vase"
-    },
-    "description": {
-      "en": "3D-printed witch boot vase — pen holder or gothic desk decor.",
-      "es": "Jarrón bota de bruja impreso en 3D: portalápices o decoración de escritorio gótica.",
-      "fr": "Vase botte de sorcière imprimé en 3D : porte-stylo ou déco de bureau gothique.",
-      "it": "Vaso stivale da strega stampato in 3D: portapenne o decorazione da scrivania gotica.",
-      "de": "3D-gedruckte Hexenstiefel-Vase: Stiftehalter oder gotische Schreibtisch-Deko."
-    },
-    "prix": 29.99,
-    "images": [
-      "assets/sourcing/vase-sorciere.jpg"
-    ],
-    "collections": [
-      "halloween"
-    ],
-    "stock": true,
-    "actif": true
+  "description": {
+   "en": "Woven cotton ghosts with hand-stitched faces, ready to hang in a cascade across a wall, window or mantel.",
+   "es": "Fantasmas de algodón tejido con caras cosidas a mano, listos para colgar en cascada por una pared, ventana o repisa.",
+   "fr": "Des fantômes en coton tissé aux visages cousus main, prêts à s'accrocher en cascade sur un mur, une fenêtre ou une cheminée.",
+   "it": "Fantasmini di cotone intrecciato con facce cucite a mano, pronti da appendere a cascata su una parete, una finestra o una mensola.",
+   "de": "Gewebte Baumwollgeister mit handgestickten Gesichtern, bereit, kaskadenartig an Wand, Fenster oder Kaminsims zu hängen."
   },
-  {
-    "id": "witch-hat-wall-hanging",
-    "nom": {
-      "en": "Witch Hat Wall Hanging",
-      "es": "Tapiz de pared de sombrero de bruja",
-      "fr": "Décoration murale chapeau de sorcière",
-      "it": "Arazzo da parete a cappello da strega",
-      "de": "Hexenhut-Wanddekoration"
-    },
-    "description": {
-      "en": "Felt witch hats finished with an organza bow and long macramé fringe, styled as a hanging duo.",
-      "es": "Sombreros de bruja de fieltro rematados con un lazo de organza y un largo fleco de macramé, presentados como dúo colgante.",
-      "fr": "Des chapeaux de sorcière en feutrine finis avec un nœud en organza et une longue frange en macramé, présentés en duo suspendu.",
-      "it": "Cappelli da strega in feltro rifiniti con un fiocco in organza e una lunga frangia in macramè, presentati come duo da appendere.",
-      "de": "Hexenhüte aus Filz, veredelt mit einer Organza-Schleife und langen Makramee-Fransen, als hängendes Duo präsentiert."
-    },
-    "prix": 19.99,
-    "images": [
-      "assets/deco2.webp"
-    ],
-    "collections": [
-      "halloween"
-    ],
-    "stock": true,
-    "actif": true
+  "prix": 22.5,
+  "images": [
+   "assets/macrame.webp"
+  ],
+  "collections": [
+   "halloween"
+  ],
+  "stock": true,
+  "actif": true
+ },
+ {
+  "id": "personalised-halloween-tapestry",
+  "nom": {
+   "en": "Personalised Photo Tapestry",
+   "es": "Tapiz fotográfico personalizado",
+   "fr": "Tenture photo personnalisée",
+   "it": "Arazzo fotografico personalizzato",
+   "de": "Personalisierter Foto-Wandteppich"
   },
-  {
-    "id": "wool-winter-scarf",
-    "nom": {
-      "en": "Wool Winter Scarf",
-      "es": "Bufanda de lana de invierno",
-      "fr": "Écharpe en laine d'hiver",
-      "it": "Sciarpa di lana invernale",
-      "de": "Winter-Wollschal"
-    },
-    "description": {
-      "en": "Soft wool scarf for winter warmth.",
-      "es": "Bufanda de lana suave para el invierno.",
-      "fr": "Écharpe en laine douce pour l'hiver.",
-      "it": "Sciarpa di lana morbida per l'inverno.",
-      "de": "Weicher Wollschal für den Winter."
-    },
-    "prix": 34.99,
-    "images": [
-      "assets/sourcing/scarf.jpg"
-    ],
-    "collections": [
-      "winter"
-    ],
-    "stock": true,
-    "actif": true
+  "description": {
+   "en": "A custom wall tapestry you make your own — add a photo, name or design for an instant statement wall, from a Halloween scene to a favourite picture.",
+   "es": "Un tapiz de pared a medida que haces tuyo: añade una foto, un nombre o un diseño para una pared que impacta al instante, desde una escena de Halloween hasta tu foto favorita.",
+   "fr": "Une tenture murale sur mesure que vous faites vôtre — ajoutez une photo, un prénom ou un design pour un mur qui marque, d'une scène d'Halloween à votre image préférée.",
+   "it": "Un arazzo da parete su misura che rendi tuo: aggiungi una foto, un nome o un design per una parete d'effetto, da una scena di Halloween alla tua immagine preferita.",
+   "de": "Ein Wandteppich nach Maß, den du zu deinem machst — füge ein Foto, einen Namen oder ein Design hinzu für eine sofort wirkungsvolle Wand, von einer Halloween-Szene bis zu deinem Lieblingsbild."
   },
-  {
-    "id": "thermal-touchscreen-gloves",
-    "nom": {
-      "en": "Thermal Touchscreen Gloves",
-      "es": "Guantes térmicos táctiles",
-      "fr": "Gants thermiques tactiles",
-      "it": "Guanti termici touchscreen",
-      "de": "Thermo-Touchscreen-Handschuhe"
-    },
-    "description": {
-      "en": "Warm gloves with touchscreen fingertips.",
-      "es": "Guantes cálidos con dedos táctiles.",
-      "fr": "Gants chauds à bouts tactiles.",
-      "it": "Guanti caldi con punte touchscreen.",
-      "de": "Warme Handschuhe mit Touchscreen-Fingern."
-    },
-    "prix": 49.99,
-    "images": [
-      "assets/sourcing/gloves.jpg"
-    ],
-    "collections": [
-      "winter"
-    ],
-    "stock": true,
-    "actif": true
+  "prix": 15.99,
+  "images": [
+   "assets/tapestry.jpg"
+  ],
+  "collections": [
+   "halloween",
+   "personalised",
+   "black-friday"
+  ],
+  "stock": true,
+  "actif": true,
+  "promo": 11.99
+ },
+ {
+  "id": "personalised-scented-candle",
+  "nom": {
+   "en": "Personalised Scented Candle",
+   "es": "Vela perfumada personalizada",
+   "fr": "Bougie parfumée personnalisée",
+   "it": "Candela profumata personalizzata",
+   "de": "Personalisierte Duftkerze"
   },
-  {
-    "id": "fleece-throw-blanket",
-    "nom": {
-      "en": "Fleece Throw Blanket",
-      "es": "Manta de forro polar",
-      "fr": "Plaid en polaire",
-      "it": "Coperta in pile",
-      "de": "Fleece-Wurfdecke"
-    },
-    "description": {
-      "en": "Cozy fleece throw blanket.",
-      "es": "Manta de forro polar acogedora.",
-      "fr": "Plaid en polaire tout doux.",
-      "it": "Coperta in pile accogliente.",
-      "de": "Kuschelige Fleece-Wurfdecke."
-    },
-    "prix": 24.99,
-    "images": [
-      "assets/sourcing/blanket.jpg"
-    ],
-    "collections": [
-      "winter"
-    ],
-    "stock": true,
-    "actif": true
+  "description": {
+   "en": "A soy-blend candle with a personalised label, ready to gift or keep for cosy nights in.",
+   "es": "Una vela de mezcla de soja con etiqueta personalizada, lista para regalar o para quedártela en noches acogedoras.",
+   "fr": "Une bougie à base de soja avec une étiquette personnalisée, prête à offrir ou à garder pour les soirées cocooning.",
+   "it": "Una candela a base di soia con etichetta personalizzata, pronta da regalare o da tenere per le serate accoglienti.",
+   "de": "Eine Kerze auf Sojabasis mit personalisiertem Etikett, bereit zum Verschenken oder für gemütliche Abende."
   },
-  {
-    "id": "silicone-hot-water-bottle",
-    "nom": {
-      "en": "Silicone Hot Water Bottle",
-      "es": "Bolsa de agua caliente de silicona",
-      "fr": "Bouillotte en silicone",
-      "it": "Borsa dell'acqua calda in silicone",
-      "de": "Silikon-Wärmflasche"
-    },
-    "description": {
-      "en": "Reusable silicone hot water bottle.",
-      "es": "Bolsa de agua caliente de silicona reutilizable.",
-      "fr": "Bouillotte en silicone réutilisable.",
-      "it": "Borsa dell'acqua calda in silicone riutilizzabile.",
-      "de": "Wiederverwendbare Silikon-Wärmflasche."
-    },
-    "prix": 16.99,
-    "images": [
-      "assets/sourcing/hot-water-bottle.jpg"
-    ],
-    "collections": [
-      "winter"
-    ],
-    "stock": true,
-    "actif": true
+  "prix": 14.5,
+  "images": [
+   "assets/produits/img-09.jpg"
+  ],
+  "collections": [
+   "personalised",
+   "christmas",
+   "gifts",
+   "black-friday"
+  ],
+  "stock": true,
+  "actif": true,
+  "promo": 11.5
+ },
+ {
+  "id": "red-christmas-ornament-set",
+  "nom": {
+   "en": "Red Christmas Ornament Set",
+   "es": "Set de adornos navideños rojos",
+   "fr": "Coffret de boules de Noël rouges",
+   "it": "Set di decorazioni natalizie rosse",
+   "de": "Rotes Weihnachtsschmuck-Set"
   },
-  {
-    "id": "winter-knit-beanie",
-    "nom": {
-      "en": "Knit Winter Beanie",
-      "es": "Gorro de punto de invierno",
-      "fr": "Bonnet tricoté d'hiver",
-      "it": "Berretto di lana invernale",
-      "de": "Winter-Strickmütze"
-    },
-    "description": {
-      "en": "Warm knitted beanie for cold days.",
-      "es": "Gorro de punto cálido para los días fríos.",
-      "fr": "Bonnet tricoté chaud pour les jours froids.",
-      "it": "Berretto di lana caldo per le giornate fredde.",
-      "de": "Warme Strickmütze für kalte Tage."
-    },
-    "prix": 19.99,
-    "images": [],
-    "collections": [
-      "winter"
-    ],
-    "stock": true,
-    "actif": false
+  "description": {
+   "en": "A coordinated set of red baubles and a knitted stocking ornament for a classic Christmas tree.",
+   "es": "Un set coordinado de bolas rojas y un adorno de calcetín de punto para un árbol de Navidad clásico.",
+   "fr": "Un ensemble coordonné de boules rouges et d'une décoration chaussette tricotée pour un sapin de Noël classique.",
+   "it": "Un set coordinato di palline rosse e una decorazione a calza lavorata a maglia per un albero di Natale classico.",
+   "de": "Ein abgestimmtes Set aus roten Kugeln und einem gestrickten Strumpf-Anhänger für einen klassischen Weihnachtsbaum."
   },
-  {
-    "id": "noel-sapin-table-bois",
-    "nom": {
-      "en": "Wooden Table Christmas Tree (DIY)",
-      "es": "Árbol de Navidad de madera de mesa (DIY)",
-      "fr": "Sapin de table en bois (DIY)",
-      "it": "Albero di Natale da tavola in legno (DIY)",
-      "de": "Tisch-Weihnachtsbaum aus Holz (DIY)"
-    },
-    "description": {
-      "en": "Flat-pack wooden mini Christmas tree to assemble yourself. Rustic table decor, reusable every year. ~23 cm.",
-      "es": "Mini árbol de Navidad de madera para montar. Decoración rústica de mesa, reutilizable cada año. ~23 cm.",
-      "fr": "Mini sapin en bois à monter soi-même. Déco de table rustique, réutilisable chaque année. ~23 cm.",
-      "it": "Mini albero di Natale in legno da montare. Decorazione rustica da tavolo, riutilizzabile ogni anno. ~23 cm.",
-      "de": "Kleiner Holz-Weihnachtsbaum zum Selbstaufbauen. Rustikale Tischdeko, jedes Jahr wiederverwendbar. ~23 cm."
-    },
-    "prix": 16.99,
-    "images": [
-      "assets/sourcing/noel-sapin-table-bois.jpg"
-    ],
-    "collections": [
-      "christmas"
-    ],
-    "stock": true,
-    "actif": true
+  "prix": 16.0,
+  "images": [
+   "assets/produits/img-03.jpg"
+  ],
+  "collections": [
+   "christmas"
+  ],
+  "stock": true,
+  "actif": true
+ },
+ {
+  "id": "skeleton-hair-claw",
+  "nom": {
+   "en": "Skeleton Hair Claw",
+   "es": "Pinza de pelo de esqueleto",
+   "fr": "Pince à cheveux squelette",
+   "it": "Molletta a scheletro",
+   "de": "Skelett-Haarspange"
   },
-  {
-    "id": "noel-deco-bois-24pcs",
-    "nom": {
-      "en": "Wooden Santa Ornaments — Set of 24",
-      "es": "Adornos de madera de Papá Noel — Set de 24",
-      "fr": "Décorations bois Père Noël — Lot de 24",
-      "it": "Decorazioni in legno Babbo Natale — Set da 24",
-      "de": "Holz-Weihnachtsmann-Anhänger — Set aus 24"
-    },
-    "description": {
-      "en": "24 assorted wooden hanging ornaments (Santa, snowflakes, Christmas tree). Perfect for garlands, gift tags or festive tables.",
-      "es": "24 adornos colgantes de madera variados (Papá Noel, copos, árbol). Ideales para guirnaldas, etiquetas o mesas festivas.",
-      "fr": "24 décorations suspendues en bois variées (Père Noël, flocons, sapin). Parfaites en guirlande, étiquettes cadeaux ou table de fête.",
-      "it": "24 decorazioni appese in legno assortite (Babbo Natale, fiocchi, albero). Perfette per ghirlande, etichette o tavole festive.",
-      "de": "24 gemischte Holz-Anhänger (Weihnachtsmann, Schneeflocken, Tannenbaum). Ideal für Girlanden, Geschenkanhänger oder Festtafeln."
-    },
-    "prix": 14.99,
-    "images": [
-      "assets/sourcing/noel-deco-bois-24pcs.jpg"
-    ],
-    "collections": [
-      "christmas"
-    ],
-    "stock": true,
-    "actif": true
+  "description": {
+   "en": "Gothic metal skeleton-hand hair claw — a spooky Halloween hair accessory.",
+   "es": "Pinza de pelo de mano de esqueleto en metal gótico: accesorio de pelo espeluznante para Halloween.",
+   "fr": "Pince à cheveux squelette en métal, style gothique — accessoire capillaire pour Halloween.",
+   "it": "Molletta per capelli a mano di scheletro in metallo gotico: accessorio per capelli spettrale per Halloween.",
+   "de": "Gothic-Metall-Haarspange in Skelettform – gruseliges Halloween-Haaraccessoire."
   },
-  {
-    "id": "noel-arbre-mural-bois",
-    "nom": {
-      "en": "Shabby Chic Wooden Wall Christmas Tree",
-      "es": "Árbol de Navidad de pared de madera shabby chic",
-      "fr": "Arbre de Noël mural en bois shabby chic",
-      "it": "Albero di Natale da parete in legno shabby chic",
-      "de": "Shabby-Chic-Wand-Weihnachtsbaum aus Holz"
-    },
-    "description": {
-      "en": "Decorative ladder-style wooden wall tree, shabby chic finish. Space-saving alternative to a real tree.",
-      "es": "Árbol de pared estilo escalera en madera, acabado shabby chic. Alternativa que ahorra espacio al árbol real.",
-      "fr": "Arbre mural en bois style échelle, finition shabby chic. Alternative gain de place au vrai sapin.",
-      "it": "Albero da parete stile scala in legno, finitura shabby chic. Alternativa salvaspazio al vero albero.",
-      "de": "Wandbaum im Leiterstil aus Holz, Shabby-Chic-Finish. Platzsparende Alternative zum echten Baum."
-    },
-    "prix": 34.99,
-    "images": [
-      "assets/sourcing/noel-arbre-mural-bois.jpg"
-    ],
-    "collections": [
-      "christmas"
-    ],
-    "stock": true,
-    "actif": true
+  "prix": 15.99,
+  "images": [
+   "assets/sourcing/skeleton-hair-claw.jpg"
+  ],
+  "collections": [
+   "halloween"
+  ],
+  "stock": true,
+  "actif": true
+ },
+ {
+  "id": "striped-linen-cushion-cover",
+  "nom": {
+   "en": "Striped Linen Cushion Cover",
+   "es": "Funda de cojín de lino a rayas",
+   "fr": "Housse de coussin en lin rayé",
+   "it": "Copricuscino in lino a righe",
+   "de": "Kissenbezug aus gestreiftem Leinen"
   },
-  {
-    "id": "noel-boule-photo-a",
-    "nom": {
-      "en": "Personalised Photo Christmas Bauble",
-      "es": "Bola de Navidad personalizada con foto",
-      "fr": "Boule de Noël personnalisée photo",
-      "it": "Pallina di Natale personalizzata con foto",
-      "de": "Personalisierte Foto-Weihnachtskugel"
-    },
-    "description": {
-      "en": "Transparent bauble you fill with your own photo. Personalised keepsake, ready to hang on the tree.",
-      "es": "Bola transparente que se rellena con tu foto. Recuerdo personalizado, lista para colgar.",
-      "fr": "Boule transparente à remplir avec votre photo. Souvenir personnalisé, prête à accrocher.",
-      "it": "Pallina trasparente da riempire con la tua foto. Ricordo personalizzato, pronta da appendere.",
-      "de": "Transparente Kugel zum Befüllen mit eigenem Foto. Personalisiertes Andenken, fertig zum Aufhängen."
-    },
-    "prix": 12.99,
-    "images": [
-      "assets/sourcing/noel-boule-photo-a.jpg"
-    ],
-    "collections": [
-      "christmas",
-      "personalised"
-    ],
-    "stock": true,
-    "actif": true
+  "description": {
+   "en": "A washed-linen cushion cover in a soft stripe, with an optional monogram for a personal touch.",
+   "es": "Una funda de cojín de lino lavado en una raya suave, con monograma opcional para un toque personal.",
+   "fr": "Une housse de coussin en lin lavé aux rayures douces, avec monogramme en option pour une touche personnelle.",
+   "it": "Un copricuscino in lino lavato a righe morbide, con monogramma opzionale per un tocco personale.",
+   "de": "Ein Kissenbezug aus gewaschenem Leinen in zarten Streifen, mit optionalem Monogramm für eine persönliche Note."
   },
-  {
-    "id": "noel-boule-photo-b",
-    "nom": {
-      "en": "Custom Photo Christmas Ornament",
-      "es": "Adorno navideño personalizado con foto",
-      "fr": "Ornement de Noël photo personnalisé",
-      "it": "Ornamento di Natale personalizzato con foto",
-      "de": "Personalisierter Foto-Weihnachtsschmuck"
-    },
-    "description": {
-      "en": "Personalised transparent bauble with your photo inside. A unique Christmas keepsake for family and friends.",
-      "es": "Bola transparente personalizada con tu foto dentro. Recuerdo navideño único para familia y amigos.",
-      "fr": "Boule transparente personnalisée avec votre photo à l'intérieur. Souvenir de Noël unique.",
-      "it": "Pallina trasparente personalizzata con la tua foto dentro. Ricordo di Natale unico.",
-      "de": "Personalisierte transparente Kugel mit Foto im Inneren. Einzigartiges Weihnachtsandenken."
-    },
-    "prix": 13.99,
-    "images": [
-      "assets/sourcing/noel-boule-photo-b.jpg"
-    ],
-    "collections": [
-      "christmas",
-      "personalised"
-    ],
-    "stock": true,
-    "actif": true
+  "prix": 21.0,
+  "images": [
+   "assets/produits/img-11.jpg"
+  ],
+  "collections": [
+   "personalised",
+   "gifts"
+  ],
+  "stock": true,
+  "actif": true
+ },
+ {
+  "id": "witch-boot-vase",
+  "nom": {
+   "en": "Witch Boot Vase",
+   "es": "Jarrón bota de bruja",
+   "fr": "Vase botte de sorcière",
+   "it": "Vaso stivale da strega",
+   "de": "Hexenstiefel-Vase"
   },
-  {
-    "id": "noel-boule-sublimation",
-    "nom": {
-      "en": "Sublimation Photo Bauble 8 cm",
-      "es": "Bola de sublimación con foto 8 cm",
-      "fr": "Boule photo par sublimation 8 cm",
-      "it": "Pallina a sublimazione con foto 8 cm",
-      "de": "Sublimations-Fotokugel 8 cm"
-    },
-    "description": {
-      "en": "Printed personalised bauble (photo or text), 8 cm. Great for custom gifts and memory trees.",
-      "es": "Bola impresa personalizada (foto o texto), 8 cm. Ideal para regalos y árboles de recuerdos.",
-      "fr": "Boule imprimée personnalisable (photo ou texte), 8 cm. Idéale pour cadeaux sur mesure.",
-      "it": "Pallina stampata personalizzabile (foto o testo), 8 cm. Perfetta per regali personalizzati.",
-      "de": "Bedruckte, personalisierbare Kugel (Foto oder Text), 8 cm. Ideal für personalisierte Geschenke."
-    },
-    "prix": 15.99,
-    "images": [
-      "assets/sourcing/noel-boule-sublimation.jpg"
-    ],
-    "collections": [
-      "christmas",
-      "personalised"
-    ],
-    "stock": true,
-    "actif": true
+  "description": {
+   "en": "3D-printed witch boot vase — pen holder or gothic desk decor.",
+   "es": "Jarrón bota de bruja impreso en 3D: portalápices o decoración de escritorio gótica.",
+   "fr": "Vase botte de sorcière imprimé en 3D : porte-stylo ou déco de bureau gothique.",
+   "it": "Vaso stivale da strega stampato in 3D: portapenne o decorazione da scrivania gotica.",
+   "de": "3D-gedruckte Hexenstiefel-Vase: Stiftehalter oder gotische Schreibtisch-Deko."
   },
-  {
-    "id": "noel-chaussettes-texte",
-    "nom": {
-      "en": "Personalised Christmas Stockings (Text)",
-      "es": "Calcetines de Navidad personalizados (texto)",
-      "fr": "Chaussettes de Noël personnalisées (texte)",
-      "it": "Calze di Natale personalizzate (testo)",
-      "de": "Personalisierte Weihnachtsstrümpfe (Text)"
-    },
-    "description": {
-      "en": "Festive stockings printed with your names or message. Fun and personal Christmas decor for the fireplace.",
-      "es": "Calcetines festivos impresos con nombres o mensaje. Decoración navideña divertida y personal para la chimenea.",
-      "fr": "Chaussettes de Noël imprimées avec vos prénoms ou un message. Déco de cheminée festive et personnelle.",
-      "it": "Calze festive stampate con nomi o messaggio. Decorazione natalizia divertente e personale per il camino.",
-      "de": "Festliche Strümpfe mit Namen oder Botschaft bedruckt. Lustige, persönliche Weihnachtsdeko für den Kamin."
-    },
-    "prix": 16.99,
-    "images": [
-      "assets/sourcing/noel-chaussettes-texte.jpg"
-    ],
-    "collections": [
-      "christmas",
-      "personalised"
-    ],
-    "stock": true,
-    "actif": true
+  "prix": 29.99,
+  "images": [
+   "assets/sourcing/vase-sorciere.jpg"
+  ],
+  "collections": [
+   "halloween"
+  ],
+  "stock": true,
+  "actif": true
+ },
+ {
+  "id": "witch-hat-wall-hanging",
+  "nom": {
+   "en": "Witch Hat Wall Hanging",
+   "es": "Tapiz de pared de sombrero de bruja",
+   "fr": "Décoration murale chapeau de sorcière",
+   "it": "Arazzo da parete a cappello da strega",
+   "de": "Hexenhut-Wanddekoration"
   },
-  {
-    "id": "noel-chemin-table-renne",
-    "nom": {
-      "en": "Reindeer Christmas Table Runner",
-      "es": "Camino de mesa navideño de reno",
-      "fr": "Chemin de table de Noël renne",
-      "it": "Tovaglia runner di Natale renna",
-      "de": "Weihnachtstischläufer Rentier"
-    },
-    "description": {
-      "en": "Festive reindeer print table runner. Instant Christmas table styling, machine washable.",
-      "es": "Camino de mesa festivo con estampado de reno. Mesa navideña al instante, lavable a máquina.",
-      "fr": "Chemin de table festif motif renne. Table de Noël instantanée, lavable en machine.",
-      "it": "Runner festivo con stampa renna. Tavola di Natale istantanea, lavabile in lavatrice.",
-      "de": "Festlicher Tischläufer mit Rentierdruck. Weihnachtstafel im Handumdrehen, maschinenwaschbar."
-    },
-    "prix": 19.99,
-    "images": [
-      "assets/sourcing/noel-chemin-table-renne.jpg"
-    ],
-    "collections": [
-      "christmas"
-    ],
-    "stock": true,
-    "actif": true
+  "description": {
+   "en": "Felt witch hats finished with an organza bow and long macramé fringe, styled as a hanging duo.",
+   "es": "Sombreros de bruja de fieltro rematados con un lazo de organza y un largo fleco de macramé, presentados como dúo colgante.",
+   "fr": "Des chapeaux de sorcière en feutrine finis avec un nœud en organza et une longue frange en macramé, présentés en duo suspendu.",
+   "it": "Cappelli da strega in feltro rifiniti con un fiocco in organza e una lunga frangia in macramè, presentati come duo da appendere.",
+   "de": "Hexenhüte aus Filz, veredelt mit einer Organza-Schleife und langen Makramee-Fransen, als hängendes Duo präsentiert."
   },
-  {
-    "id": "anniv-banniere-age",
-    "nom": {
-      "en": "Personalised Birthday Banner (Age + Photo)",
-      "es": "Banner de cumpleaños personalizado (edad + foto)",
-      "fr": "Bannière d'anniversaire personnalisée (âge + photo)",
-      "it": "Stendardo di compleanno personalizzato (età + foto)",
-      "de": "Personalisierte Geburtstagsbanner (Alter + Foto)"
-    },
-    "description": {
-      "en": "Custom birthday banner with age number and photo. Perfect for milestone birthdays and parties.",
-      "es": "Banner de cumpleaños personalizado con número de edad y foto. Perfecto para cumpleaños importantes.",
-      "fr": "Bannière d'anniversaire personnalisée avec âge et photo. Parfaite pour les anniversaires marquants.",
-      "it": "Stendardo personalizzato con numero di età e foto. Perfetto per compleanni importanti.",
-      "de": "Personalisierte Banner mit Alter und Foto. Perfekt für runde Geburtstage und Partys."
-    },
-    "prix": 17.99,
-    "images": [
-      "assets/sourcing/anniv-banniere-age.jpg"
-    ],
-    "collections": [
-      "anniversaire",
-      "personalised"
-    ],
-    "stock": true,
-    "actif": true
+  "prix": 19.99,
+  "images": [
+   "assets/deco2.webp"
+  ],
+  "collections": [
+   "halloween"
+  ],
+  "stock": true,
+  "actif": true
+ },
+ {
+  "id": "wool-winter-scarf",
+  "nom": {
+   "en": "Wool Winter Scarf",
+   "es": "Bufanda de lana de invierno",
+   "fr": "Écharpe en laine d'hiver",
+   "it": "Sciarpa di lana invernale",
+   "de": "Winter-Wollschal"
   },
-  {
-    "id": "anniv-banniere-photo",
-    "nom": {
-      "en": "Photo Birthday Banner with Party Hats",
-      "es": "Banner de cumpleaños con foto y gorros de fiesta",
-      "fr": "Bannière photo anniversaire avec chapeaux de fête",
-      "it": "Stendardo foto di compleanno con cappellini",
-      "de": "Foto-Geburtstagsbanner mit Partymützen"
-    },
-    "description": {
-      "en": "Fun banner printed with your photos and party hats. A personalised touch for any celebration.",
-      "es": "Banner divertido impreso con tus fotos y gorros de fiesta. Un toque personal para cualquier celebración.",
-      "fr": "Bannière ludique imprimée avec vos photos et chapeaux de fête. Une touche personnelle pour toute célébration.",
-      "it": "Stendardo divertente stampato con le tue foto e cappellini. Un tocco personale per ogni festa.",
-      "de": "Lustige Banner mit Fotos und Partymützen bedruckt. Eine persönliche Note für jede Feier."
-    },
-    "prix": 19.99,
-    "images": [
-      "assets/sourcing/anniv-banniere-photo.jpg"
-    ],
-    "collections": [
-      "anniversaire",
-      "personalised"
-    ],
-    "stock": true,
-    "actif": true
+  "description": {
+   "en": "Soft wool scarf for winter warmth.",
+   "es": "Bufanda de lana suave para el invierno.",
+   "fr": "Écharpe en laine douce pour l'hiver.",
+   "it": "Sciarpa di lana morbida per l'inverno.",
+   "de": "Weicher Wollschal für den Winter."
   },
-  {
-    "id": "anniv-guirlande-fanions",
-    "nom": {
-      "en": "Rainbow Bunting Banner 4 m",
-      "es": "Guirnalda de banderines arcoíris 4 m",
-      "fr": "Guirlande de fanions arc-en-ciel 4 m",
-      "it": "Ghirlanda di bandierine arcobaleno 4 m",
-      "de": "Regenbogen-Wimpelkette 4 m"
-    },
-    "description": {
-      "en": "4 m colourful bunting with 12 flags. Instant party decoration for birthdays and celebrations.",
-      "es": "Guirnalda de colores de 4 m con 12 banderines. Decoración de fiesta al instante.",
-      "fr": "Guirlande colorée de 4 m avec 12 fanions. Déco de fête instantanée pour anniversaires.",
-      "it": "Ghirlanda colorata di 4 m con 12 bandierine. Decorazione istantanea per feste di compleanno.",
-      "de": "4 m bunte Wimpelkette mit 12 Fahnen. Sofortige Partydeko für Geburtstage."
-    },
-    "prix": 12.99,
-    "images": [
-      "assets/sourcing/anniv-guirlande-fanions.jpg"
-    ],
-    "collections": [
-      "anniversaire"
-    ],
-    "stock": true,
-    "actif": true
+  "prix": 34.99,
+  "images": [
+   "assets/sourcing/scarf.jpg"
+  ],
+  "collections": [
+   "winter",
+   "black-friday"
+  ],
+  "stock": true,
+  "actif": true,
+  "promo": 27.99
+ },
+ {
+  "id": "thermal-touchscreen-gloves",
+  "nom": {
+   "en": "Thermal Touchscreen Gloves",
+   "es": "Guantes térmicos táctiles",
+   "fr": "Gants thermiques tactiles",
+   "it": "Guanti termici touchscreen",
+   "de": "Thermo-Touchscreen-Handschuhe"
   },
-  {
-    "id": "anniv-drapeaux",
-    "nom": {
-      "en": "Personalised 'Happy Birthday' Bunting",
-      "es": "Banderín personalizado 'Feliz cumpleaños'",
-      "fr": "Drapeaux personnalisés 'Joyeux Anniversaire'",
-      "it": "Bandierine personalizzate 'Buon Compleanno'",
-      "de": "Personalisierte 'Happy Birthday' Wimpel"
-    },
-    "description": {
-      "en": "6 personalised bunting flags with your name or message. Birthday decor that feels truly made for you.",
-      "es": "6 banderines personalizados con tu nombre o mensaje. Decoración de cumpleaños hecha para ti.",
-      "fr": "6 fanions personnalisés avec votre prénom ou message. Une déco d'anniversaire vraiment à vous.",
-      "it": "6 bandierine personalizzate con nome o messaggio. Decorazione di compleanno fatta per te.",
-      "de": "6 personalisierte Wimpel mit Name oder Botschaft. Geburtstagsdeko, die wirklich zu dir passt."
-    },
-    "prix": 15.99,
-    "images": [
-      "assets/sourcing/anniv-drapeaux.jpg"
-    ],
-    "collections": [
-      "anniversaire",
-      "personalised"
-    ],
-    "stock": true,
-    "actif": true
-  }
+  "description": {
+   "en": "Warm gloves with touchscreen fingertips.",
+   "es": "Guantes cálidos con dedos táctiles.",
+   "fr": "Gants chauds à bouts tactiles.",
+   "it": "Guanti caldi con punte touchscreen.",
+   "de": "Warme Handschuhe mit Touchscreen-Fingern."
+  },
+  "prix": 49.99,
+  "images": [
+   "assets/sourcing/gloves.jpg"
+  ],
+  "collections": [
+   "winter",
+   "black-friday"
+  ],
+  "stock": true,
+  "actif": true,
+  "promo": 37.99
+ },
+ {
+  "id": "fleece-throw-blanket",
+  "nom": {
+   "en": "Fleece Throw Blanket",
+   "es": "Manta de forro polar",
+   "fr": "Plaid en polaire",
+   "it": "Coperta in pile",
+   "de": "Fleece-Wurfdecke"
+  },
+  "description": {
+   "en": "Cozy fleece throw blanket.",
+   "es": "Manta de forro polar acogedora.",
+   "fr": "Plaid en polaire tout doux.",
+   "it": "Coperta in pile accogliente.",
+   "de": "Kuschelige Fleece-Wurfdecke."
+  },
+  "prix": 24.99,
+  "images": [
+   "assets/sourcing/blanket.jpg"
+  ],
+  "collections": [
+   "winter",
+   "black-friday"
+  ],
+  "stock": true,
+  "actif": true,
+  "promo": 17.99
+ },
+ {
+  "id": "silicone-hot-water-bottle",
+  "nom": {
+   "en": "Silicone Hot Water Bottle",
+   "es": "Bolsa de agua caliente de silicona",
+   "fr": "Bouillotte en silicone",
+   "it": "Borsa dell'acqua calda in silicone",
+   "de": "Silikon-Wärmflasche"
+  },
+  "description": {
+   "en": "Reusable silicone hot water bottle.",
+   "es": "Bolsa de agua caliente de silicona reutilizable.",
+   "fr": "Bouillotte en silicone réutilisable.",
+   "it": "Borsa dell'acqua calda in silicone riutilizzabile.",
+   "de": "Wiederverwendbare Silikon-Wärmflasche."
+  },
+  "prix": 16.99,
+  "images": [
+   "assets/sourcing/hot-water-bottle.jpg"
+  ],
+  "collections": [
+   "winter"
+  ],
+  "stock": true,
+  "actif": true
+ },
+ {
+  "id": "winter-knit-beanie",
+  "nom": {
+   "en": "Knit Winter Beanie",
+   "es": "Gorro de punto de invierno",
+   "fr": "Bonnet tricoté d'hiver",
+   "it": "Berretto di lana invernale",
+   "de": "Winter-Strickmütze"
+  },
+  "description": {
+   "en": "Warm knitted beanie for cold days.",
+   "es": "Gorro de punto cálido para los días fríos.",
+   "fr": "Bonnet tricoté chaud pour les jours froids.",
+   "it": "Berretto di lana caldo per le giornate fredde.",
+   "de": "Warme Strickmütze für kalte Tage."
+  },
+  "prix": 19.99,
+  "images": [],
+  "collections": [
+   "winter"
+  ],
+  "stock": true,
+  "actif": false
+ },
+ {
+  "id": "noel-sapin-table-bois",
+  "nom": {
+   "en": "Wooden Table Christmas Tree (DIY)",
+   "es": "Árbol de Navidad de madera de mesa (DIY)",
+   "fr": "Sapin de table en bois (DIY)",
+   "it": "Albero di Natale da tavola in legno (DIY)",
+   "de": "Tisch-Weihnachtsbaum aus Holz (DIY)"
+  },
+  "description": {
+   "en": "Flat-pack wooden mini Christmas tree to assemble yourself. Rustic table decor, reusable every year. ~23 cm.",
+   "es": "Mini árbol de Navidad de madera para montar. Decoración rústica de mesa, reutilizable cada año. ~23 cm.",
+   "fr": "Mini sapin en bois à monter soi-même. Déco de table rustique, réutilisable chaque année. ~23 cm.",
+   "it": "Mini albero di Natale in legno da montare. Decorazione rustica da tavolo, riutilizzabile ogni anno. ~23 cm.",
+   "de": "Kleiner Holz-Weihnachtsbaum zum Selbstaufbauen. Rustikale Tischdeko, jedes Jahr wiederverwendbar. ~23 cm."
+  },
+  "prix": 16.99,
+  "images": [
+   "assets/sourcing/noel-sapin-table-bois.jpg"
+  ],
+  "collections": [
+   "christmas"
+  ],
+  "stock": true,
+  "actif": true
+ },
+ {
+  "id": "noel-deco-bois-24pcs",
+  "nom": {
+   "en": "Wooden Santa Ornaments — Set of 24",
+   "es": "Adornos de madera de Papá Noel — Set de 24",
+   "fr": "Décorations bois Père Noël — Lot de 24",
+   "it": "Decorazioni in legno Babbo Natale — Set da 24",
+   "de": "Holz-Weihnachtsmann-Anhänger — Set aus 24"
+  },
+  "description": {
+   "en": "24 assorted wooden hanging ornaments (Santa, snowflakes, Christmas tree). Perfect for garlands, gift tags or festive tables.",
+   "es": "24 adornos colgantes de madera variados (Papá Noel, copos, árbol). Ideales para guirnaldas, etiquetas o mesas festivas.",
+   "fr": "24 décorations suspendues en bois variées (Père Noël, flocons, sapin). Parfaites en guirlande, étiquettes cadeaux ou table de fête.",
+   "it": "24 decorazioni appese in legno assortite (Babbo Natale, fiocchi, albero). Perfette per ghirlande, etichette o tavole festive.",
+   "de": "24 gemischte Holz-Anhänger (Weihnachtsmann, Schneeflocken, Tannenbaum). Ideal für Girlanden, Geschenkanhänger oder Festtafeln."
+  },
+  "prix": 14.99,
+  "images": [
+   "assets/sourcing/noel-deco-bois-24pcs.jpg"
+  ],
+  "collections": [
+   "christmas"
+  ],
+  "stock": true,
+  "actif": true
+ },
+ {
+  "id": "noel-arbre-mural-bois",
+  "nom": {
+   "en": "Shabby Chic Wooden Wall Christmas Tree",
+   "es": "Árbol de Navidad de pared de madera shabby chic",
+   "fr": "Arbre de Noël mural en bois shabby chic",
+   "it": "Albero di Natale da parete in legno shabby chic",
+   "de": "Shabby-Chic-Wand-Weihnachtsbaum aus Holz"
+  },
+  "description": {
+   "en": "Decorative ladder-style wooden wall tree, shabby chic finish. Space-saving alternative to a real tree.",
+   "es": "Árbol de pared estilo escalera en madera, acabado shabby chic. Alternativa que ahorra espacio al árbol real.",
+   "fr": "Arbre mural en bois style échelle, finition shabby chic. Alternative gain de place au vrai sapin.",
+   "it": "Albero da parete stile scala in legno, finitura shabby chic. Alternativa salvaspazio al vero albero.",
+   "de": "Wandbaum im Leiterstil aus Holz, Shabby-Chic-Finish. Platzsparende Alternative zum echten Baum."
+  },
+  "prix": 34.99,
+  "images": [
+   "assets/sourcing/noel-arbre-mural-bois.jpg"
+  ],
+  "collections": [
+   "christmas",
+   "black-friday"
+  ],
+  "stock": true,
+  "actif": true,
+  "promo": 27.99
+ },
+ {
+  "id": "noel-boule-photo-a",
+  "nom": {
+   "en": "Personalised Photo Christmas Bauble",
+   "es": "Bola de Navidad personalizada con foto",
+   "fr": "Boule de Noël personnalisée photo",
+   "it": "Pallina di Natale personalizzata con foto",
+   "de": "Personalisierte Foto-Weihnachtskugel"
+  },
+  "description": {
+   "en": "Transparent bauble you fill with your own photo. Personalised keepsake, ready to hang on the tree.",
+   "es": "Bola transparente que se rellena con tu foto. Recuerdo personalizado, lista para colgar.",
+   "fr": "Boule transparente à remplir avec votre photo. Souvenir personnalisé, prête à accrocher.",
+   "it": "Pallina trasparente da riempire con la tua foto. Ricordo personalizzato, pronta da appendere.",
+   "de": "Transparente Kugel zum Befüllen mit eigenem Foto. Personalisiertes Andenken, fertig zum Aufhängen."
+  },
+  "prix": 12.99,
+  "images": [
+   "assets/sourcing/noel-boule-photo-a.jpg"
+  ],
+  "collections": [
+   "christmas",
+   "personalised",
+   "black-friday"
+  ],
+  "stock": true,
+  "actif": true,
+  "promo": 9.99
+ },
+ {
+  "id": "noel-boule-photo-b",
+  "nom": {
+   "en": "Custom Photo Christmas Ornament",
+   "es": "Adorno navideño personalizado con foto",
+   "fr": "Ornement de Noël photo personnalisé",
+   "it": "Ornamento di Natale personalizzato con foto",
+   "de": "Personalisierter Foto-Weihnachtsschmuck"
+  },
+  "description": {
+   "en": "Personalised transparent bauble with your photo inside. A unique Christmas keepsake for family and friends.",
+   "es": "Bola transparente personalizada con tu foto dentro. Recuerdo navideño único para familia y amigos.",
+   "fr": "Boule transparente personnalisée avec votre photo à l'intérieur. Souvenir de Noël unique.",
+   "it": "Pallina trasparente personalizzata con la tua foto dentro. Ricordo di Natale unico.",
+   "de": "Personalisierte transparente Kugel mit Foto im Inneren. Einzigartiges Weihnachtsandenken."
+  },
+  "prix": 13.99,
+  "images": [
+   "assets/sourcing/noel-boule-photo-b.jpg"
+  ],
+  "collections": [
+   "christmas",
+   "personalised"
+  ],
+  "stock": true,
+  "actif": true
+ },
+ {
+  "id": "noel-boule-sublimation",
+  "nom": {
+   "en": "Sublimation Photo Bauble 8 cm",
+   "es": "Bola de sublimación con foto 8 cm",
+   "fr": "Boule photo par sublimation 8 cm",
+   "it": "Pallina a sublimazione con foto 8 cm",
+   "de": "Sublimations-Fotokugel 8 cm"
+  },
+  "description": {
+   "en": "Printed personalised bauble (photo or text), 8 cm. Great for custom gifts and memory trees.",
+   "es": "Bola impresa personalizada (foto o texto), 8 cm. Ideal para regalos y árboles de recuerdos.",
+   "fr": "Boule imprimée personnalisable (photo ou texte), 8 cm. Idéale pour cadeaux sur mesure.",
+   "it": "Pallina stampata personalizzabile (foto o testo), 8 cm. Perfetta per regali personalizzati.",
+   "de": "Bedruckte, personalisierbare Kugel (Foto oder Text), 8 cm. Ideal für personalisierte Geschenke."
+  },
+  "prix": 15.99,
+  "images": [
+   "assets/sourcing/noel-boule-sublimation.jpg"
+  ],
+  "collections": [
+   "christmas",
+   "personalised"
+  ],
+  "stock": true,
+  "actif": true
+ },
+ {
+  "id": "noel-chaussettes-texte",
+  "nom": {
+   "en": "Personalised Christmas Stockings (Text)",
+   "es": "Calcetines de Navidad personalizados (texto)",
+   "fr": "Chaussettes de Noël personnalisées (texte)",
+   "it": "Calze di Natale personalizzate (testo)",
+   "de": "Personalisierte Weihnachtsstrümpfe (Text)"
+  },
+  "description": {
+   "en": "Festive stockings printed with your names or message. Fun and personal Christmas decor for the fireplace.",
+   "es": "Calcetines festivos impresos con nombres o mensaje. Decoración navideña divertida y personal para la chimenea.",
+   "fr": "Chaussettes de Noël imprimées avec vos prénoms ou un message. Déco de cheminée festive et personnelle.",
+   "it": "Calze festive stampate con nomi o messaggio. Decorazione natalizia divertente e personale per il camino.",
+   "de": "Festliche Strümpfe mit Namen oder Botschaft bedruckt. Lustige, persönliche Weihnachtsdeko für den Kamin."
+  },
+  "prix": 16.99,
+  "images": [
+   "assets/sourcing/noel-chaussettes-texte.jpg"
+  ],
+  "collections": [
+   "christmas",
+   "personalised"
+  ],
+  "stock": true,
+  "actif": true
+ },
+ {
+  "id": "noel-chemin-table-renne",
+  "nom": {
+   "en": "Reindeer Christmas Table Runner",
+   "es": "Camino de mesa navideño de reno",
+   "fr": "Chemin de table de Noël renne",
+   "it": "Tovaglia runner di Natale renna",
+   "de": "Weihnachtstischläufer Rentier"
+  },
+  "description": {
+   "en": "Festive reindeer print table runner. Instant Christmas table styling, machine washable.",
+   "es": "Camino de mesa festivo con estampado de reno. Mesa navideña al instante, lavable a máquina.",
+   "fr": "Chemin de table festif motif renne. Table de Noël instantanée, lavable en machine.",
+   "it": "Runner festivo con stampa renna. Tavola di Natale istantanea, lavabile in lavatrice.",
+   "de": "Festlicher Tischläufer mit Rentierdruck. Weihnachtstafel im Handumdrehen, maschinenwaschbar."
+  },
+  "prix": 19.99,
+  "images": [
+   "assets/sourcing/noel-chemin-table-renne.jpg"
+  ],
+  "collections": [
+   "christmas"
+  ],
+  "stock": true,
+  "actif": true
+ },
+ {
+  "id": "anniv-banniere-age",
+  "nom": {
+   "en": "Personalised Birthday Banner (Age + Photo)",
+   "es": "Banner de cumpleaños personalizado (edad + foto)",
+   "fr": "Bannière d'anniversaire personnalisée (âge + photo)",
+   "it": "Stendardo di compleanno personalizzato (età + foto)",
+   "de": "Personalisierte Geburtstagsbanner (Alter + Foto)"
+  },
+  "description": {
+   "en": "Custom birthday banner with age number and photo. Perfect for milestone birthdays and parties.",
+   "es": "Banner de cumpleaños personalizado con número de edad y foto. Perfecto para cumpleaños importantes.",
+   "fr": "Bannière d'anniversaire personnalisée avec âge et photo. Parfaite pour les anniversaires marquants.",
+   "it": "Stendardo personalizzato con numero di età e foto. Perfetto per compleanni importanti.",
+   "de": "Personalisierte Banner mit Alter und Foto. Perfekt für runde Geburtstage und Partys."
+  },
+  "prix": 17.99,
+  "images": [
+   "assets/sourcing/anniv-banniere-age.jpg"
+  ],
+  "collections": [
+   "anniversaire",
+   "personalised"
+  ],
+  "stock": true,
+  "actif": true
+ },
+ {
+  "id": "anniv-banniere-photo",
+  "nom": {
+   "en": "Photo Birthday Banner with Party Hats",
+   "es": "Banner de cumpleaños con foto y gorros de fiesta",
+   "fr": "Bannière photo anniversaire avec chapeaux de fête",
+   "it": "Stendardo foto di compleanno con cappellini",
+   "de": "Foto-Geburtstagsbanner mit Partymützen"
+  },
+  "description": {
+   "en": "Fun banner printed with your photos and party hats. A personalised touch for any celebration.",
+   "es": "Banner divertido impreso con tus fotos y gorros de fiesta. Un toque personal para cualquier celebración.",
+   "fr": "Bannière ludique imprimée avec vos photos et chapeaux de fête. Une touche personnelle pour toute célébration.",
+   "it": "Stendardo divertente stampato con le tue foto e cappellini. Un tocco personale per ogni festa.",
+   "de": "Lustige Banner mit Fotos und Partymützen bedruckt. Eine persönliche Note für jede Feier."
+  },
+  "prix": 19.99,
+  "images": [
+   "assets/sourcing/anniv-banniere-photo.jpg"
+  ],
+  "collections": [
+   "anniversaire",
+   "personalised"
+  ],
+  "stock": true,
+  "actif": true
+ },
+ {
+  "id": "anniv-guirlande-fanions",
+  "nom": {
+   "en": "Rainbow Bunting Banner 4 m",
+   "es": "Guirnalda de banderines arcoíris 4 m",
+   "fr": "Guirlande de fanions arc-en-ciel 4 m",
+   "it": "Ghirlanda di bandierine arcobaleno 4 m",
+   "de": "Regenbogen-Wimpelkette 4 m"
+  },
+  "description": {
+   "en": "4 m colourful bunting with 12 flags. Instant party decoration for birthdays and celebrations.",
+   "es": "Guirnalda de colores de 4 m con 12 banderines. Decoración de fiesta al instante.",
+   "fr": "Guirlande colorée de 4 m avec 12 fanions. Déco de fête instantanée pour anniversaires.",
+   "it": "Ghirlanda colorata di 4 m con 12 bandierine. Decorazione istantanea per feste di compleanno.",
+   "de": "4 m bunte Wimpelkette mit 12 Fahnen. Sofortige Partydeko für Geburtstage."
+  },
+  "prix": 12.99,
+  "images": [
+   "assets/sourcing/anniv-guirlande-fanions.jpg"
+  ],
+  "collections": [
+   "anniversaire"
+  ],
+  "stock": true,
+  "actif": true
+ },
+ {
+  "id": "anniv-drapeaux",
+  "nom": {
+   "en": "Personalised 'Happy Birthday' Bunting",
+   "es": "Banderín personalizado 'Feliz cumpleaños'",
+   "fr": "Drapeaux personnalisés 'Joyeux Anniversaire'",
+   "it": "Bandierine personalizzate 'Buon Compleanno'",
+   "de": "Personalisierte 'Happy Birthday' Wimpel"
+  },
+  "description": {
+   "en": "6 personalised bunting flags with your name or message. Birthday decor that feels truly made for you.",
+   "es": "6 banderines personalizados con tu nombre o mensaje. Decoración de cumpleaños hecha para ti.",
+   "fr": "6 fanions personnalisés avec votre prénom ou message. Une déco d'anniversaire vraiment à vous.",
+   "it": "6 bandierine personalizzate con nome o messaggio. Decorazione di compleanno fatta per te.",
+   "de": "6 personalisierte Wimpel mit Name oder Botschaft. Geburtstagsdeko, die wirklich zu dir passt."
+  },
+  "prix": 15.99,
+  "images": [
+   "assets/sourcing/anniv-drapeaux.jpg"
+  ],
+  "collections": [
+   "anniversaire",
+   "personalised"
+  ],
+  "stock": true,
+  "actif": true
+ }
 ]

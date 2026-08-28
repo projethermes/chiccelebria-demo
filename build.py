@@ -197,7 +197,7 @@ def product_page(p):
         "brand": {"@type": "Brand", "name": "Chic Celebria"},
         "offers": {
             "@type": "Offer", "url": "https://www.etsy.com/shop/ChicCelebria",
-            "priceCurrency": "EUR", "price": str(p["prix"]),
+            "priceCurrency": "EUR", "price": str(p.get("promo") or p["prix"]),
             "availability": "https://schema.org/InStock",
             "itemCondition": "https://schema.org/NewCondition",
         },
@@ -227,7 +227,7 @@ def product_page(p):
         <div class="product-info">
           <p class="breadcrumb"><a href="{prefix}index.html" data-i18n="common.home">Home</a> / <a href="{prefix}collections/{first_coll}/" data-i18n="coll.{first_coll}.label">{coll_label_en}</a> / <span data-i18n="p.{p['id']}.title">{p['nom']['en']}</span></p>
           <h1 data-i18n="p.{p['id']}.title">{p['nom']['en']}</h1>
-          <p class="product-price">€{p['prix']:.2f}</p>
+          <p class="product-price">{('<span class="price-old">€%.2f</span> ' % p['prix']) if p.get('promo') else ''}€{p.get('promo', p['prix']):.2f}</p>
           <p class="product-desc" data-i18n="p.{p['id']}.desc">{p['description']['en']}</p>
           <div class="product-cta">
             <a class="btn btn-primary btn-lg" href="#" data-etsy-cta data-i18n="common.shopOnEtsy">Shop on Etsy</a>
@@ -258,7 +258,7 @@ def product_card(p, prefix):
           </a>
           <div class="p-card-body">
             <a class="p-card-title" href="{prefix}products/{p['id']}/" data-i18n="p.{p['id']}.title">{p['nom']['en']}</a>
-            <p class="p-card-price">€{p['prix']:.2f}</p>
+            <p class="p-card-price">{('<span class="price-old">€%.2f</span> ' % p['prix']) if p.get('promo') else ''}€{p.get('promo', p['prix']):.2f}</p>
           </div>
         </article>'''
 

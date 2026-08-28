@@ -491,6 +491,7 @@ textarea:focus-visible,
 .p-card-title:hover { color: var(--muted); }
 .p-card-variant { font-size: 0.82rem; color: var(--muted); margin-top: 0.2rem; }
 .p-card-price { font-size: 0.92rem; color: var(--ink); margin-top: 0.35rem; font-weight: 500; }
+.price-old { color: var(--muted, #888); text-decoration: line-through; font-weight: 400; margin-right: 0.4rem; font-size: 0.85em; }
 
 .products-footer { text-align: center; margin-top: var(--space-4); }
 
