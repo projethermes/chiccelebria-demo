@@ -94,3 +94,7 @@ Collections actuelles : halloween (actif, 9 produits), christmas (actif, 3), win
 4. Pas de librairie externe (pas de jQuery/framework). JS vanilla.
 5. Après toute refonte : vérifier que `python3 build.py` tourne sans erreur et régénère tout.
 6. Images : garder les fichiers `assets/` existants (logo.png, produits/, sourcing/).
+
+## 8. Tests
+- `tests/test_build_idempotence.py` : test de non-régression garantissant que `python3 build.py` est idempotent (deux exécutions consécutives sans modification des sources produisent des fichiers générés strictement identiques) et qu'`index.html`/`about.html`/`404.html` ne contiennent chacun qu'une seule balise `<script src="i18n-data.js"></script>` et une seule `<script src="i18n.js"></script>`.
+- Exécution : `python3 -m unittest tests/test_build_idempotence.py -v` (ou `pytest tests/test_build_idempotence.py -v`, aucune dépendance supplémentaire requise).
