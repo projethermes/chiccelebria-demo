@@ -15,6 +15,7 @@ import html
 import json
 import os
 import re
+import struct
 import unicodedata
 
 BASE = os.path.dirname(os.path.abspath(__file__))
@@ -141,6 +142,59 @@ def alt_product(pid):
 
 def absolute(rootrel):
     return f"{SITE}/{rootrel}"
+
+
+# --------------------------------------------------------------------------
+# Dimensions réelles des images (JPEG / PNG / WebP), sans dépendance externe
+# (PIL/cwebp/ImageMagick indisponibles sur cet environnement) — évite tout
+# décalage de mise en page (CLS) dû à des width/height approximatifs.
+# --------------------------------------------------------------------------
+_IMAGE_DIM_CACHE = {}
+
+
+def image_dimensions(rootrel):
+    if rootrel in _IMAGE_DIM_CACHE:
+        return _IMAGE_DIM_CACHE[rootrel]
+    path = os.path.join(BASE, rootrel)
+    dims = None
+    try:
+        with open(path, "rb") as f:
+            head = f.read(32)
+            if head[:2] == b"\xff\xd8":  # JPEG
+                f.seek(2)
+                while True:
+                    marker = f.read(2)
+                    if len(marker) < 2 or marker[0] != 0xFF:
+                        break
+                    if marker[1] in (0xC0, 0xC1, 0xC2, 0xC3):
+                        f.read(3)
+                        h, w = struct.unpack(">HH", f.read(4))
+                        dims = (w, h)
+                        break
+                    length = struct.unpack(">H", f.read(2))[0]
+                    f.read(length - 2)
+            elif head[:8] == b"\x89PNG\r\n\x1a\n":
+                w, h = struct.unpack(">II", head[16:24])
+                dims = (w, h)
+            elif head[:4] == b"RIFF" and head[8:12] == b"WEBP":
+                chunk = head[12:16]
+                if chunk == b"VP8 ":
+                    w, h = struct.unpack("<HH", head[26:30])
+                    dims = (w & 0x3FFF, h & 0x3FFF)
+                elif chunk == b"VP8L":
+                    b0, b1, b2, b3 = head[21:25]
+                    w = 1 + (((b1 & 0x3F) << 8) | b0)
+                    h = 1 + (((b3 & 0xF) << 10) | (b2 << 2) | ((b1 & 0xC0) >> 6))
+                    dims = (w, h)
+                elif chunk == b"VP8X":
+                    w = 1 + (head[24] | (head[25] << 8) | (head[26] << 16))
+                    h = 1 + (head[27] | (head[28] << 8) | (head[29] << 16))
+                    dims = (w, h)
+    except (OSError, struct.error):
+        dims = None
+    dims = dims or (1000, 1000)
+    _IMAGE_DIM_CACHE[rootrel] = dims
+    return dims
 
 
 # --------------------------------------------------------------------------
@@ -389,6 +443,7 @@ def product_page(p, lang):
     prefix = "../../../"
     images = p["images"]
     main_img = images[0] if images else ""
+    main_w, main_h = image_dimensions(main_img) if main_img else (1000, 1000)
     first_coll = p["collections"][0] if p["collections"] else None
     coll_label = next((c["label"][lang] for c in collections if c["slug"] == first_coll), None)
     current_rootrel = p_product(p["id"], lang)
@@ -432,7 +487,7 @@ def product_page(p, lang):
 
     if len(images) > 1:
         thumbs = "\n          ".join(
-            f'<button type="button" class="gallery-thumb{" is-active" if i == 0 else ""}" data-full="{prefix}{img}" data-alt="{esc(p["nom"][lang])}"><img src="{prefix}{img}" alt="" loading="lazy"></button>'
+            f'<button type="button" class="gallery-thumb{" is-active" if i == 0 else ""}" data-full="{prefix}{img}" data-alt="{esc(p["nom"][lang])}"><img src="{prefix}{img}" alt="" width="{image_dimensions(img)[0]}" height="{image_dimensions(img)[1]}" loading="lazy"></button>'
             for i, img in enumerate(images)
         )
         gallery_extra = f'\n        <div class="gallery-thumbs">\n          {thumbs}\n        </div>'
@@ -449,7 +504,7 @@ def product_page(p, lang):
       <div class="product-layout">
         <div class="product-gallery">
           <div class="gallery-main">
-            <img src="{prefix}{main_img}" alt="{esc(p["nom"][lang])}" width="1000" height="1000">
+            <img src="{prefix}{main_img}" alt="{esc(p["nom"][lang])}" width="{main_w}" height="{main_h}" fetchpriority="high">
           </div>{gallery_extra}
         </div>
         <div class="product-info">
@@ -473,14 +528,16 @@ def product_page(p, lang):
 # --------------------------------------------------------------------------
 # Cartes produit (grilles collection / accueil / produits liés)
 # --------------------------------------------------------------------------
-def product_card(p, lang, prefix):
+def product_card(p, lang, prefix, lcp=False):
     ptype = "personalised" if "personalised" in p.get("collections", []) else "decor"
     img = p["images"][0] if p["images"] else ""
+    w, h = image_dimensions(img) if img else (1000, 1000)
     badge = f'<span class="p-card-badge">{s(lang, "common.badgePersonalised")}</span>' if ptype == "personalised" else ""
+    img_attrs = 'fetchpriority="high"' if lcp else 'loading="lazy"'
     return f'''        <article class="p-card" data-name="{esc(p['nom'][lang])}" data-price="{p['prix']}" data-type="{ptype}">
           <a class="p-card-media" href="{prefix}{p_product(p['id'], lang)}">
             {badge}
-            <img class="img-main" src="{prefix}{img}" alt="{esc(p['nom'][lang])}" width="1000" height="1000" loading="lazy">
+            <img class="img-main" src="{prefix}{img}" alt="{esc(p['nom'][lang])}" width="{w}" height="{h}" {img_attrs}>
           </a>
           <div class="p-card-body">
             <a class="p-card-title" href="{prefix}{p_product(p['id'], lang)}">{esc(p['nom'][lang])}</a>
@@ -496,7 +553,7 @@ def collection_page(c, lang):
     slug = c["slug"]
     prefix = "../../../"
     items = products_of(slug)
-    cards = "\n".join(product_card(p, lang, prefix) for p in items)
+    cards = "\n".join(product_card(p, lang, prefix, lcp=(i == 0)) for i, p in enumerate(items))
     accent = " accent-halloween" if slug == "halloween" else ""
     current_rootrel = p_collection(slug, lang)
     alt_paths = alt_collection(slug)
@@ -626,8 +683,12 @@ def home_page(lang):
                 f'<script type="application/ld+json">\n{org_ld}\n</script>\n')
 
     og_image = "assets/produits/img-09.jpg"
+    # Le hero est en arrière-plan CSS (LCP de la page d'accueil) : on le
+    # précharge pour que le navigateur ne le découvre pas seulement après
+    # avoir parsé style.css.
+    preload = f'<link rel="preload" as="image" fetchpriority="high" href="{prefix}{og_image}">\n'
     head_html = head(lang, prefix, current_rootrel, alt_paths, s(lang, "home.title"), s(lang, "home.desc"),
-                      "website", og_image, extra_ld)
+                      "website", og_image, preload + extra_ld)
 
     # Collections grid — chaque tuile utilise l'image réelle du premier produit de la collection.
     tiles = []
@@ -636,8 +697,9 @@ def home_page(lang):
         if not items:
             continue
         img = items[0]["images"][0] if items[0]["images"] else ""
+        w, h = image_dimensions(img) if img else (1000, 1000)
         tiles.append(f'''      <a class="collection-tile reveal" href="{prefix}{p_collection(c["slug"], lang)}">
-        <img src="{prefix}{img}" alt="{esc(c["label"][lang])}" width="1000" height="1000" loading="lazy">
+        <img src="{prefix}{img}" alt="{esc(c["label"][lang])}" width="{w}" height="{h}" loading="lazy">
         <span class="collection-tile-label">
           <h3>{esc(c["label"][lang])}</h3>
           <span>{s(lang, "common.shopTheEdit")}</span>
@@ -711,7 +773,7 @@ def home_page(lang):
   <section class="section section-alt" aria-labelledby="editorial-heading">
     <div class="wrap editorial">
       <div class="editorial-media reveal">
-        <img src="{prefix}assets/produits/img-11.jpg" alt="{esc(s(lang, "alt.livingroom"))}" width="900" height="1350" loading="lazy">
+        <img src="{prefix}assets/produits/img-11.jpg" alt="{esc(s(lang, "alt.livingroom"))}" width="{image_dimensions("assets/produits/img-11.jpg")[0]}" height="{image_dimensions("assets/produits/img-11.jpg")[1]}" loading="lazy">
       </div>
       <div class="editorial-copy reveal">
         <h2 class="section-title" id="editorial-heading">{s(lang, "home.editorial.title")}</h2>
@@ -776,16 +838,13 @@ def about_page(lang):
 
       <h2>{s(lang, "about.how.h2")}</h2>
       <p>{esc(s(lang, "about.how.p"))}</p>{perso_section}
-
-      <h2>{s(lang, "about.editorial.h2")}</h2>
-      <p>{esc(s(lang, "about.editorial.p"))}</p>
     </div>
   </section>
 
   <section class="section">
     <div class="wrap editorial">
       <div class="editorial-media reveal">
-        <img src="{prefix}assets/produits/img-10.jpg" alt="{esc(s(lang, "alt.livingroom"))}" width="900" height="506" loading="lazy">
+        <img src="{prefix}assets/produits/img-10.jpg" alt="{esc(s(lang, "alt.livingroom"))}" width="{image_dimensions("assets/produits/img-10.jpg")[0]}" height="{image_dimensions("assets/produits/img-10.jpg")[1]}" loading="lazy">
       </div>
       <div class="editorial-copy reveal">
         <h2 class="section-title">{s(lang, "about.editorial.h2")}</h2>
