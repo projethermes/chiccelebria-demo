@@ -131,6 +131,10 @@
         if (!full) return;
         main.setAttribute("src", full);
         if (alt) main.setAttribute("alt", alt);
+        var legend = document.getElementById("gallery-legend");
+        if (legend) {
+          legend.textContent = thumb.getAttribute("data-legend") || "";
+        }
         thumbs.forEach(function (t) { t.classList.remove("is-active"); });
         thumb.classList.add("is-active");
       });

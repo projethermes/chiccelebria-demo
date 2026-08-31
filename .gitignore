@@ -1,0 +1,4 @@
+# Backups automatiques du back-office (ne pas versionner)
+admin/backups/
+__pycache__/
+*.pyc

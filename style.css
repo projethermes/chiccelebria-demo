@@ -629,6 +629,12 @@ textarea:focus-visible,
   aspect-ratio: 4 / 5;
 }
 .gallery-main img { width: 100%; height: 100%; object-fit: cover; }
+.gallery-legend {
+  margin-top: var(--space-2);
+  font-size: 0.875rem;
+  font-style: italic;
+  color: var(--ink-soft, #6b6b6b);
+}
 .gallery-thumbs { display: flex; gap: 0.6rem; margin-top: var(--space-2); }
 .gallery-thumb {
   width: 74px; height: 92px;

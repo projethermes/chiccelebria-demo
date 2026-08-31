@@ -30,6 +30,18 @@ FONTS = ('<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,ops
 esc = html.escape
 
 
+def img_src(img):
+    """Chemin d'une image : format simple (str) OU étendu ({"src": ..., "legende": {...}})."""
+    return img if isinstance(img, str) else (img or {}).get("src", "")
+
+
+def img_legend(img, lang):
+    """Légende d'une image dans une langue donnée ('' si absente ou format simple)."""
+    if isinstance(img, str):
+        return ""
+    return (img.get("legende") or {}).get(lang, "")
+
+
 def load(name):
     with open(os.path.join(BASE, name), encoding="utf-8") as f:
         return json.load(f)
@@ -442,8 +454,12 @@ def related_html(lang, prefix, p):
 def product_page(p, lang):
     prefix = "../../../"
     images = p["images"]
-    main_img = images[0] if images else ""
+    main_img = img_src(images[0]) if images else ""
     main_w, main_h = image_dimensions(main_img) if main_img else (1000, 1000)
+    legend_first = img_legend(images[0], lang) if images else ""
+    has_legend = any(img_legend(i, lang) for i in images)
+    legend_html = (f'<figcaption class="gallery-legend" id="gallery-legend">{esc(legend_first)}</figcaption>'
+                   if has_legend else '')
     first_coll = p["collections"][0] if p["collections"] else None
     coll_label = next((c["label"][lang] for c in collections if c["slug"] == first_coll), None)
     current_rootrel = p_product(p["id"], lang)
@@ -487,7 +503,7 @@ def product_page(p, lang):
 
     if len(images) > 1:
         thumbs = "\n          ".join(
-            f'<button type="button" class="gallery-thumb{" is-active" if i == 0 else ""}" data-full="{prefix}{img}" data-alt="{esc(p["nom"][lang])}"><img src="{prefix}{img}" alt="" width="{image_dimensions(img)[0]}" height="{image_dimensions(img)[1]}" loading="lazy"></button>'
+            f'<button type="button" class="gallery-thumb{" is-active" if i == 0 else ""}" data-full="{prefix}{img_src(img)}" data-alt="{esc(p["nom"][lang])}" data-legend="{esc(img_legend(img, lang))}"><img src="{prefix}{img_src(img)}" alt="" width="{image_dimensions(img_src(img))[0]}" height="{image_dimensions(img_src(img))[1]}" loading="lazy"></button>'
             for i, img in enumerate(images)
         )
         gallery_extra = f'\n        <div class="gallery-thumbs">\n          {thumbs}\n        </div>'
@@ -505,7 +521,7 @@ def product_page(p, lang):
         <div class="product-gallery">
           <div class="gallery-main">
             <img src="{prefix}{main_img}" alt="{esc(p["nom"][lang])}" width="{main_w}" height="{main_h}" fetchpriority="high">
-          </div>{gallery_extra}
+          </div>{legend_html}{gallery_extra}
         </div>
         <div class="product-info">
           <p class="breadcrumb">{breadcrumb_html}</p>
@@ -530,7 +546,7 @@ def product_page(p, lang):
 # --------------------------------------------------------------------------
 def product_card(p, lang, prefix, lcp=False):
     ptype = "personalised" if "personalised" in p.get("collections", []) else "decor"
-    img = p["images"][0] if p["images"] else ""
+    img = img_src(p["images"][0]) if p["images"] else ""
     w, h = image_dimensions(img) if img else (1000, 1000)
     badge = f'<span class="p-card-badge">{s(lang, "common.badgePersonalised")}</span>' if ptype == "personalised" else ""
     img_attrs = 'fetchpriority="high"' if lcp else 'loading="lazy"'
@@ -696,7 +712,7 @@ def home_page(lang):
         items = products_of(c["slug"])
         if not items:
             continue
-        img = items[0]["images"][0] if items[0]["images"] else ""
+        img = img_src(items[0]["images"][0]) if items[0]["images"] else ""
         w, h = image_dimensions(img) if img else (1000, 1000)
         tiles.append(f'''      <a class="collection-tile reveal" href="{prefix}{p_collection(c["slug"], lang)}">
         <img src="{prefix}{img}" alt="{esc(c["label"][lang])}" width="{w}" height="{h}" loading="lazy">
