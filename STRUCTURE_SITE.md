@@ -46,19 +46,36 @@ chiccelebria-demo/
 2. On lance `python3 build.py`.
 3. Le script régénère : `i18n-data.js`, toutes les pages `products/<id>/`, toutes les pages `collections/<slug>/`, `collections/index.html`, et réinjecte header/footer dans `index.html`, `about.html`, `404.html` (les contenus `<main>` de ces 3 pages statiques sont préservés).
 
-### Format products.json (18 entrées)
+### Format products.json (39 entrées, 38 actifs)
 ```json
 {
-  "id": "halloween-doormat",            // slug, sert de nom de dossier et de clé i18n
+  "id": "halloween-doormat",            // slug de base (utilisé pour l'URL en anglais)
   "nom": { "en": "…", "es": "…", "fr": "…", "it": "…", "de": "…" },
   "description": { "en": "…", "es": "…", "fr": "…", "it": "…", "de": "…" },
   "prix": 34.99,                        // en EUR
-  "images": ["assets/sourcing/tapis.jpg"],
+  "images": ["assets/sourcing/tapis.jpg"],  // 1 ou plusieurs — >1 active la galerie avec vignettes
   "collections": ["halloween"],         // slugs de collections
   "stock": true,
-  "actif": true                         // false = masqué du site
+  "actif": true,                        // false = masqué du site
+  "promo": 27.99                        // optionnel — prix barré si présent
+
+  // Champs optionnels Best-of (LOT 2) — chacun n'est rendu sur la fiche
+  // produit QUE s'il est présent pour la langue courante. Aucun produit du
+  // catalogue actuel ne les déclare : ne jamais en inventer une valeur.
+  , "dimensions": { "en": "…" }         // accordéon "Dimensions"
+  , "materiaux": { "en": "…" }          // accordéon "Materials"
+  , "entretien": { "en": "…" }          // accordéon "Care"
+  , "livraison": { "en": "…" }          // accordéon "Delivery"
+  , "options": [                        // sélecteurs de variantes (taille, coloris…)
+      {"name": {"en": "Size"}, "values": [{"en": "Small"}, {"en": "Large"}]}
+    ]
+  , "personalisation": { "en": "e.g. a name or short message" }  // champ + indice de personnalisation
 }
 ```
+
+Les URLs produit sont désormais localisées : le slug de chaque langue est
+dérivé automatiquement de `nom[lang]` (jamais d'une table séparée), avec
+dédoublonnage si deux produits traduisent vers le même slug dans une langue.
 
 ### Format collections.json (7 entrées)
 ```json
