@@ -1,55 +1,58 @@
-# STRUCTURE COMPLÈTE DU SITE — CHIC CELEBRIA
+# STRUCTURE COMPLÈTE DU SITE — CHIC CELEBRIA (Best-of, multilingue)
 
 ## 1. Vue d'ensemble
-- Site statique (HTML/CSS/JS natifs, zéro framework, zéro dépendance), **data-driven** : les pages produit et collection sont GÉNÉRÉES par un script Python `build.py` qui lit deux fichiers JSON.
+- Site statique (HTML/CSS/JS natifs, zéro framework, zéro dépendance), **data-driven** : toutes les pages sont GÉNÉRÉES par `build.py`, qui lit `products.json`, `collections.json` et `i18n-strings.json`.
 - Déployé sur GitHub Pages : `projethermes/chiccelebria-demo` → https://projethermes.github.io/chiccelebria-demo/
-- Vente via Etsy (pas de panier, pas de checkout). Tous les CTA renvoient vers la boutique Etsy.
-- 5 langues : en / es / fr / it / de, bascule côté client.
-- Le contenu du site est en ANGLAIS (le multilingue est une couche de traduction par-dessus).
+- Vente via Etsy (pas de panier, pas de checkout). Tous les CTA renvoient vers la boutique Etsy via `window.CHIC.etsyShopUrl`.
+- **5 langues avec de vraies URLs** : `/en/ /es/ /fr/ /it/ /de/`, chacune un site statique complet et 100 % indexable — plus d'i18n JS mono-URL. Chaque page est générée directement dans sa langue (pas de traduction côté client, pas de flash de contenu non traduit).
 - `BRIEF_REFONTE_V3.md` (à la racine) : brief de direction artistique premium (palette, typo, interdit du « design IA ») — à respecter lors de toute refonte.
 
 ## 2. Arborescence des fichiers
 ```
 chiccelebria-demo/
-├── build.py                 ← GÉNÉRATEUR (lit les JSON, écrit les pages HTML)
-├── products.json            ← DONNÉES produits (18 entrées)
-├── collections.json         ← DONNÉES collections (7 entrées)
-├── i18n-data.js             ← GÉNÉRÉ par build.py (toutes les traductions, 5 langues)
-├── i18n.js                  ← Moteur de traduction côté client (bascule de langue, localStorage)
-├── script.js                ← Interactions : menu mobile, header sticky, filtres/tri collections, CTA Etsy, newsletter
+├── build.py                 ← GÉNÉRATEUR (lit les JSON, écrit tout le site)
+├── products.json            ← DONNÉES produits (39 entrées, 38 actives)
+├── collections.json         ← DONNÉES collections (7 actives)
+├── i18n-strings.json        ← DONNÉES textes d'interface communs (5 langues) — voir §4
+├── script.js                ← Interactions : menu mobile, header sticky, sélecteur de langue,
+│                                filtres/tri collections, CTA Etsy, newsletter, accordéon, galerie
 ├── style.css                ← Design system complet (variables CSS + tout le style)
-├── index.html               ← Homepage (header/footer régénérés par build.py)
-├── about.html               ← Page About (header/footer régénérés)
-├── 404.html                 ← Page 404 (header/footer régénérés)
-├── fiches.html              ← ⚠️ ESPACE VENDEUR INTERNE — NE PAS TOUCHER
-├── fiches.json              ← ⚠️ NE PAS TOUCHER (données de l'espace vendeur)
-├── sitemap.xml
-├── robots.txt               ← disallow /fiches.html et /fiches.json
-├── assets/
-│   ├── site-config.js       ← window.CHIC = { etsyShopUrl, currency, locale } — lien Etsy centralisé
-│   ├── logo.png, banniere1.png, banniere2.png, deco2.webp, macrame.webp, tapestry.jpg
-│   ├── produits/img-01.jpg … img-12.jpg
-│   └── sourcing/*.jpg       ← photos produits actuelles
-├── collections/
-│   ├── index.html           ← GÉNÉRÉ : page « Celebrations » (index des collections)
-│   ├── halloween/index.html ← GÉNÉRÉ
-│   ├── christmas/index.html ← GÉNÉRÉ
-│   ├── gifts/index.html     ← GÉNÉRÉ
-│   ├── personalised/index.html ← GÉNÉRÉ
-│   └── winter/index.html    ← GÉNÉRÉ
-└── products/<id>/index.html ← GÉNÉRÉ, un dossier par produit (17 produits actifs)
+├── index.html, about.html   ← GÉNÉRÉS : redirections (meta refresh + canonical) vers /en/…
+├── 404.html                 ← GÉNÉRÉ : page 404 racine, en anglais, seule page volontairement
+│                                noindex (page d'erreur technique, pas une page de contenu)
+├── sitemap.xml               ← GÉNÉRÉ : toutes les URLs actives × 5 langues, hreflang inclus
+├── robots.txt                 ← GÉNÉRÉ : Allow: /, référence le sitemap
+├── fiches.html, fiches.json  ← ⚠️ ESPACE VENDEUR INTERNE — NE PAS TOUCHER, jamais inclus dans le
+│                                build public (fiches.json contient des données privées)
+├── assets/                   ← Inchangé par build.py : logo, photos produits, site-config.js
+│   ├── site-config.js       ← window.CHIC = { etsyShopUrl, currency, locale }
+│   ├── produits/, sourcing/ ← photos produits réelles
+│   └── …
+├── en/  es/  fr/  it/  de/   ← GÉNÉRÉS, un arbre complet par langue :
+│   ├── index.html            ← Accueil
+│   ├── about.html             ← About
+│   ├── collections/index.html ← page "Celebrations" (index des collections)
+│   ├── collections/<slug-langue>/index.html   ← une par collection active
+│   └── products/<slug-langue>/index.html      ← une par produit actif
+└── tests/                     ← voir §8
 ```
+Les anciens répertoires racine `products/<id>/` et `collections/<slug>/` (structure
+mono-langue, pré-Best-of) ainsi que `i18n.js` / `i18n-data.js` (moteur de traduction
+côté client) ont été supprimés : ils sont entièrement remplacés par les arbres `en/ es/
+fr/ it/ de/`.
 
 ## 3. Système data-driven — RÈGLE ABSOLUE
-**Ne jamais éditer les pages générées à la main.** Le workflow :
-1. On édite `products.json` et/ou `collections.json`.
+**Ne jamais éditer les pages générées à la main** (tout ce qui est sous `en/ es/ fr/ it/
+de/`, plus `index.html`, `about.html`, `404.html`, `sitemap.xml`, `robots.txt` à la
+racine). Le workflow :
+1. On édite `products.json`, `collections.json` et/ou `i18n-strings.json`.
 2. On lance `python3 build.py`.
-3. Le script régénère : `i18n-data.js`, toutes les pages `products/<id>/`, toutes les pages `collections/<slug>/`, `collections/index.html`, et réinjecte header/footer dans `index.html`, `about.html`, `404.html` (les contenus `<main>` de ces 3 pages statiques sont préservés).
+3. Le script régénère l'intégralité du site ci-dessus, pour les 5 langues.
 
-### Format products.json (39 entrées, 38 actifs)
+### Format products.json (39 entrées, 38 actives)
 ```json
 {
-  "id": "halloween-doormat",            // slug de base (utilisé pour l'URL en anglais)
+  "id": "halloween-doormat",            // identifiant stable (dossier produit en anglais)
   "nom": { "en": "…", "es": "…", "fr": "…", "it": "…", "de": "…" },
   "description": { "en": "…", "es": "…", "fr": "…", "it": "…", "de": "…" },
   "prix": 34.99,                        // en EUR
@@ -73,45 +76,144 @@ chiccelebria-demo/
 }
 ```
 
-Les URLs produit sont désormais localisées : le slug de chaque langue est
-dérivé automatiquement de `nom[lang]` (jamais d'une table séparée), avec
-dédoublonnage si deux produits traduisent vers le même slug dans une langue.
-
-### Format collections.json (7 entrées)
+### Format collections.json (7 entrées actives)
 ```json
 {
-  "slug": "halloween",
-  "label": { "en": "Halloween", "es": "Navidad", "fr": "Noël", "it": "Natale", "de": "Weihnachten" },
-  "type": "occasion",                   // "occasion" ou "tag"
-  "ordre": 1,                           // ordre dans le menu
+  "slug": "halloween",                  // identifiant stable (dossier collection en anglais)
+  "label": { "en": "Halloween", "es": "Halloween", "fr": "Halloween", "it": "Halloween", "de": "Halloween" },
+  "type": "occasion",                   // "occasion" (menu) ou "tag" (filtre uniquement)
+  "ordre": 1,                           // ordre dans le menu / grille "Shop by Occasion"
   "actif": true
 }
 ```
-Collections actuelles : halloween (actif, 9 produits), christmas (actif, 3), winter (actif, 4), gifts (actif, 3), personalised (actif, 3) — black-friday et anniversaire existent mais `actif: false`.
+Collections actives : halloween, christmas, black-friday, winter, anniversaire (type
+occasion) + gifts, personalised (type tag).
 
-## 4. Système i18n (5 langues)
-- `build.py` génère `i18n-data.js` : un objet `window.CHIC_I18N_DATA` avec des clés `p.<id>.title/desc`, `coll.<slug>.label/hero/metaTitle`, + clés communes.
-- `i18n.js` (côté client) : sélecteur de langue dans le header (EN/ES/FR/IT/DE), remplace les textes via attributs `data-i18n`, choix mémorisé (localStorage).
-- Le HTML de base est en anglais ; chaque texte traduisible porte `data-i18n="clé"`.
+### Slugs traduits — dérivés, jamais une table séparée
+Chaque produit/collection a une URL différente par langue, mais **aucune table de
+traduction de slugs n'est maintenue à la main** : `build.py` dérive automatiquement le
+slug de chaque langue à partir de `nom[lang]` (produits) ou `label[lang]` (collections)
+via une fonction `slugify()` (minuscules, accents retirés, ponctuation → tirets), avec
+dédoublonnage (`-2`, `-3`…) en cas de collision dans une même langue. Exemple :
+`skeleton-hair-claw` (en) ↔ `pince-a-cheveux-squelette` (fr) ↔ `skelett-haarspange` (de).
 
-## 5. URLs et pages
-- `/` (homepage) · `/about.html` · `/404.html` · `/fiches.html` (interne)
-- `/collections/` · `/collections/halloween/` · `/collections/christmas/` · `/collections/gifts/` · `/collections/personalised/` · `/collections/winter/`
-- `/products/<id>/` (17 produits actifs)
+## 4. i18n-strings.json — textes d'interface communs
+Contient les chaînes qui ne dépendent pas d'un produit/collection précis (navigation,
+boutons, page About, 404, filtres de collection, libellés d'accordéon…), pour les 5
+langues, au format `{"en": {"cle": "valeur", ...}, "es": {...}, ...}`. Utilisé par
+`build.py` via `s(lang, "cle")`. Les textes produit/collection viennent directement de
+`products.json`/`collections.json` (`nom`, `description`, `label`) — jamais dupliqués
+dans `i18n-strings.json`.
 
-## 6. Design system (style.css)
-- Palette (variables CSS) : fond ivoire `#FAF7F1`, `--ink: #1C1917`, `--muted: #6E675D`, `--champagne: #C7AE7C`, `--sable: #E4DAC6`, `--line: #E0D8CA` ; accent saisonnier halloween `#B85C2E`, christmas `#8C2B2B`/`#3A5A40`.
-- Typo : Fraunces (titres/display) + Jost (texte/nav/boutons/prix), Google Fonts (un seul <link>).
-- Style : premium clair, espaces blancs, l'image domine, animations discrètes, `prefers-reduced-motion` respecté.
+Le HTML généré est **déjà dans la bonne langue** (`<html lang="fr">`, textes en dur) :
+il n'y a plus de traduction côté client, plus de `data-i18n`, plus de flash de contenu
+non traduit. `script.js` ne fait que lire quelques textes déjà traduits posés en
+attributs `data-*` par `build.py` (ex. `data-piece-singular` / `data-piece-plural` pour
+le compteur de résultats, `data-thanks` / `data-error` pour la newsletter).
 
-## 7. Règles à respecter impérativement
-1. **CTA produit = « SHOP ON ETSY »** → tous les liens passent par `window.CHIC.etsyShopUrl` (attribut `data-etsy-cta`). Pas de panier, pas de checkout, pas de prix fictif, pas de faux avis/badge/stock.
-2. **`fiches.html` et `fiches.json` : ne pas toucher.**
-3. SEO : <title> + meta description uniques par page, canonical, OG, JSON-LD (WebSite + Organization sur toutes les pages, Product + Offer sur les pages produit), sitemap.xml, robots.txt.
-4. Pas de librairie externe (pas de jQuery/framework). JS vanilla.
-5. Après toute refonte : vérifier que `python3 build.py` tourne sans erreur et régénère tout.
-6. Images : garder les fichiers `assets/` existants (logo.png, produits/, sourcing/).
+## 5. SEO structurel multilingue
+- **Canonical auto-référent** sur chaque page (`<link rel="canonical">` pointe vers
+  l'URL absolue de la page elle-même).
+- **hreflang réciproques** : chaque page liste une alternance vers les 5 langues + un
+  `hreflang="x-default"` pointant vers la version `/en/`. Testé par
+  `tests/test_seo_multilang.py` (réciprocité stricte : si A référence B, B référence A
+  avec exactement le même jeu d'alternates).
+- **sitemap.xml** généré depuis les mêmes données que le site (produits/collections
+  actifs × 5 langues + accueil/about/index des collections), avec les balises
+  `<xhtml:link rel="alternate" hreflang="…">` par URL. Ne jamais le maintenir à la
+  main.
+- **robots.txt** : `Allow: /`, référence le sitemap, disallow uniquement
+  `/fiches.html` et `/fiches.json` (espace vendeur interne).
+- **Aucun `noindex`** sur les pages `en/ es/ fr/ it/ de/` ni sur les redirections
+  racine `index.html`/`about.html`. La seule exception volontaire est `404.html`
+  (page d'erreur technique servie par l'hébergeur quelle que soit la langue
+  demandée, jamais un contenu de destination).
+- JSON-LD : `WebSite` + `Organization` sur l'accueil et About, `Product` +
+  `BreadcrumbList` sur les fiches produit, `BreadcrumbList` sur les pages
+  collection — toujours avec des données réelles (prix, images, disponibilité).
 
-## 8. Tests
-- `tests/test_build_idempotence.py` : test de non-régression garantissant que `python3 build.py` est idempotent (deux exécutions consécutives sans modification des sources produisent des fichiers générés strictement identiques) et qu'`index.html`/`about.html`/`404.html` ne contiennent chacun qu'une seule balise `<script src="i18n-data.js"></script>` et une seule `<script src="i18n.js"></script>`.
-- Exécution : `python3 -m unittest tests/test_build_idempotence.py -v` (ou `pytest tests/test_build_idempotence.py -v`, aucune dépendance supplémentaire requise).
+## 6. Fiche produit Best-of (LOT 2)
+- Galerie : image unique par défaut ; vignettes de galerie générées automatiquement
+  si `images` contient plus d'une entrée (aucun produit actuel n'en a plusieurs).
+- Sections accordéon (Dimensions / Materials / Care / Delivery) : générées
+  **uniquement** si le champ optionnel correspondant existe pour la langue courante
+  (voir §3). Aucune ne s'affiche aujourd'hui — c'est attendu, pas un bug.
+- Sélecteurs d'options / champ de personnalisation : générés uniquement si
+  `options`/`personalisation` sont déclarés sur le produit. 0 produit actuel n'en
+  déclare — aucun sélecteur ne doit apparaître tant que la donnée n'existe pas.
+- Produits liés (« You May Also Like ») : jusqu'à 4 produits actifs partageant la
+  première collection du produit, jamais le produit courant.
+- Aucune image n'est jamais partagée entre deux produits actifs (vérifié par un
+  test dédié).
+
+## 7. Performance images (LOT 4)
+- `image_dimensions()` dans `build.py` lit les dimensions réelles de chaque image
+  (JPEG/PNG/WebP, parsing d'en-têtes en stdlib pur — aucune dépendance externe
+  disponible dans cet environnement de build) et les pose en `width`/`height`
+  explicites partout (cartes produit, tuiles de collection, galerie, images
+  éditoriales). Évite tout décalage de mise en page (CLS).
+- L'image LCP de chaque page est marquée `fetchpriority="high"` et jamais
+  `loading="lazy"` : image principale d'une fiche produit, première carte d'une
+  grille de collection. Le hero de l'accueil (arrière-plan CSS) est préchargé via
+  `<link rel="preload" as="image" fetchpriority="high">`.
+- Conversion WebP **non appliquée** : aucun outil (Pillow, cwebp, ImageMagick) n'est
+  disponible dans cet environnement sans installer une dépendance ; conformément au
+  brief, les images existantes sont servies telles quelles plutôt que de casser le
+  rendu ou d'ajouter une dépendance.
+- Risque connu (préexistant, non introduit par le pipeline) : au moins une image
+  produit (`assets/sourcing/skeleton-hair-claw.jpg`) est un visuel abstrait/cassé,
+  pas une vraie photo produit ; au moins deux images produit portent du texte
+  marketing gravé dans l'image (bannière « CUSTOM YOUR PICTURE », mention « 6 PCS »)
+  — à re-sourcer côté `products.json`, hors périmètre du générateur.
+
+## 8. Design system (style.css)
+- Palette (variables CSS) : fond ivoire `#FAF7F1`, `--ink: #1C1917`, `--muted:
+  #6E675D`, `--champagne: #C7AE7C`, `--sable: #E4DAC6`, `--line: #E0D8CA` ; accent
+  saisonnier halloween `#B85C2E`, christmas `#8C2B2B`/`#3A5A40`. Pas de dégradé
+  décoratif, pas de glassmorphism.
+- Typo : Fraunces (titres/display) + Jost (texte/nav/boutons/prix), Google Fonts (un
+  seul `<link>`).
+- Sélecteur de langue (`.lang-switch select`) : bordure et chevron champagne,
+  survol/focus discrets — cohérent avec le design system plutôt qu'un `<select>`
+  neutre du navigateur.
+- Menu mobile overlay : panneau plein-largeur, hauteur `80vh` avec défilement
+  interne (dimensionné pour les 5 collections actives + New In/Celebrations/About,
+  sans troncature si le catalogue de collections grandit encore).
+- Accessibilité inchangée : skip-link, `:focus-visible`, `prefers-reduced-motion`.
+
+## 9. Règles à respecter impérativement
+1. **CTA produit = « SHOP ON ETSY »** → tous les liens passent par
+   `window.CHIC.etsyShopUrl` (attribut `data-etsy-cta`). Pas de panier, pas de
+   checkout, pas de prix fictif, pas de faux avis/badge/stock.
+2. **`fiches.html` et `fiches.json` : ne pas toucher**, jamais inclus dans le build
+   public.
+3. **Ne jamais éditer un fichier généré à la main** — voir §3.
+4. Pas de librairie externe (pas de jQuery/framework). JS vanilla, pas de nouvelle
+   dépendance Python (stdlib uniquement).
+5. Après toute modification : `python3 build.py` sans erreur, puis
+   `python3 -m unittest discover -s tests -v` entièrement au vert.
+6. Ne jamais inventer une caractéristique produit (dimensions, matériaux, avis,
+   options…) pour remplir l'interface — voir §6.
+
+## 10. Tests
+Tout tourne en `unittest` stdlib (pas de pytest) :
+```
+python3 -m unittest discover -s tests -v
+```
+- `tests/_build_helper.py` : helper partagé, exécute le vrai `build.py` (jamais
+  réimplémenté) dans une copie temporaire isolée du dépôt — aucun test ne touche
+  l'arbre de travail réel.
+- `tests/test_build_idempotence.py` : deux builds consécutifs sans modification des
+  sources doivent produire des fichiers strictement identiques, pour les 5 langues.
+- `tests/test_seo_multilang.py` : canonical auto-référent, hreflang réciproques +
+  x-default, absence de noindex en production, sitemap.xml synchronisé avec les
+  pages générées, robots.txt indexable, slugs réellement traduits.
+- `tests/test_product_page.py` : sections accordéon/options/personnalisation
+  strictement conditionnelles aux données, JSON-LD Product + BreadcrumbList présent,
+  aucune image partagée entre deux produits.
+- `tests/test_images_performance.py` : dimensions d'image réelles, `fetchpriority`
+  sur l'image LCP de chaque type de page, préchargement du hero de l'accueil.
+- `tests/test_links_and_html.py` : aucun lien interne ou référence d'asset cassé sur
+  l'ensemble du site généré (5 langues), HTML bien formé (balises équilibrées, un
+  seul `<html>/<head>/<body>` par page), nombre exact de produits/collections actifs
+  générés par langue.

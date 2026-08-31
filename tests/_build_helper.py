@@ -27,6 +27,17 @@ def make_build_copy():
     return tmpdir
 
 
+def make_full_site_copy():
+    """Like make_build_copy(), but also copies assets/, style.css and
+    script.js — everything a generated page's internal links/srcs can
+    point at — for tests that need to resolve real links on disk."""
+    tmpdir = make_build_copy()
+    shutil.copytree(REPO_ROOT / "assets", tmpdir / "assets")
+    for name in ("style.css", "script.js"):
+        shutil.copy2(REPO_ROOT / name, tmpdir / name)
+    return tmpdir
+
+
 def run_build(cwd):
     result = subprocess.run(
         [sys.executable, "build.py"],
