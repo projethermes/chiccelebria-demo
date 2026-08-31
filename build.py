@@ -398,8 +398,8 @@ def static_page(name):
     src = open(path, encoding="utf-8").read()
     src = re.sub(r'<header class="site-header".*?</header>', lambda m: header(""), src, flags=re.DOTALL)
     src = re.sub(r'<footer class="site-footer".*?</footer>', lambda m: footer(""), src, flags=re.DOTALL)
-    src = src.replace('<script src="i18n.js"></script>',
-                      '<script src="i18n-data.js"></script>\n<script src="i18n.js"></script>')
+    src = re.sub(r'(?:<script src="i18n-data\.js"></script>\s*\n)*<script src="i18n\.js"></script>',
+                 '<script src="i18n-data.js"></script>\n<script src="i18n.js"></script>', src)
     return src
 
 
