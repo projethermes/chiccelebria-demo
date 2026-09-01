@@ -15,6 +15,7 @@ import html
 import json
 import os
 import re
+import shutil
 import struct
 import unicodedata
 
@@ -971,7 +972,29 @@ def write(path, content):
         f.write(content)
 
 
+def prune_stale_pages():
+    """Retire les dossiers products/<slug>/ et collections/<slug>/ générés
+    lors d'un build précédent pour un produit/collection supprimé ou renommé
+    (changement de slug) entre-temps — sinon ces pages orphelines restent
+    indéfiniment sur le site (contenu fantôme hors sitemap, mauvais pour le
+    SEO)."""
+    for lang in LANGS:
+        expected = {
+            "products": {PRODUCT_SLUGS[p["id"]][lang] for p in active_products()},
+            "collections": {COLL_SLUGS[c["slug"]][lang] for c in active_collections()},
+        }
+        for kind, keep in expected.items():
+            base = os.path.join(BASE, lang, kind)
+            if not os.path.isdir(base):
+                continue
+            for name in os.listdir(base):
+                full = os.path.join(base, name)
+                if os.path.isdir(full) and name not in keep:
+                    shutil.rmtree(full)
+
+
 def main():
+    prune_stale_pages()
     for lang in LANGS:
         write(p_home(lang), home_page(lang))
         write(p_about(lang), about_page(lang))

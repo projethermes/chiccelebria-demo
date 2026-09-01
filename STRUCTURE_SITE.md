@@ -11,8 +11,8 @@
 ```
 chiccelebria-demo/
 ├── build.py                 ← GÉNÉRATEUR (lit les JSON, écrit tout le site)
-├── products.json            ← DONNÉES produits (39 entrées, 38 actives)
-├── collections.json         ← DONNÉES collections (7 actives)
+├── products.json            ← DONNÉES produits (39 entrées, 39 actives)
+├── collections.json         ← DONNÉES collections (7 entrées, 7 actives)
 ├── i18n-strings.json        ← DONNÉES textes d'interface communs (5 langues) — voir §4
 ├── script.js                ← Interactions : menu mobile, header sticky, sélecteur de langue,
 │                                filtres/tri collections, CTA Etsy, newsletter, accordéon, galerie
@@ -22,8 +22,6 @@ chiccelebria-demo/
 │                                noindex (page d'erreur technique, pas une page de contenu)
 ├── sitemap.xml               ← GÉNÉRÉ : toutes les URLs actives × 5 langues, hreflang inclus
 ├── robots.txt                 ← GÉNÉRÉ : Allow: /, référence le sitemap
-├── fiches.html, fiches.json  ← ⚠️ ESPACE VENDEUR INTERNE — NE PAS TOUCHER, jamais inclus dans le
-│                                build public (fiches.json contient des données privées)
 ├── assets/                   ← Inchangé par build.py : logo, photos produits, site-config.js
 │   ├── site-config.js       ← window.CHIC = { etsyShopUrl, currency, locale }
 │   ├── produits/, sourcing/ ← photos produits réelles
@@ -49,7 +47,7 @@ racine). Le workflow :
 2. On lance `python3 build.py`.
 3. Le script régénère l'intégralité du site ci-dessus, pour les 5 langues.
 
-### Format products.json (39 entrées, 38 actives)
+### Format products.json (39 entrées, 39 actives)
 ```json
 {
   "id": "halloween-doormat",            // identifiant stable (dossier produit en anglais)
@@ -122,8 +120,9 @@ le compteur de résultats, `data-thanks` / `data-error` pour la newsletter).
   actifs × 5 langues + accueil/about/index des collections), avec les balises
   `<xhtml:link rel="alternate" hreflang="…">` par URL. Ne jamais le maintenir à la
   main.
-- **robots.txt** : `Allow: /`, référence le sitemap, disallow uniquement
-  `/fiches.html` et `/fiches.json` (espace vendeur interne).
+- **robots.txt** : `Allow: /`, référence le sitemap. Aucune règle `Disallow` : il
+  n'existe plus de page privée servie depuis la racine du dépôt (voir §11 pour la
+  séparation public/privé du back-office).
 - **Aucun `noindex`** sur les pages `en/ es/ fr/ it/ de/` ni sur les redirections
   racine `index.html`/`about.html`. La seule exception volontaire est `404.html`
   (page d'erreur technique servie par l'hébergeur quelle que soit la langue
@@ -185,14 +184,12 @@ le compteur de résultats, `data-thanks` / `data-error` pour la newsletter).
 1. **CTA produit = « SHOP ON ETSY »** → tous les liens passent par
    `window.CHIC.etsyShopUrl` (attribut `data-etsy-cta`). Pas de panier, pas de
    checkout, pas de prix fictif, pas de faux avis/badge/stock.
-2. **`fiches.html` et `fiches.json` : ne pas toucher**, jamais inclus dans le build
-   public.
-3. **Ne jamais éditer un fichier généré à la main** — voir §3.
-4. Pas de librairie externe (pas de jQuery/framework). JS vanilla, pas de nouvelle
+2. **Ne jamais éditer un fichier généré à la main** — voir §3.
+3. Pas de librairie externe (pas de jQuery/framework). JS vanilla, pas de nouvelle
    dépendance Python (stdlib uniquement).
-5. Après toute modification : `python3 build.py` sans erreur, puis
+4. Après toute modification : `python3 build.py` sans erreur, puis
    `python3 -m unittest discover -s tests -v` entièrement au vert.
-6. Ne jamais inventer une caractéristique produit (dimensions, matériaux, avis,
+5. Ne jamais inventer une caractéristique produit (dimensions, matériaux, avis,
    options…) pour remplir l'interface — voir §6.
 
 ## 10. Tests
@@ -205,6 +202,11 @@ python3 -m unittest discover -s tests -v
   l'arbre de travail réel.
 - `tests/test_build_idempotence.py` : deux builds consécutifs sans modification des
   sources doivent produire des fichiers strictement identiques, pour les 5 langues.
+- `tests/test_build_prunes_stale_pages.py` : supprimer ou renommer un produit (donc
+  changer son slug) doit faire disparaître son ancien dossier `products/<slug>/` au
+  build suivant — sinon des pages fantômes (hors sitemap, plus liées depuis le site,
+  mais toujours en ligne à leur ancienne URL) s'accumulent. Voir
+  `prune_stale_pages()` dans `build.py`.
 - `tests/test_seo_multilang.py` : canonical auto-référent, hreflang réciproques +
   x-default, absence de noindex en production, sitemap.xml synchronisé avec les
   pages générées, robots.txt indexable, slugs réellement traduits.
@@ -249,3 +251,23 @@ les persister dans le dépôt. Toute nouvelle donnée sensible ajoutée à
 l'éditeur doit suivre le même chemin (ajouter le champ à la liste
 `PRIVATE_PRODUCT_FIELDS` dans `admin_server.py`), jamais un champ direct
 dans le schéma `products.json`.
+
+**Liste produits : recherche/filtres, aperçu, duplication.** Avec 39 fiches, la
+liste produits du back-office propose une recherche (nom/id), un filtre par
+collection et un filtre par état (actif/inactif). Chaque ligne propose un lien
+« Voir ↗ » vers la fiche publique en ligne (calculé depuis `settings.site_url`
+et le même algorithme de slug que `build.py`, uniquement si le produit est
+actif — un produit inactif n'a pas de page générée) et un bouton « Dupliquer »
+qui pré-remplit un nouveau produit avec toutes les données de la fiche source
+(textes 5 langues, prix, collections, photos, champs privés) sauf l'id, à
+définir. Pratique pour ajouter une variante ou un produit très proche d'un
+existant sans tout retaper. L'éditeur produit avertit avant de quitter s'il y a
+des modifications non enregistrées (bouton Retour/Annuler ou fermeture de
+l'onglet).
+
+**Serveur admin : sert aussi les images.** `admin_server.py` sert les fichiers
+sous `/assets/…` (photos produits) en plus de `/admin.html` et de l'API — sans
+cela, les vignettes de la liste produits et les photos de l'éditeur ne
+s'affichent jamais dans le back-office. Pas d'auth requise sur ces fichiers
+(déjà publics sur le site), protection anti-traversal (le chemin résolu doit
+rester sous la racine du dépôt).
