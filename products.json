@@ -15,7 +15,7 @@
       "it": "Zerbino antiscivolo e lavabile con design zucca e fantasma. 40×60 cm.",
       "de": "Rutschfeste, waschbare Türmatte mit Kürbis- und Geistermotiv. 40×60 cm."
     },
-    "prix": 34.99,
+    "prix": 33.99,
     "images": [
       "assets/sourcing/tapis.jpg"
     ],
@@ -468,19 +468,21 @@
       "de": "Winter-Strickmütze"
     },
     "description": {
-      "en": "Warm knitted beanie for cold days.",
-      "es": "Gorro de punto cálido para los días fríos.",
-      "fr": "Bonnet tricoté chaud pour les jours froids.",
-      "it": "Berretto di lana caldo per le giornate fredde.",
-      "de": "Warme Strickmütze für kalte Tage."
+      "en": "Soft warm acrylic knitted beanie with a unisex fit. Available in 24 colours to suit every style.",
+      "es": "Gorro de punto de acrílico, suave y cálido, con corte unisex. Disponible en 24 colores para todos los estilos.",
+      "fr": "Bonnet tricoté en acrylique, doux et chaud, coupe unisexe. Disponible en 24 couleurs pour s'adapter à tous les styles.",
+      "it": "Berretto in maglia di acrilico, morbido e caldo, con taglio unisex. Disponibile in 24 colori per tutti gli stili.",
+      "de": "Weiche, warme Strickmütze aus Acryl mit Unisex-Schnitt. In 24 Farben erhältlich, passend zu jedem Stil."
     },
     "prix": 19.99,
-    "images": [],
+    "images": [
+      "assets/sourcing/beanie.jpg"
+    ],
     "collections": [
       "winter"
     ],
     "stock": true,
-    "actif": false
+    "actif": true
   },
   {
     "id": "noel-sapin-table-bois",

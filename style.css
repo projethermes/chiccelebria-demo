@@ -629,6 +629,12 @@ textarea:focus-visible,
   aspect-ratio: 4 / 5;
 }
 .gallery-main img { width: 100%; height: 100%; object-fit: cover; }
+.gallery-legend {
+  margin-top: var(--space-2);
+  font-size: 0.875rem;
+  font-style: italic;
+  color: var(--ink-soft, #6b6b6b);
+}
 .gallery-thumbs { display: flex; gap: 0.6rem; margin-top: var(--space-2); }
 .gallery-thumb {
   width: 74px; height: 92px;
@@ -826,7 +832,7 @@ textarea:focus-visible,
     transition: max-height 0.3s ease;
     border-bottom: 1px solid transparent;
   }
-  .main-nav.is-open { max-height: 420px; border-color: var(--line); }
+  .main-nav.is-open { max-height: 80vh; overflow-y: auto; border-color: var(--line); }
   .main-nav a {
     padding: 0.9rem clamp(1.25rem, 4vw, 3rem);
     border-bottom: 1px solid var(--line);
@@ -846,19 +852,27 @@ textarea:focus-visible,
    ========================================================================== */
 .lang-switch { display: flex; align-items: center; }
 .lang-switch select {
-  font-family: inherit;
-  font-size: 0.8rem;
+  font-family: var(--font-body);
+  font-size: 0.76rem;
   font-weight: 600;
-  letter-spacing: 0.04em;
-  color: inherit;
+  letter-spacing: 0.08em;
+  color: var(--ink);
   background: transparent;
-  border: 1px solid currentColor;
+  border: 1px solid var(--champagne);
   border-radius: 999px;
-  padding: 0.35rem 0.65rem;
+  padding: 0.35rem 1.6rem 0.35rem 0.85rem;
   cursor: pointer;
-  appearance: auto;
+  appearance: none;
+  -webkit-appearance: none;
+  background-image: linear-gradient(45deg, transparent 50%, var(--champagne) 50%),
+                     linear-gradient(135deg, var(--champagne) 50%, transparent 50%);
+  background-position: calc(100% - 14px) calc(50% - 2px), calc(100% - 9px) calc(50% - 2px);
+  background-size: 5px 5px, 5px 5px;
+  background-repeat: no-repeat;
+  transition: border-color 0.2s ease, background-color 0.2s ease;
 }
-.lang-switch select:focus-visible { outline: 2px solid currentColor; outline-offset: 2px; }
+.lang-switch select:hover { border-color: var(--ink); background-color: rgba(var(--champagne-rgb), 0.12); }
+.lang-switch select:focus-visible { outline: 2px solid var(--champagne); outline-offset: 2px; }
 @media (max-width: 860px) {
   .header-actions { gap: 0.5rem; }
 }

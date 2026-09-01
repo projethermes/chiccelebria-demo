@@ -49,6 +49,20 @@
   }
 
   /* ------------------------------------------------------------------
+     Language switcher — navigates to the equivalent page in the chosen
+     language (URLs are baked per-language at build time, no runtime
+     text-swapping).
+     ------------------------------------------------------------------ */
+  function initLangSwitch() {
+    var select = document.getElementById("lang-select");
+    if (!select) return;
+    select.addEventListener("change", function () {
+      var url = select.options[select.selectedIndex].getAttribute("data-url");
+      if (url) window.location.href = url;
+    });
+  }
+
+  /* ------------------------------------------------------------------
      Etsy CTAs — every "Shop on Etsy" / "View on Etsy" link reads its
      target from the single source of truth in assets/site-config.js
      ------------------------------------------------------------------ */
@@ -117,6 +131,10 @@
         if (!full) return;
         main.setAttribute("src", full);
         if (alt) main.setAttribute("alt", alt);
+        var legend = document.getElementById("gallery-legend");
+        if (legend) {
+          legend.textContent = thumb.getAttribute("data-legend") || "";
+        }
         thumbs.forEach(function (t) { t.classList.remove("is-active"); });
         thumb.classList.add("is-active");
       });
@@ -172,8 +190,12 @@
       });
 
       if (countEl) {
-        var pieceKey = visible.length === 1 ? "toolbar.piece" : "toolbar.pieces";
-        countEl.textContent = window.I18N ? window.I18N.t(pieceKey, { n: visible.length }) : (visible.length + " pieces");
+        var template = visible.length === 1
+          ? countEl.getAttribute("data-piece-singular")
+          : countEl.getAttribute("data-piece-plural");
+        countEl.textContent = template
+          ? template.replace("{n}", visible.length)
+          : (visible.length + " pieces");
       }
       if (emptyEl) emptyEl.hidden = visible.length !== 0;
     }
@@ -183,8 +205,6 @@
     });
 
     apply();
-
-    document.addEventListener("chic:lang", function () { apply(); });
   }
 
   /* ------------------------------------------------------------------
@@ -202,11 +222,11 @@
       var isValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
       if (!feedback) return;
       if (isValid) {
-        feedback.textContent = window.I18N ? window.I18N.t("home.newsletter.thanks") : "Thank you — you're on the list.";
+        feedback.textContent = form.getAttribute("data-thanks") || "Thank you — you're on the list.";
         feedback.classList.remove("is-error");
         form.reset();
       } else {
-        feedback.textContent = window.I18N ? window.I18N.t("home.newsletter.error") : "Please enter a valid email address.";
+        feedback.textContent = form.getAttribute("data-error") || "Please enter a valid email address.";
         feedback.classList.add("is-error");
       }
     });
@@ -222,6 +242,7 @@
 
   document.addEventListener("DOMContentLoaded", function () {
     initHeader();
+    initLangSwitch();
     initEtsyLinks();
     initReveal();
     initAccordions();

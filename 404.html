@@ -3,9 +3,18 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title data-i18n="e404.title">Page Not Found | Chic Celebria</title>
-<meta name="description" data-i18n-content="e404.desc" content="This page doesn't exist or has moved. Find our Halloween, Christmas, Gifts and Personalised collections at Chic Celebria.">
-<meta name="robots" content="noindex">
+<title>Page Not Found | Chic Celebria</title>
+<meta name="description" content="This page doesn&#x27;t exist or has moved. Find our seasonal collections at Chic Celebria.">
+<link rel="canonical" href="https://projethermes.github.io/chiccelebria-demo/404.html">
+
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Page Not Found | Chic Celebria">
+<meta property="og:description" content="This page doesn&#x27;t exist or has moved. Find our seasonal collections at Chic Celebria.">
+<meta property="og:url" content="https://projethermes.github.io/chiccelebria-demo/404.html">
+<meta property="og:locale" content="en_US">
+
+<meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="assets/logo.png" type="image/png">
 <link rel="apple-touch-icon" href="assets/logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,39 +22,40 @@
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 <script src="assets/site-config.js"></script>
+<meta name="robots" content="noindex">
 </head>
 <body data-page="404">
 
-<a class="skip-link" href="#main" data-i18n="common.skip">Skip to content</a>
+<a class="skip-link" href="#main">Skip to content</a>
 
 <header class="site-header" data-site-header>
   <div class="wrap header-inner">
-    <a href="index.html" class="wordmark">
+    <a href="en/index.html" class="wordmark">
       <img src="assets/logo.png" alt="" class="logo-mark" width="30" height="30">
       Chic Celebria
     </a>
-    <nav class="main-nav" id="main-nav" aria-label="Main navigation" data-i18n-aria="common.navLabel">
-      <a href="index.html#new-in" data-i18n="common.newIn">New In</a>
-      <a href="collections/" data-i18n="common.celebrations">Celebrations</a>
-      <a href="collections/halloween/" data-i18n="coll.halloween.label">Halloween</a>
-      <a href="collections/christmas/" data-i18n="coll.christmas.label">Christmas</a>
-      <a href="collections/black-friday/" data-i18n="coll.black-friday.label">Black Friday</a>
-      <a href="collections/winter/" data-i18n="coll.winter.label">Winter</a>
-      <a href="collections/anniversaire/" data-i18n="coll.anniversaire.label">Birthday</a>
-      <a href="about.html" data-i18n="common.about">About</a>
+    <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+      <a href="en/index.html#new-in">New In</a>
+      <a href="en/collections/">Celebrations</a>
+      <a href="en/collections/halloween/">Halloween</a>
+      <a href="en/collections/christmas/">Christmas</a>
+      <a href="en/collections/black-friday/">Black Friday</a>
+      <a href="en/collections/winter/">Winter</a>
+      <a href="en/collections/birthday/">Birthday</a>
+      <a href="en/about.html">About</a>
     </nav>
     <div class="header-actions">
       <div class="lang-switch">
-        <select id="lang-select" data-i18n-aria="common.language" aria-label="Language">
-          <option value="en">EN</option>
-          <option value="es">ES</option>
-          <option value="fr">FR</option>
-          <option value="it">IT</option>
-          <option value="de">DE</option>
+        <select id="lang-select" aria-label="Language">
+          <option value="en" data-url="en/index.html" selected>EN</option>
+          <option value="es" data-url="es/index.html">ES</option>
+          <option value="fr" data-url="fr/index.html">FR</option>
+          <option value="it" data-url="it/index.html">IT</option>
+          <option value="de" data-url="de/index.html">DE</option>
         </select>
       </div>
       <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="main-nav">
-        <span class="sr-only" data-i18n="common.openMenu">Open menu</span>
+        <span class="sr-only">Open menu</span>
         <span class="nav-toggle-bar" aria-hidden="true"></span>
       </button>
     </div>
@@ -56,11 +66,11 @@
   <section class="error-page">
     <div class="wrap">
       <p class="error-code" aria-hidden="true">404</p>
-      <h1 data-i18n="e404.h1">This page has wandered off.</h1>
-      <p data-i18n="e404.p">The link may be broken, or the page has moved. Head back to the homepage, or go straight to the collections to keep browsing.</p>
+      <h1>This page has wandered off.</h1>
+      <p>The link may be broken, or the page has moved. Head back to the homepage, or go straight to the collections to keep browsing.</p>
       <div class="error-actions">
-        <a class="btn btn-primary" href="index.html" data-i18n="e404.backHome">Back to Home</a>
-        <a class="btn btn-outline" href="collections/" data-i18n="about.cta.primary">Shop the Collections</a>
+        <a class="btn btn-primary" href="en/index.html">Back to Home</a>
+        <a class="btn btn-outline" href="en/collections/">Shop the Collections</a>
       </div>
     </div>
   </section>
@@ -69,36 +79,34 @@
 <footer class="site-footer">
   <div class="wrap footer-inner">
     <div class="footer-brand">
-      <a href="index.html" class="wordmark">
+      <a href="en/index.html" class="wordmark">
         <img src="assets/logo.png" alt="" class="logo-mark" width="30" height="30">
         Chic Celebria
       </a>
-      <p data-i18n="common.footerTagline">Distinctive decor and personalised gifts for Halloween, Christmas and every celebration in between.</p>
-      <a class="btn btn-outline btn-sm" href="#" data-etsy-cta data-i18n="common.shopOnEtsy">Shop on Etsy</a>
+      <p>Distinctive decor and personalised gifts for Halloween, Christmas and every celebration in between.</p>
+      <a class="btn btn-outline btn-sm" href="#" data-etsy-cta>Shop on Etsy</a>
     </div>
     <nav class="footer-links" aria-label="Shop">
-      <h4 data-i18n="common.shop">Shop</h4>
-      <a href="index.html#new-in" data-i18n="common.newIn">New In</a>
-      <a href="collections/halloween/" data-i18n="coll.halloween.label">Halloween</a>
-      <a href="collections/christmas/" data-i18n="coll.christmas.label">Christmas</a>
-      <a href="collections/black-friday/" data-i18n="coll.black-friday.label">Black Friday</a>
-      <a href="collections/winter/" data-i18n="coll.winter.label">Winter</a>
-      <a href="collections/anniversaire/" data-i18n="coll.anniversaire.label">Birthday</a>
+      <h4>Shop</h4>
+      <a href="en/index.html#new-in">New In</a>
+      <a href="en/collections/halloween/">Halloween</a>
+      <a href="en/collections/christmas/">Christmas</a>
+      <a href="en/collections/black-friday/">Black Friday</a>
+      <a href="en/collections/winter/">Winter</a>
+      <a href="en/collections/birthday/">Birthday</a>
     </nav>
     <nav class="footer-links" aria-label="Company">
-      <h4 data-i18n="common.company">Company</h4>
-      <a href="collections/" data-i18n="common.celebrations">Celebrations</a>
-      <a href="about.html" data-i18n="common.about">About</a>
-      <a href="#" data-etsy-cta data-i18n="common.shopOnEtsy">Shop on Etsy</a>
+      <h4>Company</h4>
+      <a href="en/collections/">Celebrations</a>
+      <a href="en/about.html">About</a>
+      <a href="#" data-etsy-cta>Shop on Etsy</a>
     </nav>
   </div>
   <div class="wrap footer-bottom">
-    <p>&copy; <span id="year">2026</span> <span data-i18n="common.footerCopyright">Chic Celebria. Prices shown in EUR.</span></p>
+    <p>&copy; <span id="year">2026</span> Chic Celebria. Prices shown in EUR.</p>
   </div>
 </footer>
 
-<script src="i18n-data.js"></script>
-<script src="i18n.js"></script>
 <script src="script.js"></script>
 </body>
 </html>

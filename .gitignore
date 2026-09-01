@@ -1,0 +1,14 @@
+# Back-office interne (reste local / stockage privé Hermes uniquement)
+admin/
+admin_server.py
+
+# Données de sourcing interne (fournisseurs, prix d'achat, marges — jamais dans le repo public)
+sourcing/
+fiches.json
+fiches.html
+ajout_chaussettes_noel.py
+ajout_produits_halloween.py
+ajout_produits_noel.py
+
+__pycache__/
+*.pyc

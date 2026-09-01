@@ -1,9 +1,4 @@
 User-agent: *
 Allow: /
-Allow: /*.css$
-Allow: /*.js$
-Allow: /assets/
-Disallow: /fiches.html
-Disallow: /fiches.json
 
 Sitemap: https://projethermes.github.io/chiccelebria-demo/sitemap.xml
