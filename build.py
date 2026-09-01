@@ -956,8 +956,6 @@ def gen_sitemap():
 def gen_robots():
     return f'''User-agent: *
 Allow: /
-Disallow: /fiches.html
-Disallow: /fiches.json
 
 Sitemap: {SITE}/sitemap.xml
 '''
