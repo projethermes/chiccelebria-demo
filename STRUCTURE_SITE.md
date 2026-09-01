@@ -217,3 +217,35 @@ python3 -m unittest discover -s tests -v
   l'ensemble du site généré (5 langues), HTML bien formé (balises équilibrées, un
   seul `<html>/<head>/<body>` par page), nombre exact de produits/collections actifs
   générés par langue.
+- `tests/test_no_sourcing_leak.py` : garde-fou « Option A » — aucune donnée de
+  sourcing (lien fournisseur, prix d'achat, marge…) ni outil d'admin ne doit
+  jamais réapparaître dans `git ls-files` ou dans la sortie de `build.py`. C'est
+  la spécification de référence pour la séparation public/privé — voir §11.
+
+## 11. Back-office (admin) — conception, hors dépôt
+
+Le back-office (`admin_server.py` + `admin/admin.html`) permet de gérer le
+catalogue (produits/collections/réglages, upload photo, relance de build)
+sans toucher à Git/JSON/Python — y compris les champs optionnels du schéma
+Best-of (dimensions, matériaux, entretien, livraison, personnalisation ;
+repliés dans un bloc « Détails complémentaires » de l'éditeur produit,
+vide par défaut). Il tourne **uniquement en local** (jamais
+déployé sur GitHub Pages) et son code n'est **pas suivi par Git** dans ce
+dépôt (`.gitignore` : `admin/`, `admin_server.py`) — le dépôt étant servi
+tel quel par GitHub Pages depuis la racine, tout fichier commité sous
+`admin/` deviendrait automatiquement accessible publiquement. Le code
+complet et à jour vit dans `~/.hermes/private/chiccelebria/admin/`.
+
+**Séparation stricte des champs privés.** `products.json` est la source de
+vérité du site *public* : il ne doit jamais contenir de champ de sourcing
+interne (`lien_achat`, `prix_achat`, `marge_interne`, `fournisseur`,
+`cout_sourcing`, `note_va` — la liste exacte vérifiée par
+`tests/test_no_sourcing_leak.py`). `admin_server.py` retire ces champs de
+tout produit avant de l'écrire dans `products.json` et les stocke à part
+dans `~/.hermes/private/chiccelebria/products_prive.json` (une entrée par
+id de produit) ; il les refusionne en mémoire uniquement pour la réponse
+de `/api/state`, afin que l'éditeur du back-office les affiche sans jamais
+les persister dans le dépôt. Toute nouvelle donnée sensible ajoutée à
+l'éditeur doit suivre le même chemin (ajouter le champ à la liste
+`PRIVATE_PRODUCT_FIELDS` dans `admin_server.py`), jamais un champ direct
+dans le schéma `products.json`.

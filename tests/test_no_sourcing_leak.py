@@ -52,7 +52,7 @@ IMAGE_EXTENSIONS = {".jpg", ".jpeg", ".png", ".webp", ".gif", ".ico", ".svg"}
 
 # Files whose whole purpose is to document/enforce this split — they are
 # expected to *name* the forbidden markers, not leak them as live data.
-CONTENT_SCAN_EXEMPT = {".gitignore"}
+CONTENT_SCAN_EXEMPT = {".gitignore", "STRUCTURE_SITE.md"}
 
 
 def _tracked_files():
