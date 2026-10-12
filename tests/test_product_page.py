@@ -162,12 +162,25 @@ class GeneratedProductPageTest(unittest.TestCase):
                 seen[img] = p["id"]
 
     def test_gallery_thumbnails_only_render_for_multi_image_products(self):
-        # Every product in the current catalog has exactly one image, so no
-        # generated page should render gallery thumbnails.
-        self.assertFalse(any(len(p.get("images", [])) > 1 for p in self.active_products))
+        # Gallery thumbnails are a multi-image feature: pages whose product
+        # has a single image must never render gallery-thumbs markup.
+        single_image_ids = {p["id"] for p in self.active_products
+                            if len(p.get("images", [])) <= 1}
+        slug_to_pid = {}
+        for p in self.active_products:
+            for lang in LANGS:
+                try:
+                    slug_to_pid[build.p_product(p["id"], lang)] = p["id"]
+                except KeyError:
+                    pass
         for path in self.product_pages:
             content = path.read_text(encoding="utf-8")
-            self.assertNotIn("gallery-thumbs", content, f"{path} renders gallery thumbnails but has only one image")
+            if "gallery-thumbs" not in content:
+                continue
+            rel = str(path).replace(chr(92), "/")
+            pid = next((v for k, v in slug_to_pid.items() if rel.endswith(k)), None)
+            if pid in single_image_ids:
+                self.fail(f"{path} renders gallery thumbnails but has only one image")
 
 
 if __name__ == "__main__":

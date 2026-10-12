@@ -36,6 +36,9 @@
   --space-5: 4.5rem;
   --space-6: 7rem;
 
+  --champagne-deep: #A98F5B;
+  --shadow-cta: 0 6px 18px rgba(28, 25, 23, 0.18);
+
   --line-hairline: 1px solid var(--line);
 }
 
@@ -155,10 +158,10 @@ textarea:focus-visible,
   gap: 0.5rem;
   font-family: var(--font-body);
   font-weight: 500;
-  font-size: 0.78rem;
-  letter-spacing: 0.09em;
+  font-size: 0.82rem;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
-  padding: 1rem 2rem;
+  padding: 1.05rem 2.2rem;
   border-radius: var(--radius);
   border: 1px solid var(--ink);
   cursor: pointer;
@@ -171,8 +174,9 @@ textarea:focus-visible,
 .btn-primary {
   background: var(--ink);
   color: var(--bg);
+  box-shadow: var(--shadow-cta);
 }
-.btn-primary:hover { background: transparent; color: var(--ink); }
+.btn-primary:hover { background: var(--champagne); border-color: var(--champagne); color: var(--ink); }
 
 .btn-outline {
   background: transparent;
@@ -311,9 +315,9 @@ textarea:focus-visible,
   display: flex;
   align-items: flex-end;
   background-color: var(--ink);
-  background-image: linear-gradient(0deg, rgba(20,15,12,0.72) 0%, rgba(20,15,12,0.15) 45%, rgba(20,15,12,0.05) 100%), url("assets/produits/img-09.jpg");
+  background-image: linear-gradient(0deg, rgba(20,15,12,0.72) 0%, rgba(20,15,12,0.15) 45%, rgba(20,15,12,0.05) 100%), url("assets/produits/hero-v4.jpg");
   background-size: cover;
-  background-position: center 32%;
+  background-position: center 40%;
   overflow: hidden;
 }
 .hero-inner {
@@ -339,7 +343,8 @@ textarea:focus-visible,
   display: block;
   max-width: 38ch;
   margin-top: var(--space-2);
-  font-size: 1.1rem;
+  font-style: italic;
+  font-size: 1.12rem;
   color: rgba(250, 247, 241, 0.88);
 }
 .hero-actions { margin-top: var(--space-3); }
@@ -382,7 +387,19 @@ textarea:focus-visible,
   font-size: clamp(1.7rem, 3.2vw, 2.3rem);
   font-weight: 500;
   color: var(--ink);
+  position: relative;
+  padding-bottom: 0.9rem;
 }
+.section-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 3.5rem;
+  height: 2px;
+  background: var(--champagne);
+}
+.section-head-center .section-title::after { left: 50%; transform: translateX(-50%); }
 .section-lead { color: var(--muted); font-size: 1rem; margin-top: 0.6rem; max-width: 52ch; }
 
 /* ==========================================================================
@@ -876,3 +893,86 @@ textarea:focus-visible,
 @media (max-width: 860px) {
   .header-actions { gap: 0.5rem; }
 }
+
+
+/* ==========================================================================
+   V4 — CTA premium (ombre douce + or au survol)
+   ========================================================================== */
+.btn-light { box-shadow: var(--shadow-cta); }
+.btn-light:hover { background: var(--champagne); border-color: var(--champagne); color: var(--ink); }
+.btn-outline:hover { border-color: var(--champagne); color: var(--champagne-deep); }
+
+
+/* ---- Section Top 20 eBay ---- */
+.ebay-section { background: var(--bg-alt); }
+.ebay-eyebrow {
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--champagne-deep);
+  margin-bottom: var(--space-1);
+}
+.ebay-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: var(--space-3) var(--space-2);
+  margin-top: var(--space-3);
+}
+.ebay-card {
+  position: relative;
+  background: var(--white);
+  border: var(--line-hairline);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+.ebay-card a { display: block; color: inherit; text-decoration: none; }
+.ebay-card a:hover .ebay-title { text-decoration: underline; }
+.ebay-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  background: var(--bg);
+}
+.ebay-rank {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  z-index: 1;
+  background: var(--ink);
+  color: var(--white);
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 1;
+  padding: 5px 8px;
+  border-radius: var(--radius);
+}
+.ebay-info { display: grid; gap: 6px; padding: 0.75rem; }
+.ebay-title {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 1.35;
+  color: var(--ink);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.ebay-price {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--ink);
+}
+.ebay-note {
+  margin-top: var(--space-3);
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+@media (max-width: 900px) { .ebay-grid { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 560px) { .ebay-grid { grid-template-columns: repeat(2, 1fr); } }

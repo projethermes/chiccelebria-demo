@@ -123,7 +123,7 @@
     },
     "prix": 7.5,
     "images": [
-      "assets/produits/img-02.jpg"
+      "assets/produits/v4-kraft-wrapped-gift-box.jpg"
     ],
     "collections": [
       "christmas",
@@ -205,7 +205,7 @@
     },
     "prix": 14.5,
     "images": [
-      "assets/produits/img-09.jpg"
+      "assets/produits/v4-personalised-scented-candle.jpg"
     ],
     "collections": [
       "personalised",
@@ -235,7 +235,7 @@
     },
     "prix": 16.0,
     "images": [
-      "assets/produits/img-03.jpg"
+      "assets/produits/v4-red-christmas-ornament-set.jpg"
     ],
     "collections": [
       "christmas"
@@ -502,7 +502,10 @@
     },
     "prix": 16.99,
     "images": [
-      "assets/sourcing/noel-sapin-table-bois.jpg"
+      "assets/produits/etsy-noel-sapin-table-bois-1.jpg",
+      "assets/produits/etsy-noel-sapin-table-bois-2.jpg",
+      "assets/produits/etsy-noel-sapin-table-bois-3.jpg",
+      "assets/produits/v4-noel-sapin-table-bois.jpg"
     ],
     "collections": [
       "christmas"
@@ -528,7 +531,10 @@
     },
     "prix": 14.99,
     "images": [
-      "assets/sourcing/noel-deco-bois-24pcs.jpg"
+      "assets/produits/etsy-noel-deco-bois-24pcs-1.jpg",
+      "assets/produits/etsy-noel-deco-bois-24pcs-2.jpg",
+      "assets/produits/etsy-noel-deco-bois-24pcs-3.jpg",
+      "assets/produits/v4-noel-deco-bois-24pcs.jpg"
     ],
     "collections": [
       "christmas"
@@ -554,7 +560,10 @@
     },
     "prix": 34.99,
     "images": [
-      "assets/sourcing/noel-arbre-mural-bois.jpg"
+      "assets/produits/etsy-noel-arbre-mural-bois-1.jpg",
+      "assets/produits/etsy-noel-arbre-mural-bois-2.jpg",
+      "assets/produits/etsy-noel-arbre-mural-bois-3.jpg",
+      "assets/produits/v4-noel-arbre-mural-bois.jpg"
     ],
     "collections": [
       "christmas",
@@ -582,7 +591,10 @@
     },
     "prix": 12.99,
     "images": [
-      "assets/sourcing/noel-boule-photo-a.jpg"
+      "assets/produits/etsy-noel-boule-photo-a-1.jpg",
+      "assets/produits/etsy-noel-boule-photo-a-2.jpg",
+      "assets/produits/etsy-noel-boule-photo-a-3.jpg",
+      "assets/produits/v4-noel-boule-photo-a.jpg"
     ],
     "collections": [
       "christmas",
@@ -611,7 +623,7 @@
     },
     "prix": 13.99,
     "images": [
-      "assets/sourcing/noel-boule-photo-b.jpg"
+      "assets/produits/v4-noel-boule-photo-b.jpg"
     ],
     "collections": [
       "christmas",
@@ -638,7 +650,10 @@
     },
     "prix": 15.99,
     "images": [
-      "assets/sourcing/noel-boule-sublimation.jpg"
+      "assets/produits/etsy-noel-boule-sublimation-1.jpg",
+      "assets/produits/etsy-noel-boule-sublimation-2.jpg",
+      "assets/produits/etsy-noel-boule-sublimation-3.jpg",
+      "assets/produits/v4-noel-boule-sublimation.jpg"
     ],
     "collections": [
       "christmas",
@@ -665,7 +680,7 @@
     },
     "prix": 16.99,
     "images": [
-      "assets/sourcing/noel-chaussettes-texte.jpg"
+      "assets/produits/v4-noel-chaussettes-texte.jpg"
     ],
     "collections": [
       "christmas",
@@ -692,7 +707,7 @@
     },
     "prix": 19.99,
     "images": [
-      "assets/sourcing/noel-chemin-table-renne.jpg"
+      "assets/produits/v4-noel-chemin-table-renne.jpg"
     ],
     "collections": [
       "christmas"
@@ -825,7 +840,7 @@
     },
     "prix": 34.99,
     "images": [
-      "assets/sourcing/noel-bas-vintage-brode.jpg"
+      "assets/produits/v4-noel-bas-vintage-brode.jpg"
     ],
     "collections": [
       "christmas",
@@ -852,7 +867,7 @@
     },
     "prix": 36.99,
     "images": [
-      "assets/sourcing/noel-bas-vintage-sac.jpg"
+      "assets/produits/v4-noel-bas-vintage-sac.jpg"
     ],
     "collections": [
       "christmas",
@@ -879,7 +894,7 @@
     },
     "prix": 11.99,
     "images": [
-      "assets/sourcing/noel-bas-prenom-tricote.jpg"
+      "assets/produits/v4-noel-bas-prenom-tricote.jpg"
     ],
     "collections": [
       "christmas",
@@ -906,7 +921,7 @@
     },
     "prix": 11.99,
     "images": [
-      "assets/sourcing/noel-chaussettes-alphabet.jpg"
+      "assets/produits/v4-noel-chaussettes-alphabet.jpg"
     ],
     "collections": [
       "christmas"
@@ -932,7 +947,7 @@
     },
     "prix": 36.99,
     "images": [
-      "assets/sourcing/noel-chaussette-torsade-brodee.jpg"
+      "assets/produits/v4-noel-chaussette-torsade-brodee.jpg"
     ],
     "collections": [
       "christmas",

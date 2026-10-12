@@ -83,7 +83,12 @@
     "label.style": "Style",
     "label.setSize": "Set size",
     "label.personalisation": "Personalisation",
-    "alt.livingroom": "A softly styled living room with layered seasonal decor"
+    "alt.livingroom": "A softly styled living room with layered seasonal decor",
+    "home.ebay.eyebrow": "The eBay marketplace",
+    "home.ebay.title": "Top 20 eBay listings",
+    "home.ebay.lead": "Our pick of the moment's most popular personalised gift listings, straight from eBay.",
+    "home.ebay.note": "Prices and availability may change. External links to eBay — we don't sell these items.",
+    "home.ebay.updated": "Updated on {date}"
   },
   "es": {
     "common.skip": "Saltar al contenido",
@@ -169,7 +174,12 @@
     "label.style": "Estilo",
     "label.setSize": "Tamaño del set",
     "label.personalisation": "Personalización",
-    "alt.livingroom": "Un salón decorado con suavidad y decoración de temporada en capas"
+    "alt.livingroom": "Un salón decorado con suavidad y decoración de temporada en capas",
+    "home.ebay.eyebrow": "El mercado de eBay",
+    "home.ebay.title": "Top 20 anuncios de eBay",
+    "home.ebay.lead": "Nuestra selección de los anuncios de regalos personalizados más populares del momento, directamente desde eBay.",
+    "home.ebay.note": "Los precios y la disponibilidad pueden cambiar. Enlaces externos a eBay — no vendemos estos artículos.",
+    "home.ebay.updated": "Actualizado el {date}"
   },
   "fr": {
     "common.skip": "Aller au contenu",
@@ -255,7 +265,12 @@
     "label.style": "Style",
     "label.setSize": "Taille du lot",
     "label.personalisation": "Personnalisation",
-    "alt.livingroom": "Un salon décoré avec douceur, à la déco de saison en couches"
+    "alt.livingroom": "Un salon décoré avec douceur, à la déco de saison en couches",
+    "home.ebay.eyebrow": "Le marché eBay",
+    "home.ebay.title": "Top 20 des annonces eBay",
+    "home.ebay.lead": "Notre sélection des cadeaux personnalisés les plus populaires du moment, directement depuis eBay.",
+    "home.ebay.note": "Prix et disponibilités susceptibles de changer. Liens externes vers eBay — nous ne vendons pas ces articles.",
+    "home.ebay.updated": "Mise à jour le {date}"
   },
   "it": {
     "common.skip": "Vai al contenuto",
@@ -341,7 +356,12 @@
     "label.style": "Stile",
     "label.setSize": "Dimensione del set",
     "label.personalisation": "Personalizzazione",
-    "alt.livingroom": "Un soggiorno arredato con morbidezza e decor stagionale a strati"
+    "alt.livingroom": "Un soggiorno arredato con morbidezza e decor stagionale a strati",
+    "home.ebay.eyebrow": "Il mercato eBay",
+    "home.ebay.title": "Top 20 annunci eBay",
+    "home.ebay.lead": "La nostra selezione degli annunci di regali personalizzati più popolari del momento, direttamente da eBay.",
+    "home.ebay.note": "Prezzi e disponibilità possono cambiare. Colli esterni a eBay — non vendiamo questi articoli.",
+    "home.ebay.updated": "Aggiornato il {date}"
   },
   "de": {
     "common.skip": "Zum Inhalt springen",
@@ -427,6 +447,11 @@
     "label.style": "Stil",
     "label.setSize": "Set-Größe",
     "label.personalisation": "Personalisierung",
-    "alt.livingroom": "Ein sanft eingerichtetes Wohnzimmer mit geschichteter Saisondeko"
+    "alt.livingroom": "Ein sanft eingerichtetes Wohnzimmer mit geschichteter Saisondeko",
+    "home.ebay.eyebrow": "Der eBay-Marktplatz",
+    "home.ebay.title": "Top 20 eBay-Angebote",
+    "home.ebay.lead": "Unsere Auswahl der aktuell beliebtesten Angebote für personalisierte Geschenke, direkt von eBay.",
+    "home.ebay.note": "Preise und Verfügbarkeit können sich ändern. Externe Links zu eBay — wir verkaufen diese Artikel nicht.",
+    "home.ebay.updated": "Aktualisiert am {date}"
   }
 }

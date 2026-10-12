@@ -799,6 +799,7 @@ def home_page(lang):
     </div>
   </section>
 {season_html}
+{ebay_section_html(lang)}
 
   <section class="newsletter" aria-labelledby="newsletter-heading">
     <div class="wrap newsletter-inner">
@@ -814,6 +815,66 @@ def home_page(lang):
   </section>'''
 
     return page_shell(lang, prefix, "home", body, alt_paths, head_html)
+
+
+
+def format_ebay_price(lang, value, currency):
+    """Prix eBay localise simple : '17,99 EUR' (FR/DE/ES/IT) / 'EUR17.99' (EN)."""
+    if value in (None, ""):
+        return ""
+    num = str(value)
+    if lang != "en" and "." in num:
+        num = num.replace(".", ",")
+    sym = {"EUR": "\u20ac", "GBP": "\u00a3", "USD": "$"}.get(currency or "EUR", "")
+    if lang == "en" and sym:
+        return f"{sym}{num}"
+    return f"{num} {sym}".strip()
+
+
+def ebay_section_html(lang):
+    """Section Top 20 des annonces eBay (top-ebay.json, optionnelle :
+    si absente ou vide, la section n'est pas generee)."""
+    try:
+        data = load("top-ebay.json")
+    except (OSError, ValueError):
+        return ""
+    items = data.get("annonces") or []
+    maj = str(data.get("maj") or "")[:10]
+    parts = maj.split("-")
+    maj_fmt = ".".join(parts[::-1]) if len(parts) == 3 else maj
+    cards = []
+    for it in items:
+        url = esc(it.get("url") or "")
+        img = esc(it.get("image") or "")
+        if not url or not img:
+            continue
+        titre = esc(str(it.get("titre") or "")[:110])
+        prix = format_ebay_price(lang, it.get("prix"), it.get("devise"))
+        rang = esc(str(it.get("rang") or ""))
+        cards.append(
+            '    <article class="ebay-card">'
+            f'      <a href="{url}" target="_blank" rel="noopener noreferrer nofollow">' + "\n" +
+            f'        <span class="ebay-rank" aria-hidden="true">{rang}</span>' + "\n" +
+            f'        <img src="{img}" alt="{titre}" width="224" height="224" loading="lazy">' + "\n" +
+            '        <span class="ebay-info">' + "\n" +
+            f'          <span class="ebay-title">{titre}</span>' + "\n" +
+            f'          <span class="ebay-price">{prix}</span>' + "\n" +
+            '        </span>' + "\n" +
+            '      </a>' + "\n" +
+            '    </article>')
+    if not cards:
+        return ""
+    return ("\n  <section class=\"section ebay-section\" aria-labelledby=\"ebay-heading\">\n"
+            "    <div class=\"wrap\">\n"
+            + f'      <p class="ebay-eyebrow">{esc(s(lang, "home.ebay.eyebrow"))}</p>' + "\n"
+            + f'      <h2 class="section-title" id="ebay-heading">{esc(s(lang, "home.ebay.title"))}</h2>' + "\n"
+            + f'      <p class="section-lead">{esc(s(lang, "home.ebay.lead"))}</p>' + "\n"
+            + '      <div class="ebay-grid">' + "\n"
+            + "\n".join(cards) + "\n"
+            + '      </div>' + "\n"
+            + f'      <p class="ebay-note">{esc(s(lang, "home.ebay.note"))} {esc(s(lang, "home.ebay.updated").format(date=maj_fmt))}</p>' + "\n"
+            + '    </div>' + "\n"
+            + '  </section>')
 
 
 # --------------------------------------------------------------------------
